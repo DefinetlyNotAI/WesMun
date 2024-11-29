@@ -1,0 +1,67 @@
+.committees_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.heading_container {
+    margin-bottom: 40px;
+}
+
+.heading_center h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.committee_category {
+    margin-bottom: 40px;
+}
+
+.committee_category h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.committee_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.committee_item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.committee_item h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.committee_item a {
+    display: block;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.committee_item a:hover {
+    text-decoration: underline;
+}
+
+.committee_item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}

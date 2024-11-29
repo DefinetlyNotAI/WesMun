@@ -5,7 +5,7 @@
 .schedule-container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #f9f9f9;
+    background-color: #ebdcd0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,19 +25,19 @@
 .schedule-table td {
     padding: 15px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #ebdcd0;
 }
 
 .schedule-table th {
-    background-color: #003eff;
+    background-color: #57465c;
     color: white;
 }
 
 .schedule-table td {
-    background-color: #ffffff;
+    background-color: #ebdcd0;
 }
 
 .table-heading {
-    background-color: #f3f3f3;
+    background-color: #ebdcd0;
     font-weight: bold;
 }

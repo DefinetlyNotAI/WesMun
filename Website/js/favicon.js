@@ -9,6 +9,16 @@ function updateFavicon() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const currentUrl = window.location.href;
+    const urlPath = window.location.pathname;
+
+    if (currentUrl.includes('wesmun.com') && !urlPath.endsWith('.html')) {
+        window.location.href = currentUrl.replace('.html', '');
+    }
+});
+
+
 // Initial check
 updateFavicon();
 

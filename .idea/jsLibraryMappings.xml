@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{OwlCarousel2}" />
-    <file url="PROJECT" libraries="{@teleporthq, @teleporthq/teleport-custom-scripts, animate.css, bootstrap, jquery, jquery-3.6.0, popper.js}" />
+    <file url="file://$PROJECT_DIR$" libraries="{OwlCarousel2, api, bootstrap, crypto-js, feedback2, for-form-embed-handler, jquery, popper.js}" />
   </component>
 </project>

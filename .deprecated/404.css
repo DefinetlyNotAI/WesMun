@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .not-found-container2 {
   display: flex;
   position: relative;
@@ -14,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .not-found-text2 {
   color: rgb(38, 38, 38);
   font-size: 252px;
@@ -22,6 +24,7 @@
   margin-bottom: -20px;
   letter-spacing: -20px;
 }
+
 .not-found-container3 {
   width: 421px;
   display: flex;
@@ -29,6 +32,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .not-found-text3 {
   text-align: center;
   font-weight: 400;

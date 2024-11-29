@@ -38,7 +38,7 @@ p {
 .founders {
     padding: 50px;
     background-color: #fff;
-    
+
 }
 
 .founder-grid {
@@ -103,7 +103,8 @@ p {
     justify-items: center;
 }
 
-@media (max-width: 768px) { /* Adjust for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Adjust for screens 768px and smaller */
     .team-grid-3 {
         grid-template-columns: 1fr; /* 1 column per row on mobile */
     }
@@ -116,7 +117,8 @@ p {
     justify-items: center;
 }
 
-@media (max-width: 768px) { /* Adjust for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Adjust for screens 768px and smaller */
     .team-grid-2 {
         grid-template-columns: 1fr; /* 1 column per row on mobile */
     }
@@ -159,7 +161,8 @@ footer {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) { /* Adjust for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Adjust for screens 768px and smaller */
     .navbar {
         padding: 5px; /* Less padding for smaller screens */
     }
@@ -180,7 +183,8 @@ footer {
     }
 }
 
-@media (max-width: 480px) { /* Adjust for screens 480px and smaller */
+@media (max-width: 480px) {
+    /* Adjust for screens 480px and smaller */
     .navbar .navbar-brand {
         font-size: 1.5rem; /* Larger brand name on small devices */
     }
@@ -197,6 +201,7 @@ footer {
         width: 90%; /* Adjust width for very small screens */
     }
 }
+
 @media (max-width: 768px) {
     .founder-grid {
         grid-template-columns: repeat(1, 1fr); /* Stack profiles in one column on small screens */

@@ -60,7 +60,7 @@ document.getElementById('downloadMOU').addEventListener('click', function () {
     }, 10);
 
     document.getElementById('confirmDownload').addEventListener('click', function () {
-        window.location.href = 'downloadable/Memorandum of Understanding.docx';
+        window.location.href = '../downloadable/ANY_IMPORTANT_DOCS.docx';
         closePopup(popup);
     });
 

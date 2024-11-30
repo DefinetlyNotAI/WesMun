@@ -10,11 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="OwlCarousel2" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
-    <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
-    <orderEntry type="library" name="animate.css" level="application" />
-    <orderEntry type="library" name="@teleporthq/teleport-custom-scripts" level="application" />
-    <orderEntry type="library" name="@teleporthq" level="application" />
   </component>
 </module>

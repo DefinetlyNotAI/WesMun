@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const currentUrl = window.location.href;
     const urlPath = window.location.pathname;
 
-    if (currentUrl.includes('wesmun.com')) {
+    if (currentUrl.includes('wesmun.com') && urlPath.includes('.html')) {
         if (urlPath.includes('.html')) {
             window.location.href = currentUrl.replace('.html', '');
         }

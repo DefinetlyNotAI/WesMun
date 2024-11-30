@@ -50,7 +50,7 @@ footer {
 a.thq-button-flat {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #57465c;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -58,7 +58,7 @@ a.thq-button-flat {
 }
 
 a.thq-button-flat:hover {
-    background-color: #0056b3;
+    background-color: #57465c;
 }
 
 /* Container Styles */

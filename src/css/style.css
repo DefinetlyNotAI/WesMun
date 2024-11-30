@@ -44,6 +44,33 @@ body {
     align-items: flex-start;
 }
 
+.btn-primary {
+    animation: pulse 2s infinite;
+    background: #57465c;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.custom-button {
+    background-color: #57465c !important;
+    border-color: #57465c !important;
+}
+
+.custom-button:hover {
+    background-color: #57465c !important;
+    border-color: #57465c !important;
+}
+
 .heading_container h2 {
     position: relative;
     font-weight: bold;
@@ -804,7 +831,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-    color: #00bbf0;
+    color: #57465c;
 }
 
 .info_section .info_social {
@@ -832,7 +859,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-    color: #00bbf0;
+    color: #57465c;
 }
 
 .info_section .info_links {
@@ -859,7 +886,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-    color: #00bbf0;
+    color: #57465c;
 }
 
 .info_section form input {

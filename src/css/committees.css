@@ -1,6 +1,6 @@
 .committees_section {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #ebdcd0;
 }
 
 .heading_container {
@@ -32,8 +32,8 @@
 }
 
 .committee_item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #faf3ee;
+    border: 1px solid #faf3ee;
     border-radius: 8px;
     padding: 20px;
     width: calc(50% - 20px);
@@ -64,5 +64,5 @@
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    border: 2px solid #ddd;
+    border: 2px solid #faf3ee;
 }

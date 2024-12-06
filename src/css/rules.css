@@ -1,11 +1,11 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f5;
+    background-color: #ebdcd0;
 }
 
 .hackathon-rules {
     padding: 30px;
-    background-color: #fff;
+    background-color: #faf3ee;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;

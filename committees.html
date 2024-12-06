@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>WESMUN - Committees</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
     <!-- Basic -->
-    <meta charset="utf-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <!-- Mobile Metas -->
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
@@ -11,12 +15,159 @@
     <link href="src/images/WesmunFavicon.jpg" rel="shortcut icon" type="">
     <link href="src/css/favicon.css" rel="stylesheet" type="text/css"/>
 
-    <title>WESMUN - Committees</title>
-
     <!-- Bootstrap core CSS -->
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: "Open Sans", sans-serif;
+            color: #55537b;
+            background-color: #ebdcd0;
+            overflow-x: hidden;
+        }
+
+        .layout_padding {
+            padding: 90px 0;
+        }
+
+        /* Committee Cards */
+        .committees_section {
+            padding: 90px 0;
+        }
+
+        .heading_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .heading_container h2 {
+            position: relative;
+            font-weight: bold;
+            color: #57465c;
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+        }
+
+        .committee_category {
+            margin-bottom: 60px;
+        }
+
+        .committee_category h3 {
+            color: #57465c;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .committee_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .committee_list-4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .committee_item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .committee_item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .committee_item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .committee_item:hover img {
+            transform: scale(1.05);
+        }
+
+        .committee_content {
+            padding: 25px;
+        }
+
+        .committee_name {
+            color: #57465c;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary-x {
+            background: #57465c;
+            color: #ebdcd0;
+            animation: pulse 2s infinite;
+        }
+
+        .btn-secondary {
+            background: #ebdcd0;
+            color: #57465c;
+            border: 2px solid #57465c;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: #ebdcd0;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(235, 220, 208, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none !important;
+            }
+
+            .navbar-toggler {
+                display: block;
+            }
+
+            .committee_list {
+                grid-template-columns: 1fr;
+            }
+
+            .heading_container h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
     <!-- Fonts style -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
@@ -79,175 +230,177 @@
     <!-- End Header Section -->
 </div>
 
-<!-- Committees Section -->
 <section class="committees_section layout_padding">
-    <link href="src/css/committees.css" rel="stylesheet"/>
-
-    <div class="container">
-        <div class="heading_container heading_center">
-            <h2>Committees</h2>
+    <div class="container-fluid">
+        <div class="heading_container">
+            <h2>Our Committees</h2>
+            <p>Explore our diverse range of committees designed for delegates of all experience levels</p>
         </div>
 
-        <!-- Beginner Committees -->
         <div class="committee_category">
             <h3>Beginner Committees</h3>
-            <div class="committee_list">
+            <div class="committee_list-4">
                 <div class="committee_item">
-                    <h4>UNICEF</h4>
-                    <img alt="UNICEF Chair" src="src/downloadable/UNICEF_chair.jpg">
-                    <a href="committees/UNICEF.html">View Committee</a>
-                    <a href="src/downloadable/UNICEF_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNICEF Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNICEF</h4>
+                        <a class="btn btn-primary-x" href="committees/UNICEF.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNICEF_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>WHO</h4>
-                    <img alt="WHO Chair" src="src/downloadable/WHO_chair.jpg">
-                    <a href="committees/WHO.html">View Committee</a>
-                    <a href="src/downloadable/WHO_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="WHO Chair" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
+                    <div class="committee_content">
+                        <h4 class="committee_name">WHO</h4>
+                        <a class="btn btn-primary-x" href="committees/WHO.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/WHO_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>UNHCR</h4>
-                    <img alt="UNHCR Chair" src="src/downloadable/UNHCR_chair.jpg">
-                    <a href="committees/UNHCR.html">View Committee</a>
-                    <a href="src/downloadable/UNHCR_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNHCR Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNHCR</h4>
+                        <a class="btn btn-primary-x" href="committees/UNHCR.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNHCR_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>UNSC Jr</h4>
-                    <img alt="UNSC Jr Chair" src="src/downloadable/UNSC_jr_chair.jpg">
-                    <a href="committees/UNSC_jr.html">View Committee</a>
-                    <a href="src/downloadable/UNSC_jr_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNSC Jr Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNSC Jr</h4>
+                        <a class="btn btn-primary-x" href="committees/UNSC_jr.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNSC_jr_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>UNHRC</h4>
-                    <img alt="UNHRC Chair" src="src/downloadable/UNHRC_chair.jpg">
-                    <a href="committees/UNHRC.html">View Committee</a>
-                    <a href="src/downloadable/UNHRC_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNHRC Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNHRC</h4>
+                        <a class="btn btn-primary-x" href="committees/UNHRC.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNHRC_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>UNW</h4>
-                    <img alt="UNW Chair" src="src/downloadable/UNW_chair.jpg">
-                    <a href="committees/UNW.html">View Committee</a>
-                    <a href="src/downloadable/UNW_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNW Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNW</h4>
+                        <a class="btn btn-primary-x" href="committees/UNW.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNW_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Intermediate Committees -->
         <div class="committee_category">
             <h3>Intermediate Committees</h3>
-            <div class="committee_list">
+            <div class="committee_list-4">
                 <div class="committee_item">
-                    <h4>UNODC</h4>
-                    <img alt="UNODC Chair" src="src/downloadable/UNODC_chair.jpg">
-                    <a href="committees/UNODC.html">View Committee</a>
-                    <a href="src/downloadable/UNODC_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNODC Chair" src="https://images.unsplash.com/photo-1560250097-0b93528c311a">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNODC</h4>
+                        <a class="btn btn-primary-x" href="committees/UNODC.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNODC_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>GA1</h4>
-                    <img alt="GA1 Chair" src="src/downloadable/GA1_chair.jpg">
-                    <a href="committees/GA1.html">View Committee</a>
-                    <a href="src/downloadable/GA1_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="GA1 Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">GA1</h4>
+                        <a class="btn btn-primary-x" href="committees/GA1.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/GA1_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>Arab League (Arabic)</h4>
-                    <img alt="Arab League Arabic Chair" src="src/downloadable/Arab_League_Arabic_chair.jpg">
-                    <a href="committees/Arab_League_Arabic.html">View Committee</a>
-                    <a href="src/downloadable/Arab_League_Arabic_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="Arab League Arabic Chair"
+                         src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">Arab League (Arabic)</h4>
+                        <a class="btn btn-primary-x" href="committees/Arab_League_Arabic.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/Arab_League_Arabic_background_guide.pdf"
+                           target="_blank">Background Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>Arab League (English)</h4>
-                    <img alt="Arab League English Chair" src="src/downloadable/Arab_League_English_chair.jpg">
-                    <a href="committees/Arab_League_English.html">View Committee</a>
-                    <a href="src/downloadable/Arab_League_English_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="Arab League English Chair"
+                         src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">Arab League (English)</h4>
+                        <a class="btn btn-primary-x" href="committees/Arab_League_English.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/Arab_League_English_background_guide.pdf"
+                           target="_blank">Background Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>GA4</h4>
-                    <img alt="GA4 Chair" src="src/downloadable/GA4_chair.jpg">
-                    <a href="committees/GA4.html">View Committee</a>
-                    <a href="src/downloadable/GA4_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="GA4 Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">GA4</h4>
+                        <a class="btn btn-primary-x" href="committees/GA4.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/GA4_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>ECOSOC</h4>
-                    <img alt="ECOSOC Chair" src="src/downloadable/ECOSOC_chair.jpg">
-                    <a href="committees/ECOSOC.html">View Committee</a>
-                    <a href="src/downloadable/ECOSOC_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="ECOSOC Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">ECOSOC</h4>
+                        <a class="btn btn-primary-x" href="committees/ECOSOC.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/ECOSOC_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Advanced Committees -->
         <div class="committee_category">
             <h3>Advanced Committees</h3>
             <div class="committee_list">
                 <div class="committee_item">
-                    <h4>NATO</h4>
-                    <img alt="NATO Chair" src="src/downloadable/NATO_chair.jpg">
-                    <a href="committees/NATO.html">View Committee</a>
-                    <a href="src/downloadable/NATO_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="NATO Chair" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d">
+                    <div class="committee_content">
+                        <h4 class="committee_name">NATO</h4>
+                        <a class="btn btn-primary-x" href="committees/NATO.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/NATO_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>UNSC</h4>
-                    <img alt="UNSC Chair" src="src/downloadable/UNSC_chair.jpg">
-                    <a href="committees/UNSC.html">View Committee</a>
-                    <a href="src/downloadable/UNSC_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="UNSC Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">UNSC</h4>
+                        <a class="btn btn-primary-x" href="committees/UNSC.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/UNSC_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>HSC</h4>
-                    <img alt="HSC Chair" src="src/downloadable/HSC_chair.jpg">
-                    <a href="committees/HSC.html">View Committee</a>
-                    <a href="src/downloadable/HSC_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="HSC Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">HSC</h4>
+                        <a class="btn btn-primary-x" href="committees/HSC.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/HSC_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
                 <div class="committee_item">
-                    <h4>HCC</h4>
-                    <img alt="HCC Chair" src="src/downloadable/HCC_chair.jpg">
-                    <a href="committees/HCC.html">View Committee</a>
-                    <a href="src/downloadable/HCC_background_guide.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> Background Guide
-                    </a>
+                    <img alt="HCC Chair" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e">
+                    <div class="committee_content">
+                        <h4 class="committee_name">HCC</h4>
+                        <a class="btn btn-primary-x" href="committees/HCC.html">View Committee</a>
+                        <a class="btn btn-secondary" href="/downloadable/HCC_background_guide.pdf" target="_blank">Background
+                            Guide</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Committees Section -->
-
-<!-- JavaScript Files (Make sure to include them in this order) -->
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Popper.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 </body>
-
 </html>

@@ -54,7 +54,7 @@ body {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
     100% {
         transform: scale(1);
@@ -920,17 +920,12 @@ a:focus {
     text-align: center;
     display: inline-block;
     padding: 10px 55px;
-    background-color: #00bbf0;
     color: #ebdcd0;
     border-radius: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border: none;
     margin-top: 15px;
-}
-
-.info_section form button:hover {
-    background-color: #007fa4;
 }
 
 /* footer section*/

@@ -77,9 +77,15 @@
 
         .committee_list-4 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
             gap: 30px;
             padding: 0 20px;
+        }
+
+        @media (min-width: 768px) {
+            .committee_list-4 {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
         .committee_item {

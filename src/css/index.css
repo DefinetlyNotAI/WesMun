@@ -1,0 +1,22 @@
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #4a3c50;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-out;
+}
+
+#loading-screen.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-video {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}

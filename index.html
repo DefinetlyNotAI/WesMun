@@ -19,7 +19,7 @@
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     <!-- font awesome style -->
     <link href="src/css/font-awesome.min.css" rel="stylesheet"/>
 
@@ -29,7 +29,17 @@
     <!-- responsive style -->
     <link href="src/css/responsive.css" rel="stylesheet"/>
 
+    <link href="src/css/index.css" rel="stylesheet">
 </head>
+
+<body class="sub_page">
+<div id="loading-screen">
+    <video autoplay id="loading-video" loop muted>
+        <source src="src/media/Load.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+</body>
 
 <div class="hero_area" style="height: auto; width: auto; padding:0;">
     <div class="hero_bg_box">
@@ -95,9 +105,8 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="img-box">
-                                    <img alt="" src="src/media/WesmunLogo.png">
-                                </div>
+                                <img alt="" class="img animate__animated animate__bounceIn"
+                                     src="src/media/WesmunLogo.png">
                             </div>
                         </div>
                     </div>
@@ -107,7 +116,6 @@
     </section>
     <!-- end slider section -->
 </div>
-
 
 <!-- One of a kind -->
 
@@ -172,7 +180,6 @@
     </div>
 </section>
 
-
 <!-- end why section -->
 
 <!-- JavaScript Files (Make sure to include them in this order) -->
@@ -186,5 +193,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="src/js/index.loading.js"></script>
 
 </html>

@@ -165,14 +165,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar-nav {
-        display: none !important;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
     .committee_list {
         grid-template-columns: 1fr;
     }

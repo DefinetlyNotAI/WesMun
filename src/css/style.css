@@ -1,5 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
+.chair_name {
+    font-size: 1.25rem; /* Increase font size */
+    margin-bottom: 10px; /* Add space between names */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.chair_name i {
+    margin-right: 10px; /* Add space between icon and name */
+}
+
+.chair_item {
+    padding: 20px; /* Add padding to the chair item */
+    border: 1px solid #ebdcd0; /* Add border to the chair item */
+    border-radius: 10px; /* Round the corners */
+    background-color: #f5e9e0; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+
+/* Wrapper for content */
+.content-wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f5e9e0;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in this wrapper */
+}
+
+/* Section Headings */
+.section-heading {
+    font-size: 1.8rem;
+    color: #444;
+    border-bottom: 2px solid #55537b;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Styled List */
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #555;
+    display: flex; /* To align horizontally in the center */
+    align-items: center;
+    justify-content: center;
+}
+
+.styled-list li i {
+    font-size: 1.4rem;
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+/* Paragraph Styling */
+.about-text {
+    text-align: center; /* Center align the paragraph */
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 15px 20px;
+    }
+
+    .section-heading {
+        font-size: 1.6rem;
+    }
+
+    .styled-list li {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #55537b;

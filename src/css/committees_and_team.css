@@ -89,7 +89,7 @@ body {
 }
 
 .committee_item {
-    background: white;
+    background: #f5e9e0;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

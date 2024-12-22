@@ -58,3 +58,8 @@
     clip-path: polygon(0 0, 100% 0, 0 100%);
     z-index: 2; /* Ensures it appears above the main box-shadow */
 }
+
+.purple_bg {
+    background-color: #4a3c50; /* Adjust the color code to match the purple used in your project */
+    color: #ebdcd0; /* Ensure text is readable on the purple background */
+}

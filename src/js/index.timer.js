@@ -1,25 +1,28 @@
 const RegisterDate = new Date("December 20, 2024 00:00:00").getTime();
+const LateReDate = new Date("December 25, 2024 00:00:00").getTime();
 const StartDate = new Date("February 13, 2025 00:00:00").getTime();
 const EndDate = new Date("February 16, 2025 00:00:00").getTime();
 
 const countdownTimer = setInterval(() => {
     const now = Date.now();
     let message;
-    let extraMessage = "";
 
     if (now < RegisterDate) {
         const timeLeft = RegisterDate - now;
-        message = `WesMun Registration Start in ${Math.floor(timeLeft / (1000 * 60 * 60 * 24))} days, ${Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} hours, ${Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))} minutes, and ${Math.floor((timeLeft % (1000 * 60)) / 1000)} seconds.`;
+        message = `You only have ${Math.floor(timeLeft / (1000 * 60 * 60 * 24))} days, ${Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} hours, ${Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))} minutes, and ${Math.floor((timeLeft % (1000 * 60)) / 1000)} seconds to complete early registration payment!`;
+    } else if (now < LateReDate) {
+        const timeLeft = LateReDate - now;
+        message = `You only have ${Math.floor(timeLeft / (1000 * 60 * 60 * 24))} days, ${Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} hours, ${Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))} minutes, and ${Math.floor((timeLeft % (1000 * 60)) / 1000)} seconds to complete late registration payment!`;
     } else if (now < StartDate) {
         const timeLeft = StartDate - now;
-        message = `WesMun Start in ${Math.floor(timeLeft / (1000 * 60 * 60 * 24))} days, ${Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} hours, ${Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))} minutes, and ${Math.floor((timeLeft % (1000 * 60)) / 1000)} seconds.`;
+        message = `WESMUN will officially start in ${Math.floor(timeLeft / (1000 * 60 * 60 * 24))} days, ${Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))} hours, ${Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))} minutes, and ${Math.floor((timeLeft % (1000 * 60)) / 1000)} seconds.`;
     } else if (now <= EndDate) {
-        message = "The Official WesMun has begun!";
+        message = "WESMUN has begun - See you there!";
     } else {
-        message = "The Official WesMun has ended.";
+        message = "WESMUN has ended.";
     }
 
-    document.getElementById("countdown").innerHTML = message + (extraMessage ? `<br>${extraMessage}` : "");
+    document.getElementById("countdown").innerHTML = message;
 
     if (now > EndDate) clearInterval(countdownTimer);
 }, 1000);

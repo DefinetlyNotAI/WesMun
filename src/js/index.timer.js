@@ -1,6 +1,6 @@
 const RegisterDate = new Date("December 20, 2024 00:00:00").getTime();
-const StartDate = new Date("December 28, 2024 00:00:00").getTime();
-const EndDate = new Date("December 29, 2024 00:00:00").getTime();
+const StartDate = new Date("February 13, 2025 00:00:00").getTime();
+const EndDate = new Date("February 16, 2025 00:00:00").getTime();
 
 const countdownTimer = setInterval(() => {
     const now = Date.now();

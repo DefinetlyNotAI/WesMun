@@ -1,88 +1,71 @@
-**WesMun Proprietary License Agreement**
+# License Agreement for WESMUN 2025 Website
 
-**Copyright © 2024 Shahm Najeeb. All rights reserved.**
+This License Agreement ("Agreement") is entered into by and between
+**Shahm Najeeb** , the owner of the WESMUN 2025 website ("Licensor"),
+and **You** ("Licensee"), the authorized user of the website.
 
-This License Agreement ("Agreement") is a legal contract between the User of the website ("You"), Wesgreen International
-School and Shahm Najeeb ("Licensor") regarding the use of the WesMun event concept, software, code, documentation, and
-all associated materials ("Materials") developed and provided by Licensor. By accessing, using, or attempting to use the
-Materials, You agree to be bound by the terms of this Agreement. If You do not agree to these terms, You are not
-permitted to use the Materials.
+---
 
-### 1. Grant of License
+## 1. Ownership of Intellectual Property
 
-Licensor grants You a limited, non-exclusive, non-transferable, non-sublicensable license to access and use the
-Materials solely for personal, non-commercial purposes. Any other use of the Materials is strictly prohibited.
+- **1.1** The Licensee acknowledges that all intellectual property rights, including but not limited to the code, domain
+  name system (DNS), and website design and content (collectively referred to as the "Website Materials"), are the sole
+  property of the Licensor.
 
-### 2. Restrictions
+- **1.2** No transfer of ownership is implied or granted under this Agreement.
 
-- **No Redistribution or Sharing**: You may not distribute, publish, sublicense, rent, lease, lend, sell, or otherwise
-  transfer the Materials or any derivative ideas to any third party.
-- **No Reproduction of Concept**: You may not recreate, organize, host, or otherwise develop any event resembling the "
-  WesMun" hackathon, including but not limited to any hackathon event branded with the Wesgreen name, the format or
-  structure of the WesMun event series (including "WesMun 24" or future years), without prior written consent from
-  Licensor.
-- **No Modification or Derivative Works**: You are not permitted to modify, adapt, translate, reverse engineer,
-  decompile, disassemble, or create derivative works based on the Materials or the WesMun event concept.
-- **No Public Display or Hosting**: You may not host, display, or make the Materials publicly accessible without
-  explicit written consent from Licensor.
+---
 
-### 3. Ownership and Intellectual Property
+## 2. Rights and Obligations of the Licensee
 
-All rights, titles, and interests in and to the Materials, including any updates, modifications, enhancements, and the
-concept of the WesMun event series, are owned exclusively by Licensor. You acknowledge that the Materials are protected
-by copyright, trade secret, and other intellectual property laws, and You agree to take no actions inconsistent with
-such ownership.
+- **2.1** The Licensee is granted a non-exclusive, revocable license to use the Website Materials solely for the purpose
+  of operating the WESMUN 2025 event.
 
-### 4. Confidentiality
+- **2.2** The Licensee agrees to provide proper recognition to the Licensor in all materials, publications, and
+  communications involving the Website Materials, including but not limited to event brochures, social media posts, and
+  official announcements.
 
-The Materials, including the WesMun event concept, methodologies, and associated branding, shall be treated as
-confidential and proprietary. You agree not to disclose any such information to third parties or use it for any purpose
-other than as authorized under this Agreement.
+- **2.3** The Licensee shall not copy, modify, distribute, or sublicense the Website Materials without prior written
+  consent from the Licensor.
 
-### 5. Prohibition on Derivative Events and Works
+---
 
-You may not organize, develop, or participate in the creation of any hackathon, coding competition, or similar event
-that reproduces the branding, structure, themes, or distinctive features of the WesMun event series without Licensor’s
-express written consent.
+## 3. Licensors Responsibilities
 
-### 6. Updates and Modifications
+- **3.1** The Licensor agrees to host and maintain the Website Materials at their own expense for the duration of the
+  WESMUN 2025 event.
 
-Licensor may, at its sole discretion, provide updates, modifications, or enhancements to the Materials or the WesMun
-event concept. This Agreement will govern any updates or modifications provided to You unless such updates come with
-separate terms.
+- **3.2** The Licensor retains the right to update, modify, or discontinue the Website Materials at their sole
+  discretion, provided that reasonable notice is given to the Licensee to ensure event operations are not disrupted.
 
-### 7. Termination
+---
 
-This Agreement is effective until terminated. Licensor reserves the right to terminate Your access to the Materials and
-the WesMun concept at any time, for any reason, with or without notice. Upon termination, You must immediately cease all
-use of the Materials and destroy any copies in Your possession.
+## 4. Termination
 
-### 8. Disclaimer of Warranties
+- **4.1** This Agreement may be terminated by the Licensor immediately upon any breach of its terms by the Licensee.
 
-The Materials are provided "AS IS," without warranty of any kind. Licensor disclaims all warranties, whether express,
-implied, or statutory, regarding the Materials and event concepts, including but not limited to any implied warranties
-of merchantability, fitness for a particular purpose, title, and non-infringement.
+- **4.2** Upon termination, the Licensee must cease all use of the Website Materials and either return or destroy any
+  copies in their possession, as directed by the Licensor.
 
-### 9. Limitation of Liability
+---
 
-In no event will Licensor be liable for any damages (including direct, indirect, incidental, special, or consequential
-damages) arising out of the use or inability to use the Materials or the WesMun event concept, even if Licensor has been
-advised of the possibility of such damages.
+## 5. Indemnification
 
-### 10. Governing Law and Jurisdiction
+- **5.1** The Licensee agrees to indemnify and hold the Licensor harmless against any claims, damages, or expenses
+  arising from unauthorized use of the Website Materials or violations of this Agreement.
 
-This Agreement shall be governed by and construed in accordance with the laws of Sharjah, UAE. Any disputes arising
-under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts located in UAE.
+---
 
-### 11. Entire Agreement
+## 6. Governing Law
 
-This Agreement constitutes the entire agreement between the parties regarding the use of the Materials and supersedes
-all prior or contemporaneous agreements, representations, or understandings.
+- **6.1** This Agreement shall be governed by and construed in accordance with the laws of [Insert Jurisdiction],
+  without regard to its conflict of law provisions.
 
-### 12. Amendments
+---
 
-Licensor reserves the right to modify or amend this Agreement at any time. Continued use of the Materials after any such
-amendments constitutes acceptance of the new terms.
+## 7. Entire Agreement
 
-By using the Materials or the WesMun event concept, You acknowledge that You have read, understood, and agree to be
-bound by these terms and conditions.
+- **7.1** This Agreement constitutes the entire understanding between the parties and supersedes all prior agreements,
+  communications, or representations related to the subject matter.
+
+---

@@ -41,6 +41,24 @@
 </div>
 </body>
 
+<div id="licensePopup"
+     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); color: white; flex-direction: column; justify-content: center; align-items: center; z-index: 1000; font-family: Arial, sans-serif; display: none;">
+    <div style="background: #333; padding: 20px; border-radius: 10px; max-width: 600px; text-align: center;">
+        <h2>License Agreement</h2>
+        <div id="licenseText"
+             style="max-height: 300px; overflow-y: auto; text-align: left; background: #444; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+            <!-- License text will be inserted here -->
+        </div>
+        <label style="display: flex; align-items: center; margin-bottom: 20px;">
+            <input id="acceptCheckbox" style="margin-right: 10px;" type="checkbox"> I accept the terms and conditions
+        </label>
+        <button disabled
+                id="acceptButton"
+                style="padding: 10px 20px; background: #d32f2f; color: white; border: none; border-radius: 5px; cursor: pointer;">Accept
+        </button>
+    </div>
+</div>
+
 <div class="hero_area" style="height: auto; width: auto; padding:0;">
     <div class="hero_bg_box">
         <div class="bg_img_box">
@@ -114,8 +132,6 @@
     <!-- end slider section -->
 </div>
 
-<script src="/src/js/index.timer.js"></script>
-
 <!-- about section -->
 
 <section class="about_section layout_padding">
@@ -149,7 +165,8 @@
                 MUN equips students with the tools to think critically, communicate effectively,
                 and develop solutions that can make a meaningful impact on the world.
             </p>
-            <br><br>
+            <div id="countdown" style="font-size: 1.5em; text-align: center; margin-top: 20px;"></div>
+            <br>
         </div>
         <div class="heading_container heading_center letter">
                 <div class="detail-box">
@@ -211,5 +228,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <script src="src/js/index.loading.js"></script>
+<script onload="checkLicenseCookie()" src="src/js/index.license.js"></script>
+<script src="src/js/index.timer.js"></script>
 
 </html>

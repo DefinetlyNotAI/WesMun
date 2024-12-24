@@ -41,6 +41,35 @@
 
 <body class="sub_page">
 
+<div id="licensePopupMinimized"
+     style="position: fixed; bottom: 20px; right: 20px; background: #333; color: white; padding: 10px 20px; border-radius: 10px; cursor: pointer; display: flex; justify-content: center; align-items: center; z-index: 1001; font-family: Arial, sans-serif;">
+    <span>📜 View License Agreement</span>
+</div>
+
+<div id="autoAcceptNotification"
+     style="position: fixed; bottom: 20px; right: 20px; background: #28a745; color: white; padding: 10px 20px; border-radius: 10px; display: none; z-index: 1002; font-family: Arial, sans-serif;">
+    License has been automatically accepted.
+</div>
+
+<div id="licensePopup"
+     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); color: white; flex-direction: column; justify-content: center; align-items: center; z-index: 1000; font-family: Arial, sans-serif; display: none;">
+    <div style="background: #333; padding: 20px; border-radius: 10px; max-width: 600px; text-align: center;">
+        <h2>License Agreement</h2>
+        <div id="licenseText"
+             style="max-height: 300px; overflow-y: auto; text-align: left; background: #444; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+            <!-- License text will be inserted here -->
+        </div>
+        <label style="display: flex; align-items: center; margin-bottom: 20px;">
+            <input id="acceptCheckbox" style="margin-right: 10px;" type="checkbox"> I accept the terms and conditions
+        </label>
+        <button disabled
+                id="acceptButton"
+                style="padding: 10px 20px; background: #d32f2f; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Accept
+        </button>
+    </div>
+</div>
+
 <div class="hero_area">
 
     <div class="hero_bg_box">
@@ -220,6 +249,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="src/js/license.js"></script>
 
 </body>
 

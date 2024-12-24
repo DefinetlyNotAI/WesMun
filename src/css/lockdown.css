@@ -1,0 +1,278 @@
+:root {
+    --primary: #ff3e3e;
+    --secondary: #1a1a1a;
+    --text: #ffffff;
+    --glitch-offset: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--secondary);
+    color: var(--text);
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Lock Animation */
+.lock {
+    width: 100px;
+    height: 120px;
+    margin: 0 auto 40px;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.lock-body {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.lock-hole {
+    width: 20px;
+    height: 20px;
+    background: var(--secondary);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 62, 62, 0.5);
+}
+
+.lock::before {
+    content: '';
+    width: 80px;
+    height: 40px;
+    border: 10px solid var(--primary);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    border-radius: 40px 40px 0 0;
+    border-bottom: none;
+}
+
+/* Glitch Effect */
+.glitch {
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: glitch 500ms infinite;
+    margin-bottom: 1em;
+}
+
+/* Author and Message Styles */
+.author {
+    margin: 2em 0;
+}
+
+.author p {
+    margin: 0.5em 0;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.explanation {
+    margin: 2em 0;
+    line-height: 1.6;
+}
+
+.explanation p {
+    margin: 0.5em 0;
+}
+
+/* Warning Text */
+.warning-text {
+    margin-top: 2em;
+    opacity: 0.8;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid var(--primary);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* Status Indicator */
+.status {
+    margin-top: 2em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+.status-text {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--primary)
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.2
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 4s;
+}
+
+.fade-in-delayed {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Grid Background */
+.grid {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: linear-gradient(rgba(255, 62, 62, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 62, 62, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: perspective(500px) rotateX(45deg);
+    animation: grid-move 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes grid-move {
+    0% {
+        transform: perspective(500px) rotateX(45deg) translateY(0);
+    }
+    100% {
+        transform: perspective(500px) rotateX(45deg) translateY(50px);
+    }
+}

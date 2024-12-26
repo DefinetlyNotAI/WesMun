@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #55537b;
+    background-color: #ebdcd0;
+    overflow-x: hidden;
+}
+
+.layout_padding {
+    padding: 90px 0;
+}
+
+/* Committee Cards */
+.committees_section {
+    padding: 90px 0;
+}
+
+.heading_container_x {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+}
+
+.heading_container h2 {
+    position: relative;
+    font-weight: bold;
+    color: #57465c;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.committee_category {
+    margin-bottom: 60px;
+}
+
+.committee_category h3 {
+    color: #57465c;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.committee_list-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.committee_list-t {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    height: 200%;
+}
+
+.committee_list-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .committee_list-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.committee_item {
+    background: #f5e9e0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.committee_item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.committee_item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.committee_item:hover img {
+    transform: scale(1.05);
+}
+
+.committee_content {
+    padding: 25px;
+}
+
+.committee_name {
+    color: #57465c;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.btn-primary-x {
+    background: #57465c;
+    color: #ebdcd0;
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-x:hover {
+    background: #535353;
+    color: #ebdcd0;
+    border: 2px solid #57465c;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    background: #ebdcd0;
+    color: #57465c;
+    border: 2px solid #57465c;
+}
+
+.mobile-menu a {
+    display: block;
+    color: #ebdcd0;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(235, 220, 208, 0.1);
+}
+
+@media (max-width: 768px) {
+    .committee_list-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .heading_container h2 {
+        font-size: 2rem;
+    }
+}

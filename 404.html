@@ -4,7 +4,212 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>404 - Page Not Found</title>
-    <link href="src/css/404.css" rel="stylesheet">
+    <link href="/src/media/WesmunFavicon.svg" rel="shortcut icon" type="">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #ecf0f1;
+            --background: #1a1a2e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--background);
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .glitch-wrapper {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .glitch {
+            font-size: 8rem;
+            font-weight: bold;
+            position: relative;
+            text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+            0.025em 0.04em 0 #fffc00;
+            animation: glitch 725ms infinite;
+        }
+
+        .glitch span {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                0.025em 0.04em 0 #fffc00;
+            }
+            15% {
+                text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                0.025em 0.04em 0 #fffc00;
+            }
+            16% {
+                text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+                -0.05em -0.05em 0 #fffc00;
+            }
+            49% {
+                text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+                -0.05em -0.05em 0 #fffc00;
+            }
+            50% {
+                text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+                0 -0.04em 0 #fffc00;
+            }
+            99% {
+                text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+                0 -0.04em 0 #fffc00;
+            }
+            100% {
+                text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+                -0.04em -0.025em 0 #fffc00;
+            }
+        }
+
+        .message {
+            margin-bottom: 3rem;
+        }
+
+        .message h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .message p {
+            font-size: 1.2rem;
+            color: var(--text);
+            opacity: 0.8;
+        }
+
+        .portal {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .rings {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .rings::before, .rings::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite 0.5s;
+        }
+
+        .rings::after {
+            width: 40%;
+            height: 40%;
+            animation-delay: 1s;
+        }
+
+        .core {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--accent);
+            animation: glow 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0.5;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 20px var(--accent);
+            }
+            50% {
+                box-shadow: 0 0 40px var(--accent);
+            }
+            100% {
+                box-shadow: 0 0 20px var(--accent);
+            }
+        }
+
+        .home-button {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .home-button:hover {
+            background: var(--accent);
+            color: var(--background);
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -24,6 +229,219 @@
     </div>
     <div class="particles"></div>
 </div>
-<script src="src/js/404.js" type="module"></script>
+<script>
+    function createGlitchEffect(element) {
+        const originalText = element.textContent;
+        const chars = '!<>-_\\/[]{}—=*^?#________';
+
+        function glitch() {
+            let iterations = 0;
+
+            const interval = setInterval(() => {
+                element.textContent = element.textContent
+                    .split('')
+                    .map((char, index) => {
+                        if (index < iterations) {
+                            return originalText[index];
+                        }
+                        return chars[Math.floor(Math.random() * chars.length)];
+                    })
+                    .join('');
+
+                iterations += 1 / 3;
+
+                if (iterations >= originalText.length) {
+                    clearInterval(interval);
+                    element.textContent = originalText;
+                }
+            }, 30);
+        }
+
+        return {
+            start: () => setInterval(glitch, 5000),
+            trigger: glitch
+        };
+    }
+
+    class CorruptionElement {
+        constructor(canvas) {
+            this.ctx = canvas.getContext('2d');
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 50 + 20;
+            this.maxSize = this.size * 1.5;
+            this.growing = true;
+            this.corruption = 0;
+            this.lifespan = 0;
+            this.maxLife = Math.random() * 200 + 100;
+            this.color = `rgba(52, 152, 219, 0.2)`;
+        }
+
+        update() {
+            if (this.growing) {
+                this.size += 0.5;
+                if (this.size >= this.maxSize) {
+                    this.growing = false;
+                }
+            } else {
+                this.size -= 0.5;
+            }
+
+            this.corruption += 0.02;
+            this.lifespan++;
+
+            return this.lifespan < this.maxLife;
+        }
+
+        draw() {
+            const segments = 8;
+            const angleStep = (Math.PI * 2) / segments;
+
+            this.ctx.save();
+            this.ctx.translate(this.x, this.y);
+            this.ctx.rotate(this.corruption);
+
+            this.ctx.beginPath();
+            for (let i = 0; i < segments; i++) {
+                const angle = i * angleStep;
+                const distortion = Math.sin(this.corruption * 2 + i) * 10;
+                const radius = this.size + distortion;
+
+                const x = Math.cos(angle) * radius;
+                const y = Math.sin(angle) * radius;
+
+                if (i === 0) {
+                    this.ctx.moveTo(x, y);
+                } else {
+                    this.ctx.lineTo(x, y);
+                }
+            }
+            this.ctx.closePath();
+
+            this.ctx.strokeStyle = this.color;
+            this.ctx.lineWidth = 2;
+            this.ctx.stroke();
+
+            this.ctx.restore();
+        }
+    }
+
+    class Particle {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.size = Math.random() * 3 + 1;
+            this.speedX = Math.random() * 3 - 1.5;
+            this.speedY = Math.random() * 3 - 1.5;
+            this.color = `rgba(52, 152, 219, ${Math.random() * 0.5 + 0.5})`;
+        }
+
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (this.size > 0.2) this.size -= 0.1;
+        }
+
+        draw(ctx) {
+            ctx.fillStyle = this.color;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+
+    // Setup canvas
+    const canvas = document.createElement('canvas');
+    canvas.style.position = 'fixed';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+    canvas.style.pointerEvents = 'none';
+    canvas.style.zIndex = '-1';
+    document.querySelector('.particles').appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let corruptionElements = [];
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // Interactive elements
+    const portal = document.querySelector('.portal');
+    const homeButton = document.querySelector('.home-button');
+
+    // Portal interaction
+    portal.addEventListener('mouseover', () => {
+        portal.style.transform = 'scale(1.1)';
+    });
+
+    portal.addEventListener('mouseout', () => {
+        portal.style.transform = 'scale(1)';
+    });
+
+    portal.addEventListener('click', createParticles);
+
+    // Home button interaction
+    homeButton.addEventListener('click', () => {
+        window.location.href = '/';
+    });
+
+    // Particle creation
+    function createParticles() {
+        const rect = portal.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+
+        for (let i = 0; i < 20; i++) {
+            particles.push(new Particle(x, y));
+        }
+    }
+
+    // Corruption elements
+    function spawnCorruptionElement() {
+        if (corruptionElements.length < 10) {
+            corruptionElements.push(new CorruptionElement(canvas));
+        }
+    }
+
+    // Animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Update and draw corruption elements
+        corruptionElements = corruptionElements.filter(element => {
+            const isAlive = element.update();
+            if (isAlive) {
+                element.draw();
+            }
+            return isAlive;
+        });
+
+        // Update and draw particles
+        particles = particles.filter(particle => {
+            particle.update();
+            particle.draw(ctx);
+            return particle.size > 0.2;
+        });
+
+        requestAnimationFrame(animate);
+    }
+
+    // Start animations
+    animate();
+    setInterval(spawnCorruptionElement, 2000);
+
+    // Initialize glitch effect
+    const glitchText = document.querySelector('.glitch');
+    const glitchEffect = createGlitchEffect(glitchText);
+    glitchEffect.start();
+</script>
 </body>
 </html>

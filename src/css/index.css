@@ -59,6 +59,18 @@
     z-index: 2; /* Ensures it appears above the main box-shadow */
 }
 
+@media (max-width: 599px) {
+    .phone-break {
+        display: inline;
+    }
+}
+
+@media (min-width: 600px) {
+    .phone-break {
+        display: none;
+    }
+}
+
 .purple_bg {
     background-color: #4a3c50; /* Adjust the color code to match the purple used in your project */
     color: #ebdcd0; /* Ensure text is readable on the purple background */

@@ -196,3 +196,12 @@ The Creator must provide written consent to the chosen developer,
 specifying their role and responsibilities.
 The Creator retains the right to revoke this selection if the chosen developer
 fails to comply with the licensing terms or agreement conditions.
+
+### 8.6 Reversion of Succession
+
+The Creator retains the right to revoke this selection if the chosen developer
+fails to comply with the licensing terms or agreement conditions.
+The Creator is allowed to choose who may be the new developer, and then the new
+developer may choose his/her successor, although the Creator is allowed to revoke
+any developer for any reason, If this occurs, the Creator must give the succession to
+a new developer.

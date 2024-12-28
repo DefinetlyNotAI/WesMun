@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Fetch the license text from converted.license.html
-    fetch('https://definetlynotai.github.io/WesMun/converted.license')
+    fetch('https://wesmun.com/converted.license')
         .then(response => response.text())
         .then(text => {
             licenseText.innerHTML = text;

@@ -26,9 +26,164 @@
     <link href="src/css/style.css" rel="stylesheet"/>
 
     <!-- responsive style -->
-    <link href="src/css/responsive.css" rel="stylesheet"/>
+    <style>
+        @media (max-width: 1300px) {
+        }
 
-    <link href="src/css/index.css" rel="stylesheet">
+        @media (max-width: 1120px) {
+        }
+
+        @media (max-width: 992px) {
+            .hero_area {
+                min-height: auto;
+            }
+
+            .hero_area {
+                background: linear-gradient(130deg, #57465c, #57465c);
+            }
+
+            .hero_area .hero_bg_box {
+                display: none;
+            }
+
+            .slider_section {
+                padding: 45px 0 75px 0;
+            }
+
+            .custom_nav-container .navbar-nav {
+                padding-top: 15px;
+                align-items: center;
+            }
+
+
+            .custom_nav-container .navbar-nav .nav-item .nav-link {
+                padding: 5px 25px;
+                margin: 5px 0;
+            }
+
+
+        }
+
+        @media (max-width: 576px) {
+            .header_section .header_top .contact_nav a span {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slider_section .detail-box h1 {
+                font-size: 2rem;
+            }
+
+            .track_section form {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .track_section form input {
+                width: 100%;
+            }
+
+            .track_section form button {
+                padding: 10px 60px;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .service_section .box {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 376px) {
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1170px;
+            }
+        }
+    </style>
+    <style>
+        #loading-screen {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #4a3c50;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s ease-out;
+        }
+
+        #loading-screen.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #loading-video {
+            width: auto;
+            height: auto;
+            object-fit: cover;
+        }
+
+
+        .letter {
+            position: relative;
+            width: auto;
+            padding: 40px;
+            background: #f5e9e0;
+            border-radius: 8px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0 auto;
+            overflow: hidden; /* Ensures the pseudo-element doesn't overlap */
+        }
+
+        .letter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #f5e9e0 0%, #ebdcd0 100%);
+            clip-path: polygon(100% 100%, 0 100%, 100% 0);
+            box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 2; /* Ensures it appears above the main box-shadow */
+        }
+
+        .letter::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            background: #ebdcd0;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            z-index: 2; /* Ensures it appears above the main box-shadow */
+        }
+
+        @media (max-width: 599px) {
+            .phone-break {
+                display: inline;
+            }
+        }
+
+        @media (min-width: 600px) {
+            .phone-break {
+                display: none;
+            }
+        }
+
+        .purple_bg {
+            background-color: #4a3c50; /* Adjust the color code to match the purple used in your project */
+            color: #ebdcd0; /* Ensure text is readable on the purple background */
+        }
+    </style>
 </head>
 
 <body class="sub_page">

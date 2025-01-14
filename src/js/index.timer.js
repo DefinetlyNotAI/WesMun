@@ -1,5 +1,5 @@
 const RegisterDate = new Date("December 20, 2024 00:00:00").getTime();
-const LateReDate = new Date("January 10, 2025 11:59:00").getTime();
+const LateReDate = new Date("January 27, 2025 11:59:00").getTime();
 const StartDate = new Date("February 13, 2025 00:00:00").getTime();
 const EndDate = new Date("February 16, 2025 00:00:00").getTime();
 

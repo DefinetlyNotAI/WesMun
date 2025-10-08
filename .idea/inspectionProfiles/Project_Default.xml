@@ -14,10 +14,21 @@
       </option>
     </inspection_tool>
     <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ExceptionCaughtLocallyJS" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="href" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="10">
+          <list size="19">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -28,6 +39,15 @@
             <item index="7" class="java.lang.String" itemvalue="ul" />
             <item index="8" class="java.lang.String" itemvalue="div" />
             <item index="9" class="java.lang.String" itemvalue="style" />
+            <item index="10" class="java.lang.String" itemvalue="navbar8-wrapper" />
+            <item index="11" class="java.lang.String" itemvalue="fragment" />
+            <item index="12" class="java.lang.String" itemvalue="hero17-wrapper" />
+            <item index="13" class="java.lang.String" itemvalue="features24-wrapper" />
+            <item index="14" class="java.lang.String" itemvalue="cta26-wrapper" />
+            <item index="15" class="java.lang.String" itemvalue="features25-wrapper" />
+            <item index="16" class="java.lang.String" itemvalue="steps2-wrapper" />
+            <item index="17" class="java.lang.String" itemvalue="contact10-wrapper" />
+            <item index="18" class="java.lang.String" itemvalue="footer4-wrapper" />
           </list>
         </value>
       </option>
@@ -38,22 +58,19 @@
     <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="PyCompatibilityInspection" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="ourVersions">
         <value>
-          <list size="7">
+          <list size="5">
             <item index="0" class="java.lang.String" itemvalue="3.13" />
-            <item index="1" class="java.lang.String" itemvalue="3.8" />
-            <item index="2" class="java.lang.String" itemvalue="3.7" />
-            <item index="3" class="java.lang.String" itemvalue="3.9" />
-            <item index="4" class="java.lang.String" itemvalue="3.10" />
-            <item index="5" class="java.lang.String" itemvalue="3.12" />
-            <item index="6" class="java.lang.String" itemvalue="3.11" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+            <item index="2" class="java.lang.String" itemvalue="3.12" />
+            <item index="3" class="java.lang.String" itemvalue="3.11" />
+            <item index="4" class="java.lang.String" itemvalue="3.9" />
           </list>
         </value>
       </option>
     </inspection_tool>
-    <inspection_tool class="PyGlobalUndefinedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
@@ -73,6 +90,7 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyProtectedMemberInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredNames">
         <list>
@@ -81,15 +99,18 @@
         </list>
       </option>
     </inspection_tool>
-    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" editorAttributes="INFO_ATTRIBUTES" />
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
-          <option value="_debug.self" />
+          <option value="bool.*" />
         </list>
       </option>
     </inspection_tool>
     <inspection_tool class="PyVulnerableApiCodeInspection" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES" />
+    <inspection_tool class="SqlNoDataSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SqlResolveInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="TodoComment" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="DUPLICATE_FROM_SERVER" />
   </profile>
 </component>

@@ -1,34 +1,11 @@
 import type {Metadata} from "next";
+import {Award, Globe, Users} from "lucide-react";
 
 // Metadata
 export const metadata: Metadata = {
     title: "WESMUN 2025 - Model United Nations Conference",
     description:
         "Join us for WESMUN 2025, a premier Model United Nations conference fostering diplomacy, debate, and global understanding.",
-}
-
-// Site Configuration
-export const siteConfig = {
-    name: "WESMUN",
-    event: {
-        date: "March 15-17, 2025",
-        location: "Western University",
-        theme: "Geopolitics, Networking Control and Transnational Threats",
-        conferenceStart: "2026-12-01T09:00:00", // December 1st, 2026 at 9 AM
-        conferenceEnd: "2026-12-04T17:00:00", // December 4th, 2026 at 5 PM (3 days after start)
-    },
-    contact: {
-        email: "info@wesmun.org",
-        phone: "+1 (555) 123-4567",
-        address: "1151 Richmond St, London, ON N6A 3K7",
-        socialMedia: {
-            instagram: "https://instagram.com/wesmun",
-            twitter: "https://twitter.com/wesmun",
-            facebook: "https://facebook.com/wesmun",
-            linkedin: "https://linkedin.com/company/wesmun",
-            tiktok: "https://tiktok.com/@wesmun",
-        },
-    },
 }
 
 // Navigation Links
@@ -63,7 +40,7 @@ Secretaries General, WESMUN 2025`,
 }
 
 // Committees
-export interface Committee {
+interface Committee {
     id: string
     name: string
     abbreviation: string
@@ -250,6 +227,39 @@ export const committees: Committee[] = [
     },
 ]
 
+export interface CommitteeDetailPageClientProps {
+    committee: Committee
+}
+
+export const CommitteeDetailPage = {
+    BACK_BUTTON: "Back to Committees",
+    COMMITTEE_LEADERSHIP_TITLE: "Committee Leadership",
+    CHAIR_LABEL: "Chair",
+    VICE_CHAIR_LABEL: "Vice Chair",
+    ABOUT_COMMITTEE_TITLE: "About This Committee",
+    TOPICS_TITLE: "Topics for Debate",
+    DOWNLOAD_BG_GUIDE: "Download Background Guide",
+    APPLY_BUTTON: "Apply to This Committee",
+    PLACEHOLDER_IMAGE: "/placeholder.svg",
+} as const
+
+export interface Params {
+    params: { id: string }
+}
+
+export const CommitteeText = {
+    PAGE_TITLE: "Our Committees",
+    PAGE_SUBTITLE: "Choose from six diverse committees, each tackling critical global issues",
+    ABOUT_TITLE: "About This Committee",
+    TOPICS_TITLE: "Topics for Debate",
+    LEADERSHIP_TITLE: "Committee Leadership",
+    CHAIR_LABEL: "Chair",
+    VICE_CHAIR_LABEL: "Vice Chair",
+    DOWNLOAD_GUIDE: "Download Guide",
+    APPLY_NOW: "Apply Now",
+    PLACEHOLDER_IMAGE: "/placeholder.svg",
+} as const
+
 // Departments
 export interface DepartmentMember {
     name: string
@@ -417,73 +427,11 @@ export const departments: Department[] = [
     },
 ]
 
-// Deprecated Department Heads for backward compatibility
-export interface DepartmentHead {
-    id: string
-    name: string
-    position: string
-    department: string
-    image: string
-    bio: string
-    email: string
-}
-
-export const departmentHeads: DepartmentHead[] = [
-    {
-        id: "logistics",
-        name: "Emily Thompson",
-        position: "Director of Logistics",
-        department: "Logistics",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "Emily oversees all logistical operations for WESMUN, ensuring a seamless conference experience for all delegates and staff.",
-        email: "logistics@wesmun.org",
-    },
-    {
-        id: "finance",
-        name: "David Kim",
-        position: "Director of Finance",
-        department: "Finance",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "David manages the financial operations and budgeting for WESMUN, ensuring fiscal responsibility and transparency.",
-        email: "finance@wesmun.org",
-    },
-    {
-        id: "marketing",
-        name: "Sophia Martinez",
-        position: "Director of Marketing",
-        department: "Marketing & Communications",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "Sophia leads our marketing efforts, managing social media, outreach, and promotional campaigns to grow WESMUN's presence.",
-        email: "marketing@wesmun.org",
-    },
-    {
-        id: "technology",
-        name: "Ryan Patel",
-        position: "Director of Technology",
-        department: "Technology",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "Ryan oversees all technical aspects of the conference, from registration systems to virtual platforms and IT support.",
-        email: "tech@wesmun.org",
-    },
-    {
-        id: "delegate-affairs",
-        name: "Olivia Brown",
-        position: "Director of Delegate Affairs",
-        department: "Delegate Affairs",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "Olivia ensures that all delegates have an exceptional experience, managing communications, accommodations, and delegate services.",
-        email: "delegates@wesmun.org",
-    },
-    {
-        id: "academic",
-        name: "Thomas Anderson",
-        position: "Director of Academic Affairs",
-        department: "Academic Affairs",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "Thomas coordinates all academic aspects of the conference, including committee topics, background guides, and chair training.",
-        email: "academic@wesmun.org",
-    },
-]
+export const DepartmentText = {
+    PAGE_TITLE: "Our Departments",
+    PAGE_SUBTITLE: "Meet the dedicated teams leading WESMUN 2025 to excellence",
+    PLACEHOLDER_IMAGE: "/placeholder.svg",
+} as const
 
 // FAQs
 export interface FAQ {
@@ -566,7 +514,75 @@ export const faqs: FAQ[] = [
     },
 ]
 
-// What We Offer
+export const FAQText = {
+    PAGE_TITLE: "Frequently Asked Questions",
+    PAGE_SUBTITLE: "Find answers to common questions about WESMUN 2025",
+    CATEGORY_ALL: "all",
+} as const
+
+// Sign Up Page Content
+export const signUpPageContent = {
+    title: "Register for WESMUN 2025",
+    description: "Join us for an unforgettable Model UN experience. Choose your registration type below.",
+    earlyBirdDeadline: "2025-02-01T23:59:59", // February 1st, 2025 at 11:59 PM
+    registrationTypes: [
+        {
+            id: "individual",
+            name: "Individual Delegate",
+            price: "$60",
+            earlyBirdPrice: "$45",
+            description: "Perfect for individual students looking to attend WESMUN",
+            features: [
+                "Access to all committee sessions",
+                "Conference materials and background guides",
+                "Lunch on all three days",
+                "Social events and activities",
+                "Certificate of participation",
+                "Eligibility for awards",
+            ],
+            signupLink: "https://forms.gle/individual-delegate-signup",
+        },
+        {
+            id: "school-group",
+            name: "School Group (10+ delegates)",
+            price: "$50 per delegate",
+            earlyBirdPrice: "$40 per delegate",
+            description: "Discounted rate for schools bringing 10 or more delegates",
+            features: [
+                "All individual delegate benefits",
+                "Group discount pricing",
+                "Dedicated faculty advisor support",
+                "Priority committee placement",
+                "Group photo opportunity",
+                "School recognition at ceremonies",
+            ],
+            signupLink: "https://forms.gle/school-group-signup",
+        },
+    ],
+    importantDates: [
+        {date: "February 1, 2025", event: "Early Bird Registration Deadline"},
+        {date: "March 1, 2025", event: "Final Registration Deadline"},
+        {date: "March 10, 2025", event: "Country Assignments Released"},
+        {date: "March 15-17, 2025", event: "WESMUN 2025 Conference"},
+    ],
+}
+
+export const SignUpText = {
+    PAGE_TITLE: "Register for WESMUN 2025",
+    PAGE_SUBTITLE: "Choose your registration type and secure your spot at this year's conference",
+    PERKS_TITLE: "Perks Included",
+    PERKS_DESCRIPTION:
+        "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
+    EARLY_BIRD_LABEL: "Early Bird Price",
+    REGULAR_PRICE_LABEL: "Regular Price",
+    HELP_TEXT: "Need help choosing? Check out our FAQs or contact us directly",
+    VIEW_FAQS: "View FAQs",
+    CONTACT_US: "Contact Us",
+    REGISTER_NOW: "Register Now",
+} as const
+
+// Site Configuration (e.g. footer) and Main page
+
 export interface Offering {
     id: string
     title: string
@@ -619,65 +635,83 @@ export const offerings: Offering[] = [
     },
 ]
 
-// Sign Up Page Content
-export const signUpPageContent = {
-    title: "Register for WESMUN 2025",
-    description: "Join us for an unforgettable Model UN experience. Choose your registration type below.",
-    earlyBirdDeadline: "2025-02-01T23:59:59", // February 1st, 2025 at 11:59 PM
-    registrationTypes: [
-        {
-            id: "individual",
-            name: "Individual Delegate",
-            price: "$60",
-            earlyBirdPrice: "$45",
-            description: "Perfect for individual students looking to attend WESMUN",
-            features: [
-                "Access to all committee sessions",
-                "Conference materials and background guides",
-                "Lunch on all three days",
-                "Social events and activities",
-                "Certificate of participation",
-                "Eligibility for awards",
-            ],
-            signupLink: "https://forms.gle/individual-delegate-signup",
+export const siteConfig = {
+    name: "WESMUN",
+    event: {
+        date: "March 15-17, 2025",
+        location: "Western University",
+        theme: "Geopolitics, Networking Control and Transnational Threats",
+        conferenceStart: "2026-12-01T09:00:00", // December 1st, 2026 at 9 AM
+        conferenceEnd: "2026-12-04T17:00:00", // December 4th, 2026 at 5 PM (3 days after start)
+    },
+    contact: {
+        email: "info@wesmun.org",
+        phone: "+1 (555) 123-4567",
+        address: "1151 Richmond St, London, ON N6A 3K7",
+        socialMedia: {
+            instagram: "https://instagram.com/wesmun",
+            twitter: "https://twitter.com/wesmun",
+            facebook: "https://facebook.com/wesmun",
+            linkedin: "https://linkedin.com/company/wesmun",
+            tiktok: "https://tiktok.com/@wesmun",
         },
-        {
-            id: "school-group",
-            name: "School Group (10+ delegates)",
-            price: "$50 per delegate",
-            earlyBirdPrice: "$40 per delegate",
-            description: "Discounted rate for schools bringing 10 or more delegates",
-            features: [
-                "All individual delegate benefits",
-                "Group discount pricing",
-                "Dedicated faculty advisor support",
-                "Priority committee placement",
-                "Group photo opportunity",
-                "School recognition at ceremonies",
-            ],
-            signupLink: "https://forms.gle/school-group-signup",
-        },
-    ],
-    importantDates: [
-        {date: "February 1, 2025", event: "Early Bird Registration Deadline"},
-        {date: "March 1, 2025", event: "Final Registration Deadline"},
-        {date: "March 10, 2025", event: "Country Assignments Released"},
-        {date: "March 15-17, 2025", event: "WESMUN 2025 Conference"},
-    ],
+    },
 }
 
-// Export all data as a single object for convenience
-export const wesmunData = {
-    siteConfig,
-    navigationLinks,
-    secretaryGeneralLetter,
-    committees,
-    departmentHeads,
-    faqs,
-    signUpPageContent,
-    offerings,
-    departments,
+export const MainText = {
+    title: `Welcome to ${siteConfig.name}`,
+    theme: siteConfig.event.theme,
+    description:
+        "Join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving at Western University's premier Model United Nations conference.",
+    dateLocation: `${siteConfig.event.date} | ${siteConfig.event.location}`,
+    buttons: [
+        {text: "Register Now", href: "/sign-up", primary: true},
+        {text: "View Committees", href: "/committees", primary: false},
+    ],
+
+    STATS: [
+        {icon: Users, value: "500+", label: "Expected Delegates"},
+        {icon: Globe, value: "6", label: "Diverse Committees"},
+        {icon: Award, value: "3 Days", label: "Of Intense Debate"},
+    ],
+
+    SG_LETTER: {
+        title: secretaryGeneralLetter.title,
+        content: secretaryGeneralLetter.content.split("\n\n"),
+        image: secretaryGeneralLetter.image || "/placeholder.svg",
+        name: secretaryGeneralLetter.name,
+        position: secretaryGeneralLetter.position,
+    },
+
+    OFFERINGS: offerings.map((off) => ({
+        title: off.title,
+        description: off.description,
+    })),
+
+    CTA: {
+        title: "Ready to Join WESMUN 2025?",
+        description:
+            "Register now to secure your spot at one of the most prestigious Model UN conferences",
+        button: {text: "Register Now", href: "/sign-up"},
+    },
 }
 
-export const contactInfo = siteConfig.contact
-export default wesmunData
+
+// Contact Information
+export interface ContactInfo {
+    email: string;
+    phone: string;
+    address: string;
+    socialMedia: { instagram: string; twitter: string; facebook: string; linkedin: string; tiktok: string }
+}
+
+export const contactInfo: ContactInfo = siteConfig.contact
+
+export const ContactText = {
+    PAGE_TITLE: "Get In Touch",
+    PAGE_SUBTITLE: "Have questions? We're here to help. Reach out to us through any of the channels below",
+    SOCIAL_TITLE: "Connect on Social Media",
+    SOCIAL_FOLLOW: "Follow us for updates, announcements, and behind-the-scenes content",
+    INSTAGRAM_LABEL: "Instagram",
+    TIKTOK_LABEL: "TikTok",
+} as const

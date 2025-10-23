@@ -6,27 +6,27 @@
 ╔═══════════════════════════════════════════════════════════════════════════╗
 ║                          FONT CUSTOMIZATION GUIDE                         ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
-║ To change fonts, edit the @theme inline block below (lines ~90-95)       ║
+║ To change fonts, edit the @theme inline block below (lines ~90-95)        ║
 ║                                                                           ║
-║ AVAILABLE FONTS (copy and paste the value you want):                     ║
+║ AVAILABLE FONTS (copy and paste the value you want):                      ║
 ║                                                                           ║
-║ For --font-sans (body text):                                             ║
-║   • var(--font-playfair), "Playfair Display", serif                      ║
-║   • var(--font-playfair-extralight), "Playfair Display", serif           ║
+║ For --font-sans (body text):                                              ║
+║   • var(--font-playfair), "Playfair Display", serif                       ║
+║   • var(--font-playfair-extralight), "Playfair Display", serif            ║
 ║   • serif                                                                 ║
-║   • var(--font-caramel), "Caramel", cursive                              ║
-║   • var(--font-hurricane), "Hurricane", cursive                          ║
-║   • var(--font-tangerine), "Tangerine", cursive                          ║
+║   • var(--font-caramel), "Caramel", cursive                               ║
+║   • var(--font-hurricane), "Hurricane", cursive                           ║
+║   • var(--font-tangerine), "Tangerine", cursive                           ║
 ║                                                                           ║
-║ For --font-title (headings):                                             ║
-║   • var(--font-great-vibes), "Great Vibes", cursive                      ║
-║   • var(--font-caramel), "Caramel", cursive                              ║
-║   • var(--font-hurricane), "Hurricane", cursive                          ║
-║   • var(--font-tangerine), "Tangerine", cursive                          ║
-║   • var(--font-playfair), "Playfair Display", serif                      ║
+║ For --font-title (headings):                                              ║
+║   • var(--font-great-vibes), "Great Vibes", cursive                       ║
+║   • var(--font-caramel), "Caramel", cursive                               ║
+║   • var(--font-hurricane), "Hurricane", cursive                           ║
+║   • var(--font-tangerine), "Tangerine", cursive                           ║
+║   • var(--font-playfair), "Playfair Display", serif                       ║
 ║                                                                           ║
-║ EXAMPLE: To use Hurricane for titles, change line ~91 to:                ║
-║   --font-title: var(--font-hurricane), "Hurricane", cursive;             ║
+║ EXAMPLE: To use Hurricane for titles, change line ~91 to:                 ║
+║   --font-title: var(--font-hurricane), "Hurricane", cursive;              ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 */
 

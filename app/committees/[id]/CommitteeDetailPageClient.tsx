@@ -2,20 +2,16 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import {Button} from "@/components/ui/button"
-import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
-import {Badge} from "@/components/ui/badge"
-import {Navigation} from "@/components/navigation"
-import {Footer} from "@/components/footer"
-import {ScrollToTop} from "@/components/scroll-to-top"
-import {ArrowLeft, Download, ExternalLink, Users} from "lucide-react"
-import {Committee} from "@/data";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { ScrollToTop } from "@/components/scroll-to-top"
+import { ArrowLeft, Download, ExternalLink, Users } from "lucide-react"
+import {CommitteeDetailPage, CommitteeDetailPageClientProps} from "@/lib/data";
 
-interface CommitteeDetailPageClientProps {
-    committee: Committee
-}
-
-export default function CommitteeDetailPageClient({committee}: CommitteeDetailPageClientProps) {
+export default function CommitteeDetailPageClient({ committee }: CommitteeDetailPageClientProps) {
     return (
         <div className="min-h-screen">
             <ScrollToTop/>
@@ -27,16 +23,16 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     <Link
                         href="/committees"
                         className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-8 transition-colors"
-                        onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                     >
-                        <ArrowLeft className="mr-2" size={16}/>
-                        Back to Committees
+                        <ArrowLeft className="mr-2" size={16} />
+                        {CommitteeDetailPage.BACK_BUTTON}
                     </Link>
 
-                    {/* Banner image at the top */}
+                    {/* Banner image */}
                     <div className="w-full h-64 md:h-80 relative bg-muted rounded-lg overflow-hidden mb-8">
                         <Image
-                            src={committee.bannerImage || "/placeholder.svg"}
+                            src={committee.bannerImage || CommitteeDetailPage.PLACEHOLDER_IMAGE}
                             alt={`${committee.name} Banner`}
                             fill
                             className="object-cover"
@@ -62,7 +58,7 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                 {committee.difficulty}
                             </Badge>
                             <Badge variant="outline" className="text-base px-4 py-1 border-muted-foreground/50">
-                                <Users size={14} className="mr-2"/>
+                                <Users size={14} className="mr-2" />
                                 {committee.committeeSize}
                             </Badge>
                         </div>
@@ -73,13 +69,13 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     {/* Leadership section */}
                     <Card className="mb-8">
                         <CardHeader>
-                            <CardTitle>Committee Leadership</CardTitle>
+                            <CardTitle>{CommitteeDetailPage.COMMITTEE_LEADERSHIP_TITLE}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex items-center gap-4">
                                     <Image
-                                        src={committee.chair.image || "/placeholder.svg"}
+                                        src={committee.chair.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
                                         alt={committee.chair.name}
                                         width={80}
                                         height={80}
@@ -87,12 +83,12 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                     />
                                     <div>
                                         <p className="text-lg font-semibold text-foreground">{committee.chair.name}</p>
-                                        <p className="text-sm text-muted-foreground">Chair</p>
+                                        <p className="text-sm text-muted-foreground">{CommitteeDetailPage.CHAIR_LABEL}</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <Image
-                                        src={committee.viceChair.image || "/placeholder.svg"}
+                                        src={committee.viceChair.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
                                         alt={committee.viceChair.name}
                                         width={80}
                                         height={80}
@@ -100,7 +96,7 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                     />
                                     <div>
                                         <p className="text-lg font-semibold text-foreground">{committee.viceChair.name}</p>
-                                        <p className="text-sm text-muted-foreground">Vice Chair</p>
+                                        <p className="text-sm text-muted-foreground">{CommitteeDetailPage.VICE_CHAIR_LABEL}</p>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +106,7 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     {/* About Section */}
                     <Card className="mb-8">
                         <CardHeader>
-                            <CardTitle>About This Committee</CardTitle>
+                            <CardTitle>{CommitteeDetailPage.ABOUT_COMMITTEE_TITLE}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-muted-foreground leading-relaxed">{committee.detailedDescription}</p>
@@ -120,7 +116,7 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     {/* Topics Section */}
                     <Card className="mb-8">
                         <CardHeader>
-                            <CardTitle>Topics for Debate</CardTitle>
+                            <CardTitle>{CommitteeDetailPage.TOPICS_TITLE}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <ul className="space-y-3">
@@ -138,25 +134,25 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Button asChild variant="outline" className="h-12 text-base bg-transparent">
                             <a href={committee.backgroundGuidePdf} download>
-                                <Download className="mr-2" size={18}/>
-                                Download Background Guide
+                                <Download className="mr-2" size={18} />
+                                {CommitteeDetailPage.DOWNLOAD_BG_GUIDE}
                             </a>
                         </Button>
                         <Button
                             asChild
                             className="h-12 text-base bg-primary text-primary-foreground hover:bg-primary/90"
-                            onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                         >
                             <Link href={committee.signupLink} target="_blank">
-                                Apply to This Committee
-                                <ExternalLink className="ml-2" size={18}/>
+                                {CommitteeDetailPage.APPLY_BUTTON}
+                                <ExternalLink className="ml-2" size={18} />
                             </Link>
                         </Button>
                     </div>
                 </div>
             </section>
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }

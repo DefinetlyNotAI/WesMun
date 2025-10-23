@@ -1,20 +1,19 @@
 import CommitteeDetailPageClient from "./CommitteeDetailPageClient"
-import {notFound} from "next/navigation"
-import {committees} from "@/data"
+import { notFound } from "next/navigation"
+import {committees, Params} from "@/lib/data"
 
 export function generateStaticParams() {
-    return committees.map((committee) => ({
-        id: committee.id,
-    }))
+    return committees.map((committee) => ({ id: committee.id }))
 }
 
-// Server component to fetch data and generate static params
-export default function CommitteeDetailPage({params}: { params: { id: string } }) {
+
+// Server component to fetch committee data
+export default function CommitteeDetailPage({ params }: Params) {
     const committee = committees.find((c) => c.id === params.id)
 
     if (!committee) {
         notFound()
     }
 
-    return <CommitteeDetailPageClient committee={committee}/>
+    return <CommitteeDetailPageClient committee={committee} />
 }

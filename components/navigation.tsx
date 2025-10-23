@@ -4,7 +4,7 @@ import Link from "next/link"
 import {useState} from "react"
 import {Menu, X} from "lucide-react"
 import {Button} from "@/components/ui/button"
-import {navigationLinks, siteConfig} from "@/data"
+import {navigationLinks, siteConfig} from "@/lib/data"
 
 export function Navigation() {
     const [isOpen, setIsOpen] = useState(false)

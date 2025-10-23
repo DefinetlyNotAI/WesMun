@@ -1,6 +1,7 @@
 import Link from "next/link"
 import {SiInstagram, SiTiktok} from "react-icons/si"
-import {contactInfo, navigationLinks, siteConfig} from "@/lib/data"
+import {contactInfo} from "@/lib/data/contact"
+import {navigationLinks, siteConfig} from "@/lib/data/meta";
 
 export function Footer() {
     return (

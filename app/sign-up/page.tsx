@@ -8,7 +8,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Check, ExternalLink } from "lucide-react"
-import {signUpPageContent, SignUpText} from "@/lib/data"
+import {signUpPageContent, SignUpText} from "@/lib/data/signup"
 
 
 export default function SignUpPage() {

@@ -4,7 +4,7 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { SiInstagram, SiTiktok } from "react-icons/si"
-import {contactInfo, ContactText} from "@/lib/data"
+import {contactInfo, ContactText} from "@/lib/data/contact"
 
 
 export default function ContactPage() {

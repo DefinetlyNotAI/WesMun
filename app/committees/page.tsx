@@ -10,7 +10,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { ArrowRight, Users } from "lucide-react"
-import {committees, CommitteeText} from "@/lib/data"
+import {committees, CommitteeText} from "@/lib/data/committees"
 
 
 export default function CommitteesPage() {

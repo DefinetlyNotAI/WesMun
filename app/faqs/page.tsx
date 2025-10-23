@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
-import {faqs, FAQText} from "@/lib/data"
+import {faqs, FAQText} from "@/lib/data/faq"
 
 
 export default function FAQsPage() {

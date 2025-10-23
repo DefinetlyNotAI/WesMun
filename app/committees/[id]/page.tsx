@@ -1,6 +1,6 @@
 import CommitteeDetailPageClient from "./CommitteeDetailPageClient"
 import { notFound } from "next/navigation"
-import {committees} from "@/lib/data"
+import {committees} from "@/lib/data/committees"
 import {Params} from "@/lib/types";
 
 export function generateStaticParams() {

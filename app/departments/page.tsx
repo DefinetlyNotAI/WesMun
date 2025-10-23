@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail } from "lucide-react"
-import {departments, DepartmentText} from "@/lib/data"
+import {departments, DepartmentText} from "@/lib/data/departments"
 
 export default function DepartmentsPage() {
     return (

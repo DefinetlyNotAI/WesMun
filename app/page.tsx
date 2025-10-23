@@ -7,7 +7,7 @@ import {Footer} from "@/components/footer"
 import {CountdownTimer} from "@/components/countdown-timer"
 import {ScrollToTop} from "@/components/scroll-to-top"
 import {ArrowRight, Users} from "lucide-react"
-import {MainText} from "@/lib/data";
+import {MainText} from "@/lib/data/meta";
 
 // Hero content
 export default function HomePage() {

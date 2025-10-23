@@ -1,7 +1,7 @@
 "use client"
 
 import {useEffect, useState} from "react"
-import {siteConfig} from "@/lib/data"
+import {siteConfig} from "@/lib/data/meta"
 
 export function CountdownTimer() {
     const [timeLeft, setTimeLeft] = useState<string>("")

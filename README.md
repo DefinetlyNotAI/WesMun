@@ -73,35 +73,35 @@ such as committees, team members, schedules, and more.
 
 ```md
 └── WesMun/
-    ├── 404.html
-    ├── committees
-    │   ├── Arab_League_Arabic.html
-    │   ├── Arab_League_English.html
-    │   ├── ECOSOC.html
-    │   ├── GA1.html
-    │   ├── GA4.html
-    │   ├── HCC.html
-    │   ├── HSC.html
-    │   ├── NATO.html
-    │   ├── UNHCR.html
-    │   ├── UNHRC.html
-    │   ├── UNICEF.html
-    │   ├── UNODC.html
-    │   ├── UNSC.html
-    │   ├── UNSC_jr.html
-    │   ├── UNW.html
-    │   └── WHO.html
-    ├── committees.html
-    ├── index.html
-    ├── schedule.html
-    ├── src
-    │   ├── css * Contains all CSS files *
-    │   ├── download * Contains downloadable files including the PDF's for Background guides *
-    │   ├── fonts * Contains font files *
-    │   ├── js * Contains all JavaScript files *
-    │   └── media * Contains all media files including icons, svg and webp images *
-    ├── team.html
-    └── venue_and_payments.html
+├── 404.html
+├── committees
+│ ├── Arab_League_Arabic.html
+│ ├── Arab_League_English.html
+│ ├── ECOSOC.html
+│ ├── GA1.html
+│ ├── GA4.html
+│ ├── HCC.html
+│ ├── HSC.html
+│ ├── NATO.html
+│ ├── UNHCR.html
+│ ├── UNHRC.html
+│ ├── UNICEF.html
+│ ├── UNODC.html
+│ ├── UNSC.html
+│ ├── UNSC_jr.html
+│ ├── UNW.html
+│ └── WHO.html
+├── committees.html
+├── index.html
+├── schedule.html
+├── src
+│ ├── css * Contains all CSS files *
+│ ├── download * Contains downloadable files including the PDF's for Background guides *
+│ ├── fonts * Contains font files *
+│ ├── js * Contains all JavaScript files *
+│ └── media * Contains all media files including icons, svg and webp images *
+├── team.html
+└── venue_and_payments.html
 ```
 
 ### Project Index

@@ -1,6 +1,7 @@
 import CommitteeDetailPageClient from "./CommitteeDetailPageClient"
 import { notFound } from "next/navigation"
-import {committees, Params} from "@/lib/data"
+import {committees} from "@/lib/data"
+import {Params} from "@/lib/types";
 
 export function generateStaticParams() {
     return committees.map((committee) => ({ id: committee.id }))

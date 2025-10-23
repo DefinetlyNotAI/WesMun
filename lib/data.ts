@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import {Award, Globe, Users} from "lucide-react";
+import {Committee, ContactInfo, Department, FAQ, Offering} from "@/lib/types";
 
 // Metadata
 export const metadata: Metadata = {
@@ -40,28 +41,6 @@ Secretaries General, WESMUN 2025`,
 }
 
 // Committees
-interface Committee {
-    id: string
-    name: string
-    abbreviation: string
-    description: string
-    topics: string[]
-    chair: {
-        name: string
-        image: string
-    }
-    viceChair: {
-        name: string
-        image: string
-    }
-    bannerImage: string
-    signupLink: string
-    detailedDescription: string
-    backgroundGuidePdf: string
-    committeeSize: string
-    difficulty: "Beginner" | "Intermediate" | "Advanced"
-}
-
 export const committees: Committee[] = [
     {
         id: "unga",
@@ -227,10 +206,6 @@ export const committees: Committee[] = [
     },
 ]
 
-export interface CommitteeDetailPageClientProps {
-    committee: Committee
-}
-
 export const CommitteeDetailPage = {
     BACK_BUTTON: "Back to Committees",
     COMMITTEE_LEADERSHIP_TITLE: "Committee Leadership",
@@ -242,10 +217,6 @@ export const CommitteeDetailPage = {
     APPLY_BUTTON: "Apply to This Committee",
     PLACEHOLDER_IMAGE: "/placeholder.svg",
 } as const
-
-export interface Params {
-    params: { id: string }
-}
 
 export const CommitteeText = {
     PAGE_TITLE: "Our Committees",
@@ -261,21 +232,6 @@ export const CommitteeText = {
 } as const
 
 // Departments
-export interface DepartmentMember {
-    name: string
-    position: string
-    image: string
-    email: string
-}
-
-export interface Department {
-    id: string
-    name: string
-    description: string
-    bannerImage: string
-    team: DepartmentMember[]
-}
-
 export const departments: Department[] = [
     {
         id: "logistics",
@@ -434,13 +390,6 @@ export const DepartmentText = {
 } as const
 
 // FAQs
-export interface FAQ {
-    id: string
-    question: string
-    answer: string
-    category: "General" | "Registration" | "Committees" | "Logistics"
-}
-
 export const faqs: FAQ[] = [
     {
         id: "what-is-mun",
@@ -582,14 +531,6 @@ export const SignUpText = {
 } as const
 
 // Site Configuration (e.g. footer) and Main page
-
-export interface Offering {
-    id: string
-    title: string
-    description: string
-    icon: string
-}
-
 export const offerings: Offering[] = [
     {
         id: "diverse-committees",
@@ -698,13 +639,6 @@ export const MainText = {
 
 
 // Contact Information
-export interface ContactInfo {
-    email: string;
-    phone: string;
-    address: string;
-    socialMedia: { instagram: string; twitter: string; facebook: string; linkedin: string; tiktok: string }
-}
-
 export const contactInfo: ContactInfo = siteConfig.contact
 
 export const ContactText = {

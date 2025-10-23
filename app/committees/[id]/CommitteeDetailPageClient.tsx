@@ -9,7 +9,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { ArrowLeft, Download, ExternalLink, Users } from "lucide-react"
-import {CommitteeDetailPage, CommitteeDetailPageClientProps} from "@/lib/data";
+import {CommitteeDetailPage} from "@/lib/data";
+import {CommitteeDetailPageClientProps} from "@/lib/types";
 
 export default function CommitteeDetailPageClient({ committee }: CommitteeDetailPageClientProps) {
     return (

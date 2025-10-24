@@ -3,21 +3,30 @@ import { Caramel, Great_Vibes, Hurricane, Playfair_Display, Tangerine } from "ne
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-// Centralized font definitions
+const PLAYFAIR = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
+const PLAYFAIR_EXTRALIGHT = Playfair_Display({ weight: "400", subsets: ["latin"], variable: "--font-playfair-extralight" })
+const GREAT_VIBES = Great_Vibes({ weight: "400", subsets: ["latin"], variable: "--font-great-vibes" })
+const CARAMEL = Caramel({ weight: "400", subsets: ["latin"], variable: "--font-caramel" })
+const HURRICANE = Hurricane({ weight: "400", subsets: ["latin"], variable: "--font-hurricane" })
+const TANGERINE = Tangerine({ weight: "400", subsets: ["latin"], variable: "--font-tangerine" })
+
 const FONTS = {
-    PLAYFAIR: Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" }),
-    PLAYFAIR_EXTRALIGHT: Playfair_Display({ weight: "400", subsets: ["latin"], variable: "--font-playfair-extralight" }),
-    GREAT_VIBES: Great_Vibes({ weight: "400", subsets: ["latin"], variable: "--font-great-vibes" }),
-    CARAMEL: Caramel({ weight: "400", subsets: ["latin"], variable: "--font-caramel" }),
-    HURRICANE: Hurricane({ weight: "400", subsets: ["latin"], variable: "--font-hurricane" }),
-    TANGERINE: Tangerine({ weight: "400", subsets: ["latin"], variable: "--font-tangerine" }),
+    PLAYFAIR: PLAYFAIR,
+    PLAYFAIR_EXTRALIGHT: PLAYFAIR_EXTRALIGHT,
+    GREAT_VIBES: GREAT_VIBES,
+    CARAMEL: CARAMEL,
+    HURRICANE: HURRICANE,
+    TANGERINE: TANGERINE,
 } as const
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     const fontClasses = `${FONTS.PLAYFAIR.variable} ${FONTS.PLAYFAIR_EXTRALIGHT.variable} ${FONTS.GREAT_VIBES.variable} ${FONTS.CARAMEL.variable} ${FONTS.HURRICANE.variable} ${FONTS.TANGERINE.variable}`
 
+    // noinspection HtmlRequiredTitleElement
     return (
         <html lang="en">
+        <head>
+        </head>
         <body className={`${fontClasses} font-sans antialiased`}>
         {children}
         <Analytics />

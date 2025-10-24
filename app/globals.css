@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=TAN+MON+CHERI&display=swap');
 
 /*
 ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -105,10 +104,24 @@
     --sidebar-ring: oklch(0.439 0 0);
 }
 
+@font-face {
+    font-family: "Tan Mon Cheri";
+    /*noinspection CssUnknownTarget*/
+    src: url("/fonts/tan-mon-cheri.woff2") format("woff2"),
+         url("/fonts/tan-mon-cheri.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-tan-mon-cheri: "Tan Mon Cheri";
+}
+
 @theme inline {
     /* 🎨 EDIT THESE TWO LINES TO CHANGE FONTS SITE-WIDE */
     --font-sans: "Playfair Display", serif;
-    --font-title: "TAN MON CHERI", cursive;
+    --font-title: var(--font-tan-mon-cheri), cursive;
 
     /* 🎨 COLOR PALETTE */
     --color-background: var(--background);

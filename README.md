@@ -18,11 +18,7 @@
 ## Table of Contents
 
 - [ Overview](#overview)
-    - [ Key Features](#key-features)
-    - [ Project Structure](#project-structure)
 - [ Features](#features)
-- [ Project Structure](#project-structure)
-    - [ Project Index](#project-index)
 - [ Contributing](#contributing)
 - [ License](#license)
 

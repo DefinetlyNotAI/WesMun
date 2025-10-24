@@ -22,11 +22,10 @@ const FONTS = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     const fontClasses = `${FONTS.PLAYFAIR.variable} ${FONTS.PLAYFAIR_EXTRALIGHT.variable} ${FONTS.GREAT_VIBES.variable} ${FONTS.CARAMEL.variable} ${FONTS.HURRICANE.variable} ${FONTS.TANGERINE.variable}`
 
-    // noinspection HtmlRequiredTitleElement
     return (
         <html lang="en">
         <head>
-        </head>
+            <title>WESMUN 2026</title></head>
         <body className={`${fontClasses} font-sans antialiased`}>
         {children}
         <Analytics />

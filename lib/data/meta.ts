@@ -111,7 +111,7 @@ export const siteConfig = {
 }
 
 export const MainText = {
-    title: `Welcome to ${siteConfig.name}`,
+    title: `Welcome To ${siteConfig.name}`,
     theme: siteConfig.event.theme,
     description:
         "Join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving at Western University's premier Model United Nations conference.",

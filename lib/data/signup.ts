@@ -1,8 +1,8 @@
 // Sign Up Page Content
 export const signUpPageContent = {
-    title: "Register for WESMUN 2025",
+    title: "Register for WESMUN 2026",
     description: "Join us for an unforgettable Model UN experience. Choose your registration type below.",
-    earlyBirdDeadline: "2025-02-01T23:59:59", // February 1st, 2025 at 11:59 PM
+    earlyBirdDeadline: "2026-02-01T23:59:59",
     registrationTypes: [
         {
             id: "individual",
@@ -37,16 +37,10 @@ export const signUpPageContent = {
             signupLink: "https://forms.gle/school-group-signup",
         },
     ],
-    importantDates: [
-        {date: "February 1, 2025", event: "Early Bird Registration Deadline"},
-        {date: "March 1, 2025", event: "Final Registration Deadline"},
-        {date: "March 10, 2025", event: "Country Assignments Released"},
-        {date: "March 15-17, 2025", event: "WESMUN 2025 Conference"},
-    ],
 }
 
 export const SignUpText = {
-    PAGE_TITLE: "Register for WESMUN 2025",
+    PAGE_TITLE: "Register for WESMUN 2026",
     PAGE_SUBTITLE: "Choose your registration type and secure your spot at this year's conference",
     PERKS_TITLE: "Perks Included",
     PERKS_DESCRIPTION:
@@ -58,4 +52,3 @@ export const SignUpText = {
     CONTACT_US: "Contact Us",
     REGISTER_NOW: "Register Now",
 } as const
-

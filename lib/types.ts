@@ -64,7 +64,6 @@ export interface Offering {
 // Contact Information
 export interface ContactInfo {
     email: string;
-    phone: string;
     address: string;
-    socialMedia: { instagram: string; twitter: string; facebook: string; linkedin: string; tiktok: string }
+    socialMedia: { instagram: string; tiktok: string }
 }

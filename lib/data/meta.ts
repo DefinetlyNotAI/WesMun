@@ -6,9 +6,9 @@ import {departments} from "@/lib/data/departments";
 
 // Metadata
 export const metadata: Metadata = {
-    title: "WESMUN 2025 - Model United Nations Conference",
+    title: "WESMUN 2026 - Model United Nations Conference",
     description:
-        "Join us for WESMUN 2025, a premier Model United Nations conference fostering diplomacy, debate, and global understanding.",
+        "Join us for WESMUN 2026, a premier Model United Nations conference fostering diplomacy, debate, and global understanding.",
 }
 
 // Navigation Links
@@ -30,17 +30,13 @@ export const secretaryGeneralLetter = {
     image: "/placeholder.svg?height=400&width=1200",
     content: `Dear Delegates,
 
-It is with great pleasure that we welcome you to WESMUN 2025. As Secretaries General, we are honored to invite you to join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving.
+It is with great pleasure that we welcome you to WESMUN 2026. As Secretaries General, we are honored to invite you to join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving.
 
 This year's conference promises to be our most ambitious yet, bringing together the brightest minds from across the region to tackle the world's most pressing challenges. Whether you're a seasoned delegate or attending your first Model UN conference, WESMUN offers an unparalleled opportunity to develop your skills in public speaking, critical thinking, and international relations.
 
 Our dedicated team has worked tirelessly to create an experience that will challenge you intellectually while fostering lasting friendships and memories. We encourage you to engage fully with the conference, step outside your comfort zone, and embrace the spirit of international cooperation that defines the United Nations.
 
-We look forward to seeing you at WESMUN 2025.
-
-Sincerely,
-Jane Doe & John Smith
-Secretaries General, WESMUN 2025`,
+We look forward to seeing you at WESMUN 2026.`,
 }
 
 // Site Configuration (e.g. footer) and Main page
@@ -49,65 +45,61 @@ export const offerings: Offering[] = [
         id: "diverse-committees",
         title: "Diverse Committees",
         description:
-            "Choose from six specialized committees covering a wide range of global issues, from security to health to human rights.",
-        icon: "users",
+            "Choose from many specialized committees covering a wide range of global issues, from Geopolitics, Networking Control to Transnational Threats.",
+        icon: "Users",
     },
     {
         id: "skill-development",
         title: "Skill Development",
         description:
             "Develop essential skills in public speaking, negotiation, research, and critical thinking that will benefit you throughout your academic and professional career.",
-        icon: "trending-up",
+        icon: "TrendingUp",
     },
     {
         id: "networking",
         title: "Networking Opportunities",
         description:
             "Connect with like-minded students from across the region who share your passion for international relations and global affairs.",
-        icon: "network",
+        icon: "Network",
     },
     {
         id: "comprehensive-support",
         title: "Comprehensive Support",
         description:
             "From detailed background guides to experienced chairs, we provide everything you need to succeed at your first or fiftieth conference.",
-        icon: "life-buoy",
+        icon: "LifeBuoy",
     },
     {
         id: "awards-recognition",
         title: "Awards & Recognition",
         description:
             "Outstanding delegates are recognized for their diplomacy, research, and contribution to committee debate.",
-        icon: "award",
+        icon: "Award",
     },
     {
         id: "memorable-experience",
         title: "Memorable Experience",
         description:
             "Beyond the committee rooms, enjoy social events, keynote speakers, and activities that make WESMUN an unforgettable experience.",
-        icon: "star",
+        icon: "Star",
     },
-]
+];
 
 export const siteConfig = {
     name: "WESMUN",
     event: {
-        date: "March 15-17, 2025",
-        location: "Western University",
+        date: "March 15-17, 2026",
+        location: "Wesgreen International School",
         theme: "Geopolitics, Networking Control and Transnational Threats",
         conferenceStart: "2026-12-01T09:00:00", // December 1st, 2026 at 9 AM
         conferenceEnd: "2026-12-04T17:00:00", // December 4th, 2026 at 5 PM (3 days after start)
     },
     contact: {
-        email: "info@wesmun.org",
-        phone: "+1 (555) 123-4567",
+        email: "secretariat@wesmun.com",
         address: "1151 Richmond St, London, ON N6A 3K7",
         socialMedia: {
-            instagram: "https://instagram.com/wesmun",
-            twitter: "https://twitter.com/wesmun",
-            facebook: "https://facebook.com/wesmun",
-            linkedin: "https://linkedin.com/company/wesmun",
-            tiktok: "https://tiktok.com/@wesmun",
+            instagram: "https://instagram.com/w.e.s.mun",
+            tiktok: "https://tiktok.com/@w.e.s.mun",
         },
     },
     imageSVG: "/wesmun.svg",
@@ -117,7 +109,7 @@ export const MainText = {
     title: `Welcome To ${siteConfig.name}`,
     theme: siteConfig.event.theme,
     description:
-        "Join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving at Western University's premier Model United Nations conference.",
+        "Join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving at Wesgreen's premier Model United Nations conference.",
     dateLocation: `${siteConfig.event.date} | ${siteConfig.event.location}`,
     buttons: [
         {text: "Register Now", href: "/sign-up", primary: true},
@@ -141,10 +133,11 @@ export const MainText = {
     OFFERINGS: offerings.map((off) => ({
         title: off.title,
         description: off.description,
+        icon: off.icon,
     })),
 
     CTA: {
-        title: "Ready to Join WESMUN 2025?",
+        title: "Ready to Join WESMUN 2026?",
         description:
             "Register now to secure your spot at one of the most prestigious Model UN conferences",
         button: {text: "Register Now", href: "/sign-up"},

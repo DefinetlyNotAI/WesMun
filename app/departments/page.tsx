@@ -51,7 +51,13 @@ export default function DepartmentsPage() {
 
                                 {/* Team Members */}
                                 <CardContent className="p-6">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        <div
+                                            className={`grid grid-cols-1 gap-6 ${
+                                                department.team.length === 4
+                                                    ? 'md:grid-cols-2'
+                                                    : 'md:grid-cols-2 lg:grid-cols-3'
+                                            }`}
+                                        >
                                         {department.team.map((member, index) => (
                                             <div key={index} className="flex items-start gap-4">
                                                 <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">

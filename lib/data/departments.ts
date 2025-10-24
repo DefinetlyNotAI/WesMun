@@ -126,6 +126,6 @@ export const departments: Department[] = [
 
 export const DepartmentText = {
     PAGE_TITLE: "Our Departments",
-    PAGE_SUBTITLE: "Meet the dedicated teams leading WESMUN 2025 to excellence",
+    PAGE_SUBTITLE: "Meet the dedicated teams leading WESMUN 2026 to excellence",
     PLACEHOLDER_IMAGE: "/placeholder.svg",
 } as const

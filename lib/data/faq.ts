@@ -28,7 +28,7 @@ export const faqs: FAQ[] = [
         id: "registration-deadline",
         question: "When is the registration deadline?",
         answer:
-            "The final registration deadline is March 1st, 2025. However, we encourage early registration as committee spots are limited and fill up quickly. Early bird pricing ends February 1st, 2025.",
+            "The final registration deadline is March 1st, 2026. However, we encourage early registration as committee spots are limited and fill up quickly. Early bird pricing ends February 1st, 2026.",
         category: "Registration",
     },
     {
@@ -77,6 +77,6 @@ export const faqs: FAQ[] = [
 
 export const FAQText = {
     PAGE_TITLE: "Frequently Asked Questions",
-    PAGE_SUBTITLE: "Find answers to common questions about WESMUN 2025",
+    PAGE_SUBTITLE: "Find answers to common questions about WESMUN 2026",
     CATEGORY_ALL: "all",
 } as const

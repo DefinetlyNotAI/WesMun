@@ -47,7 +47,7 @@ domain name, or event-specific content hosted on the website, except for the Web
 ### 2.1 Restricted Usage
 
 The Owner is granted permission to use the Website Code solely for the purpose of
-organizing and hosting WESMUN events, including WESMUN 2025 and any future editions,
+organizing and hosting WESMUN events, including WESMUN and any future editions,
 during the term of this Agreement. The Owner may not copy, modify, distribute,
 sublicense, or repurpose the Website Code for any other website, event,
 or project without the prior written consent of the Creator.

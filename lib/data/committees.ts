@@ -182,12 +182,8 @@ export const CommitteeDetailPage = {
 export const CommitteeText = {
     PAGE_TITLE: "Our Committees",
     PAGE_SUBTITLE: "Choose from six diverse committees, each tackling critical global issues",
-    ABOUT_TITLE: "About This Committee",
     TOPICS_TITLE: "Topics for Debate",
-    LEADERSHIP_TITLE: "Committee Leadership",
     CHAIR_LABEL: "Chair",
     VICE_CHAIR_LABEL: "Vice Chair",
-    DOWNLOAD_GUIDE: "Download Guide",
-    APPLY_NOW: "Apply Now",
     PLACEHOLDER_IMAGE: "/placeholder.svg",
 } as const

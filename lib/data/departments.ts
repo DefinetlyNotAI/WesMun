@@ -10,10 +10,18 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "secretariat@wesmun.com",
         team: [
-            { name: "Hatim Saeed", position: "Secretary General (SG)", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Mishal Irfan", position: "Secretary General (SG)", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Arsalan Ali", position: "Deputy Secretary General (DSG)", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Joan Qais", position: "Deputy Secretary General (DSG)", image: "/placeholder.svg?height=200&width=200" },
+            {name: "Hatim Saeed", position: "Secretary General (SG)", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Mishal Irfan", position: "Secretary General (SG)", image: "/placeholder.svg?height=200&width=200"},
+            {
+                name: "Arsalan Ali",
+                position: "Deputy Secretary General (DSG)",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Joan Qais",
+                position: "Deputy Secretary General (DSG)",
+                image: "/placeholder.svg?height=200&width=200"
+            },
         ],
     },
     {
@@ -24,8 +32,8 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "it@wesmun.com",
         team: [
-            { name: "Shahm Najeeb", position: "Head Director of IT", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Zayed Munir", position: "Assistant Director of IT", image: "/placeholder.svg?height=200&width=200" },
+            {name: "Shahm Najeeb", position: "Head Director of IT", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Zayed Munir", position: "Assistant Director of IT", image: "/placeholder.svg?height=200&width=200"},
         ],
     },
     {
@@ -36,11 +44,31 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "logistics@wesmun.com",
         team: [
-            { name: "Issa Al Amoody", position: "Head Director of Logistics", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Dania Suliman Osman", position: "Head Director of Logistics", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Harib Abdalla Yousif", position: "Assistant Director of Logistics", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Hamdan Rashid", position: "Assistant Director of Logistics", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Zain Al Barbawi", position: "Assistant Director of Logistics", image: "/placeholder.svg?height=200&width=200" },
+            {
+                name: "Issa Al Amoody",
+                position: "Head Director of Logistics",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Dania Suliman Osman",
+                position: "Head Director of Logistics",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Harib Abdalla Yousif",
+                position: "Assistant Director of Logistics",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Hamdan Rashid",
+                position: "Assistant Director of Logistics",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Zain Al Barbawi",
+                position: "Assistant Director of Logistics",
+                image: "/placeholder.svg?height=200&width=200"
+            },
         ],
     },
     {
@@ -50,11 +78,27 @@ export const departments: Department[] = [
             "Maintaining safety and security for all participants, venues, and events throughout the conference.",
         bannerImage: "/placeholder.svg?height=300&width=1200",
         team: [
-            { name: "Ahmed Abdalla", position: "Head Director of Security", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Haya Emad", position: "Head Director of Security", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Abdullah Mennad", position: "Head Director of Security", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Dana Ali", position: "Assistant Director of Security", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Dalia Momen", position: "Assistant Director of Security", image: "/placeholder.svg?height=200&width=200" },
+            {
+                name: "Ahmed Abdalla",
+                position: "Head Director of Security",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {name: "Haya Emad", position: "Head Director of Security", image: "/placeholder.svg?height=200&width=200"},
+            {
+                name: "Abdullah Mennad",
+                position: "Head Director of Security",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Dana Ali",
+                position: "Assistant Director of Security",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Dalia Momen",
+                position: "Assistant Director of Security",
+                image: "/placeholder.svg?height=200&width=200"
+            },
         ],
     },
     {
@@ -65,11 +109,11 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "chiefofstaff@wesmun.com",
         team: [
-            { name: "Karma Abdalrahman", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Joan Juma Alzaghol", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Lara Elgharably", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Hannah Althea", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Hamza Mohammed", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200" },
+            {name: "Karma Abdalrahman", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Joan Juma Alzaghol", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Lara Elgharably", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Hannah Althea", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Hamza Mohammed", position: "Chief of Staff", image: "/placeholder.svg?height=200&width=200"},
         ],
     },
     {
@@ -80,11 +124,23 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "hospitality@wesmun.com",
         team: [
-            { name: "Shafana Shahriar", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Lina Hayder", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Monzir Mohamed Adam Sabiel", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Ali Ehsan", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Samia Tarique", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200" },
+            {
+                name: "Shafana Shahriar",
+                position: "Director of Hospitality",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {name: "Lina Hayder", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200"},
+            {
+                name: "Monzir Mohamed Adam Sabiel",
+                position: "Director of Hospitality",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {name: "Ali Ehsan", position: "Director of Hospitality", image: "/placeholder.svg?height=200&width=200"},
+            {
+                name: "Samia Tarique",
+                position: "Director of Hospitality",
+                image: "/placeholder.svg?height=200&width=200"
+            },
         ],
     },
     {
@@ -95,9 +151,9 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "media@wesmun.com",
         team: [
-            { name: "Layla Elewa", position: "Director of Media", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Aon Alaa Thunebat", position: "Director of Media", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Lana Doghmosh", position: "Director of Media", image: "/placeholder.svg?height=200&width=200" },
+            {name: "Layla Elewa", position: "Director of Media", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Aon Alaa Thunebat", position: "Director of Media", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Lana Doghmosh", position: "Director of Media", image: "/placeholder.svg?height=200&width=200"},
         ],
     },
     {
@@ -107,8 +163,8 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "finance@wesmun.com",
         team: [
-            { name: "Arham Khan", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Mariya Taiyeb", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200" },
+            {name: "Arham Khan", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Mariya Taiyeb", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200"},
         ],
     },
     {
@@ -118,8 +174,16 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "pr@wesmun.com",
         team: [
-            { name: "Ahmad Kabir", position: "Director of Public Relations", image: "/placeholder.svg?height=200&width=200" },
-            { name: "Soha Shamsher", position: "Director of Public Relations", image: "/placeholder.svg?height=200&width=200" },
+            {
+                name: "Ahmad Kabir",
+                position: "Director of Public Relations",
+                image: "/placeholder.svg?height=200&width=200"
+            },
+            {
+                name: "Soha Shamsher",
+                position: "Director of Public Relations",
+                image: "/placeholder.svg?height=200&width=200"
+            },
         ],
     },
 ]

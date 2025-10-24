@@ -1,16 +1,16 @@
 import Image from "next/image"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ScrollToTop } from "@/components/scroll-to-top"
-import { Card, CardContent } from "@/components/ui/card"
-import { Mail } from "lucide-react"
-import { departments, DepartmentText } from "@/lib/data/departments"
+import {Navigation} from "@/components/navigation"
+import {Footer} from "@/components/footer"
+import {ScrollToTop} from "@/components/scroll-to-top"
+import {Card, CardContent} from "@/components/ui/card"
+import {Mail} from "lucide-react"
+import {departments, DepartmentText} from "@/lib/data/departments"
 
 export default function DepartmentsPage() {
     return (
         <div className="min-h-screen">
-            <ScrollToTop />
-            <Navigation />
+            <ScrollToTop/>
+            <Navigation/>
 
             <section className="pt-32 pb-20 px-4">
                 <div className="container mx-auto animate-in fade-in duration-1000">
@@ -33,10 +33,12 @@ export default function DepartmentsPage() {
                                         fill
                                         className="object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                                    <div
+                                        className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"/>
 
                                     {/* Responsive Text */}
-                                    <div className="relative flex flex-col justify-start p-4 md:absolute md:bottom-0 md:left-0 md:right-0 md:p-6">
+                                    <div
+                                        className="relative flex flex-col justify-start p-4 md:absolute md:bottom-0 md:left-0 md:right-0 md:p-6">
                                         <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-1 md:mb-2">{department.name}</h2>
                                         <p className="text-sm md:text-pretty text-muted-foreground max-w-3xl">{department.description}</p>
                                         {department.email && (
@@ -44,7 +46,7 @@ export default function DepartmentsPage() {
                                                 href={`mailto:${department.email}`}
                                                 className="inline-flex items-center gap-1.5 text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors mt-2 break-all"
                                             >
-                                                <Mail size={16} className="flex-shrink-0" />
+                                                <Mail size={16} className="flex-shrink-0"/>
                                                 <span className="truncate">{department.email}</span>
                                             </a>
                                         )}
@@ -62,7 +64,8 @@ export default function DepartmentsPage() {
                                     >
                                         {department.team.map((member, index) => (
                                             <div key={index} className="flex items-start gap-4">
-                                                <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
+                                                <div
+                                                    className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
                                                     <Image
                                                         src={member.image || DepartmentText.PLACEHOLDER_IMAGE}
                                                         alt={member.name}
@@ -84,7 +87,7 @@ export default function DepartmentsPage() {
                 </div>
             </section>
 
-            <Footer />
+            <Footer/>
         </div>
     )
 }

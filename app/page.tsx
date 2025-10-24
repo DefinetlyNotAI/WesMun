@@ -6,10 +6,9 @@ import {Navigation} from "@/components/navigation"
 import {Footer} from "@/components/footer"
 import {CountdownTimer} from "@/components/countdown-timer"
 import {ScrollToTop} from "@/components/scroll-to-top"
-import {ArrowRight} from "lucide-react"
+import * as LucideIcons from "lucide-react"
+import {ArrowRight, LucideProps} from "lucide-react"
 import {MainText} from "@/lib/data/meta";
-import * as LucideIcons from "lucide-react";
-import { LucideProps } from "lucide-react";
 import React from "react";
 
 // Hero content
@@ -116,10 +115,12 @@ export default function HomePage() {
                             const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<LucideProps>>)[off.icon] || LucideIcons.Users;
 
                             return (
-                                <Card key={idx} className="bg-background border-border hover:border-primary/50 transition-colors">
+                                <Card key={idx}
+                                      className="bg-background border-border hover:border-primary/50 transition-colors">
                                     <CardContent className="p-6">
-                                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                                            <Icon className="text-primary" size={24} />
+                                        <div
+                                            className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                                            <Icon className="text-primary" size={24}/>
                                         </div>
                                         <h3 className="text-xl font-semibold mb-2 text-foreground">{off.title}</h3>
                                         <p className="text-muted-foreground text-sm">{off.description}</p>

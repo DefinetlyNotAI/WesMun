@@ -1,17 +1,17 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ScrollToTop } from "@/components/scroll-to-top"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { SiInstagram, SiTiktok } from "react-icons/si"
+import {Navigation} from "@/components/navigation"
+import {Footer} from "@/components/footer"
+import {ScrollToTop} from "@/components/scroll-to-top"
+import {Card, CardContent} from "@/components/ui/card"
+import {Button} from "@/components/ui/button"
+import {SiInstagram, SiTiktok} from "react-icons/si"
 import {contactInfo, ContactText} from "@/lib/data/contact"
 
 
 export default function ContactPage() {
     return (
         <div className="min-h-screen">
-            <ScrollToTop />
-            <Navigation />
+            <ScrollToTop/>
+            <Navigation/>
 
             <section className="pt-32 pb-20 px-4">
                 <div className="container mx-auto max-w-4xl animate-in fade-in duration-1000">
@@ -31,7 +31,7 @@ export default function ContactPage() {
                                         rel="noopener noreferrer"
                                         aria-label={ContactText.INSTAGRAM_LABEL}
                                     >
-                                        <SiInstagram size={20} />
+                                        <SiInstagram size={20}/>
                                     </a>
                                 </Button>
                                 <Button asChild variant="outline" size="icon">
@@ -41,7 +41,7 @@ export default function ContactPage() {
                                         rel="noopener noreferrer"
                                         aria-label={ContactText.TIKTOK_LABEL}
                                     >
-                                        <SiTiktok size={20} />
+                                        <SiTiktok size={20}/>
                                     </a>
                                 </Button>
                             </div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            <Footer />
+            <Footer/>
         </div>
     )
 }

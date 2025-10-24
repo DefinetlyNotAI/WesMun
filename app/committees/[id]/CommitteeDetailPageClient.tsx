@@ -2,17 +2,17 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ScrollToTop } from "@/components/scroll-to-top"
-import { ArrowLeft, Download, ExternalLink, Users } from "lucide-react"
+import {Button} from "@/components/ui/button"
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
+import {Badge} from "@/components/ui/badge"
+import {Navigation} from "@/components/navigation"
+import {Footer} from "@/components/footer"
+import {ScrollToTop} from "@/components/scroll-to-top"
+import {ArrowLeft, Download, ExternalLink, Users} from "lucide-react"
 import {CommitteeDetailPage} from "@/lib/data/committees";
 import {CommitteeDetailPageClientProps} from "@/lib/types";
 
-export default function CommitteeDetailPageClient({ committee }: CommitteeDetailPageClientProps) {
+export default function CommitteeDetailPageClient({committee}: CommitteeDetailPageClientProps) {
     return (
         <div className="min-h-screen">
             <ScrollToTop/>
@@ -24,9 +24,9 @@ export default function CommitteeDetailPageClient({ committee }: CommitteeDetail
                     <Link
                         href="/committees"
                         className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-8 transition-colors"
-                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                     >
-                        <ArrowLeft className="mr-2" size={16} />
+                        <ArrowLeft className="mr-2" size={16}/>
                         {CommitteeDetailPage.BACK_BUTTON}
                     </Link>
 
@@ -59,7 +59,7 @@ export default function CommitteeDetailPageClient({ committee }: CommitteeDetail
                                 {committee.difficulty}
                             </Badge>
                             <Badge variant="outline" className="text-base px-4 py-1 border-muted-foreground/50">
-                                <Users size={14} className="mr-2" />
+                                <Users size={14} className="mr-2"/>
                                 {committee.committeeSize}
                             </Badge>
                         </div>
@@ -135,25 +135,25 @@ export default function CommitteeDetailPageClient({ committee }: CommitteeDetail
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Button asChild variant="outline" className="h-12 text-base bg-transparent">
                             <a href={committee.backgroundGuidePdf} download>
-                                <Download className="mr-2" size={18} />
+                                <Download className="mr-2" size={18}/>
                                 {CommitteeDetailPage.DOWNLOAD_BG_GUIDE}
                             </a>
                         </Button>
                         <Button
                             asChild
                             className="h-12 text-base bg-primary text-primary-foreground hover:bg-primary/90"
-                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                            onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                         >
                             <Link href={committee.signupLink} target="_blank">
                                 {CommitteeDetailPage.APPLY_BUTTON}
-                                <ExternalLink className="ml-2" size={18} />
+                                <ExternalLink className="ml-2" size={18}/>
                             </Link>
                         </Button>
                     </div>
                 </div>
             </section>
 
-            <Footer />
+            <Footer/>
         </div>
     )
 }

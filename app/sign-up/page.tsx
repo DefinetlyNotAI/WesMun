@@ -1,13 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ScrollToTop } from "@/components/scroll-to-top"
-import { Check, ExternalLink } from "lucide-react"
+import {useEffect, useState} from "react"
+import {Button} from "@/components/ui/button"
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
+import {Navigation} from "@/components/navigation"
+import {Footer} from "@/components/footer"
+import {ScrollToTop} from "@/components/scroll-to-top"
+import {Check, ExternalLink} from "lucide-react"
 import {signUpPageContent, SignUpText} from "@/lib/data/signup"
 
 
@@ -28,8 +28,8 @@ export default function SignUpPage() {
 
     return (
         <div className="min-h-screen">
-            <ScrollToTop />
-            <Navigation />
+            <ScrollToTop/>
+            <Navigation/>
 
             <section className="pt-32 pb-20 px-4">
                 <div className="container mx-auto animate-in fade-in duration-1000">
@@ -43,18 +43,23 @@ export default function SignUpPage() {
                             <Card key={type.id} className="bg-card border-border relative flex flex-col">
                                 <CardHeader className="text-center pb-4">
                                     <CardTitle className="text-2xl mb-2">{type.name}</CardTitle>
-                                    <CardDescription className="text-sm min-h-[40px]">{type.description}</CardDescription>
+                                    <CardDescription
+                                        className="text-sm min-h-[40px]">{type.description}</CardDescription>
                                     <div className="mt-4">
                                         {isEarlyBird ? (
                                             <>
-                                                <div className="text-sm text-muted-foreground line-through">{type.price}</div>
-                                                <span className="text-4xl font-bold text-primary">{type.earlyBirdPrice}</span>
-                                                <div className="text-xs text-muted-foreground mt-1">{SignUpText.EARLY_BIRD_LABEL}</div>
+                                                <div
+                                                    className="text-sm text-muted-foreground line-through">{type.price}</div>
+                                                <span
+                                                    className="text-4xl font-bold text-primary">{type.earlyBirdPrice}</span>
+                                                <div
+                                                    className="text-xs text-muted-foreground mt-1">{SignUpText.EARLY_BIRD_LABEL}</div>
                                             </>
                                         ) : (
                                             <>
                                                 <span className="text-4xl font-bold text-primary">{type.price}</span>
-                                                <div className="text-xs text-muted-foreground mt-1">{SignUpText.REGULAR_PRICE_LABEL}</div>
+                                                <div
+                                                    className="text-xs text-muted-foreground mt-1">{SignUpText.REGULAR_PRICE_LABEL}</div>
                                             </>
                                         )}
                                     </div>
@@ -63,18 +68,19 @@ export default function SignUpPage() {
                                 <CardContent className="flex-1 flex flex-col">
                                     <div className="mb-6 flex-1">
                                         <div className="flex items-center gap-2 mb-3">
-                                            <Check className="text-primary flex-shrink-0" size={20} />
-                                            <span className="text-lg font-semibold text-foreground">{SignUpText.PERKS_TITLE}</span>
+                                            <Check className="text-primary flex-shrink-0" size={20}/>
+                                            <span
+                                                className="text-lg font-semibold text-foreground">{SignUpText.PERKS_TITLE}</span>
                                         </div>
                                         <p className="text-sm text-muted-foreground leading-relaxed pl-7">{SignUpText.PERKS_DESCRIPTION}</p>
                                     </div>
                                     <Button
                                         asChild
                                         className="w-full h-11 bg-primary text-primary-foreground hover:bg-primary/90"
-                                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                                        onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                                     >
                                         <Link href={type.signupLink} target="_blank">
-                                            {SignUpText.REGISTER_NOW} <ExternalLink className="ml-2" size={16} />
+                                            {SignUpText.REGISTER_NOW} <ExternalLink className="ml-2" size={16}/>
                                         </Link>
                                     </Button>
                                 </CardContent>
@@ -96,7 +102,7 @@ export default function SignUpPage() {
                 </div>
             </section>
 
-            <Footer />
+            <Footer/>
         </div>
     )
 }

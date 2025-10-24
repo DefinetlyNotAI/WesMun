@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import {Award, Globe, Users} from "lucide-react";
 import {Offering} from "@/lib/types";
+import {departments} from "@/lib/data/departments";
 
 
 // Metadata
@@ -21,9 +22,10 @@ export const navigationLinks = [
 ]
 
 // Secretary General Letter
+const [firstSG, secondSG] = departments.find(d => d.id === "secretariat")!.team.slice(0, 2);
 export const secretaryGeneralLetter = {
     title: "Letter from the Secretaries General",
-    name: "Jane Doe & John Smith",
+    name: `${firstSG.name} & ${secondSG.name}`,
     position: "Secretaries General",
     image: "/placeholder.svg?height=400&width=1200",
     content: `Dear Delegates,

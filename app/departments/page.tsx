@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail } from "lucide-react"
-import {departments, DepartmentText} from "@/lib/data/departments"
+import { departments, DepartmentText } from "@/lib/data/departments"
 
 export default function DepartmentsPage() {
     return (
@@ -37,6 +37,15 @@ export default function DepartmentsPage() {
                                     <div className="absolute bottom-0 left-0 right-0 p-6">
                                         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">{department.name}</h2>
                                         <p className="text-muted-foreground text-pretty max-w-3xl">{department.description}</p>
+                                        {department.email && (
+                                            <a
+                                                href={`mailto:${department.email}`}
+                                                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors mt-2 break-all"
+                                            >
+                                                <Mail size={16} className="flex-shrink-0" />
+                                                <span className="truncate">{department.email}</span>
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
 
@@ -56,13 +65,6 @@ export default function DepartmentsPage() {
                                                 <div className="flex-1 min-w-0">
                                                     <h3 className="font-semibold text-foreground text-balance">{member.name}</h3>
                                                     <p className="text-sm text-primary mb-2">{member.position}</p>
-                                                    <a
-                                                        href={`mailto:${member.email}`}
-                                                        className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors break-all"
-                                                    >
-                                                        <Mail size={14} className="flex-shrink-0" />
-                                                        <span className="truncate">{member.email}</span>
-                                                    </a>
                                                 </div>
                                             </div>
                                         ))}

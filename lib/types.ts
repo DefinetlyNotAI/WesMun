@@ -34,7 +34,6 @@ export interface DepartmentMember {
     name: string
     position: string
     image: string
-    email: string
 }
 
 export interface Department {
@@ -42,6 +41,7 @@ export interface Department {
     name: string
     description: string
     bannerImage: string
+    email?: string
     team: DepartmentMember[]
 }
 

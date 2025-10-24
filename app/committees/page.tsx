@@ -8,7 +8,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { ArrowRight, Users } from "lucide-react"
-import { committees } from "@/lib/data/committees"
+import {committees, CommitteeText} from "@/lib/data/committees"
 
 export default function CommitteesPage() {
     return (
@@ -19,9 +19,9 @@ export default function CommitteesPage() {
             <section className="pt-32 pb-20 px-4">
                 <div className="container mx-auto animate-in fade-in duration-1000">
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Our Committees</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">{CommitteeText.PAGE_TITLE}</h1>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-                            Choose from six diverse committees, each tackling critical global issues
+                            {CommitteeText.PAGE_SUBTITLE}
                         </p>
                     </div>
 
@@ -31,7 +31,7 @@ export default function CommitteesPage() {
                                 <Card className="bg-card border-border overflow-hidden hover:border-primary/50 transition-all cursor-pointer h-full">
                                     <div className="w-full h-48 relative bg-muted">
                                         <Image
-                                            src={committee.bannerImage || "/placeholder.svg"}
+                                            src={committee.bannerImage || CommitteeText.PLACEHOLDER_IMAGE}
                                             alt={`${committee.name} Banner`}
                                             fill
                                             className="object-cover"

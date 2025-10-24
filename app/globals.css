@@ -1,36 +1,27 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
-/*
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                          FONT CUSTOMIZATION GUIDE                         ║
-╠═══════════════════════════════════════════════════════════════════════════╣
-║ To change fonts, edit the @theme inline block below (lines ~90-95)        ║
-║                                                                           ║
-║ AVAILABLE FONTS (copy and paste the value you want):                      ║
-║                                                                           ║
-║ For --font-sans (body text):                                              ║
-║   • var(--font-playfair), "Playfair Display", serif                       ║
-║   • var(--font-playfair-extralight), "Playfair Display", serif            ║
-║   • serif                                                                 ║
-║   • var(--font-caramel), "Caramel", cursive                               ║
-║   • var(--font-hurricane), "Hurricane", cursive                           ║
-║   • var(--font-tangerine), "Tangerine", cursive                           ║
-║                                                                           ║
-║ For --font-title (headings):                                              ║
-║   • var(--font-great-vibes), "Great Vibes", cursive                       ║
-║   • var(--font-caramel), "Caramel", cursive                               ║
-║   • var(--font-hurricane), "Hurricane", cursive                           ║
-║   • var(--font-tangerine), "Tangerine", cursive                           ║
-║   • var(--font-playfair), "Playfair Display", serif                       ║
-║                                                                           ║
-║ EXAMPLE: To use Hurricane for titles, change line ~91 to:                 ║
-║   --font-title: var(--font-hurricane), "Hurricane", cursive;              ║
-╚═══════════════════════════════════════════════════════════════════════════╝
-*/
-
 @custom-variant dark (&:is(.dark *));
 
+/* Fonts */
+@font-face {
+    font-family: "Playfair Display";
+    /*noinspection CssUnknownTarget*/
+    src: url("/fonts/PlayfairDisplay-Regular.otf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tan Mon Cheri";
+    /*noinspection CssUnknownTarget*/
+    src: url("/fonts/tan-mon-cheri.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Color variables */
 :root {
     --background: oklch(0 0 0);
     --foreground: oklch(1 0 0);
@@ -38,24 +29,24 @@
     --card-foreground: oklch(1 0 0);
     --popover: oklch(0.1 0 0);
     --popover-foreground: oklch(1 0 0);
-    --primary: oklch(0.8 0.15 85);
+    --primary: #e0aa3e;
     --primary-foreground: oklch(0 0 0);
     --secondary: oklch(1 0 0);
     --secondary-foreground: oklch(0 0 0);
     --muted: oklch(0.2 0 0);
     --muted-foreground: oklch(0.7 0 0);
-    --accent: oklch(0.8 0.15 85);
+    --accent: #e0aa3e;
     --accent-foreground: oklch(0 0 0);
     --destructive: oklch(0.577 0.245 27.325);
     --destructive-foreground: oklch(1 0 0);
     --border: oklch(0.2 0 0);
     --input: oklch(0.2 0 0);
-    --ring: oklch(0.8 0.15 85);
-    --chart-1: oklch(0.8 0.15 85);
-    --chart-2: oklch(0.6 0.1 80);
-    --chart-3: oklch(0.4 0.05 80);
-    --chart-4: oklch(0.9 0.15 80);
-    --chart-5: oklch(0.7 0.12 80);
+    --ring: #e0aa3e;
+    --chart-1: #e0aa3e;
+    --chart-2: #c78b2a;
+    --chart-3: #a66f1f;
+    --chart-4: #f0d28a;
+    --chart-5: #d29a33;
     --radius: 0.5rem;
     --sidebar: oklch(0.985 0 0);
     --sidebar-foreground: oklch(0.145 0 0);
@@ -104,37 +95,19 @@
     --sidebar-ring: oklch(0.439 0 0);
 }
 
-@font-face {
-    font-family: "Tan Mon Cheri";
-    /*noinspection CssUnknownTarget*/
-    src: url("/fonts/tan-mon-cheri.woff2") format("woff2"),
-         url("/fonts/tan-mon-cheri.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-:root {
-    --font-tan-mon-cheri: "Tan Mon Cheri";
-}
-
+/* Theme settings */
 @theme inline {
-    /* 🎨 EDIT THESE TWO LINES TO CHANGE FONTS SITE-WIDE */
-    --font-sans: "Playfair Display", serif;
-    --font-title: var(--font-tan-mon-cheri), cursive;
+    --font-sans: "Tan Mon Cheri", serif;
+    --font-title: "Playfair Display", cursive;
 
-    /* 🎨 COLOR PALETTE */
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-card: var(--card);
     --color-card-foreground: var(--card-foreground);
     --color-popover: var(--popover);
     --color-popover-foreground: var(--popover-foreground);
-
-    /* Updated primary to gold */
     --color-primary: #e0aa3e;
     --color-primary-foreground: var(--primary-foreground);
-
     --color-secondary: var(--secondary);
     --color-secondary-foreground: var(--secondary-foreground);
     --color-muted: var(--muted);
@@ -146,7 +119,6 @@
     --color-border: var(--border);
     --color-input: var(--input);
     --color-ring: var(--ring);
-
     --color-chart-1: var(--chart-1);
     --color-chart-2: var(--chart-2);
     --color-chart-3: var(--chart-3);
@@ -168,7 +140,7 @@
     --color-sidebar-ring: var(--sidebar-ring);
 }
 
-
+/* Base layer */
 @layer base {
     * {
         @apply border-border outline-ring/50;
@@ -179,31 +151,20 @@
         font-family: var(--font-sans), sans-serif;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .logo,
-    .hero-title,
-    .section-title {
-        font-family: var(--font-title), serif;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-sans), serif;
     }
 
-    p,
-    span,
-    div,
-    a,
-    button,
-    input,
-    textarea,
-    select,
-    label {
+    .logo, .hero-title, .section-title {
+        font-family: var(--font-title), cursive;
+    }
+
+    p, span, div, a, button, input, textarea, select, label {
         font-family: var(--font-sans), serif;
     }
 }
 
+/* Utilities layer */
 @layer utilities {
     .bg-gradient-primary {
         background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
@@ -218,5 +179,10 @@
 
     .border-gradient-primary {
         border-image: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%) 1;
+    }
+
+    .title-font,
+    .font-title {
+        font-family: var(--font-title), cursive;
     }
 }

@@ -1,21 +1,31 @@
 import CommitteeDetailPageClient from "./CommitteeDetailPageClient"
-import {notFound} from "next/navigation"
-import {committees} from "@/lib/data/committees"
-import {Params} from "@/lib/types"
+import { notFound } from "next/navigation"
+import { committees } from "@/lib/data/committees"
 
 // Generate static paths for SSG
 export function generateStaticParams() {
-    return committees.map((committee) => ({id: committee.id}))
+    return committees.map((committee) => ({ id: committee.id }))
 }
 
 // Server component
-export default async function CommitteeDetailPage({params}: Params) {
-    const resolvedParams = await params  // Ignore TypeScript warning for async params - Error: Route "/committees/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-    const committee = committees.find((c) => c.id === resolvedParams.id)
+export default async function CommitteeDetailPage(props: any) {
+    // Defensive resolution: params itself or its id may be a Promise/thenable (per Next generated types)
+    let params = props?.params
+    if (params && typeof (params as any).then === 'function') {
+        params = await params
+    }
+
+    let id: any = params?.id ?? params
+    if (id && typeof (id as any).then === 'function') {
+        id = await id
+    }
+
+    // find committee safely
+    const committee = (id == null) ? undefined : committees.find((c) => c.id === String(id))
 
     if (!committee) {
         notFound()
     }
 
-    return <CommitteeDetailPageClient committee={committee}/>
+    return <CommitteeDetailPageClient committee={committee} />
 }

@@ -14,6 +14,7 @@ const securityHeaders = [
     },
 ];
 
+// noinspection JSUnusedGlobalSymbols
 const nextConfig = {
     images: {
         localPatterns: [

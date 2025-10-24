@@ -25,10 +25,6 @@ export interface CommitteeDetailPageClientProps {
     committee: Committee
 }
 
-export interface Params {
-    params: { id: string }
-}
-
 // Departments
 export interface DepartmentMember {
     name: string

@@ -13,9 +13,14 @@ export function Navigation() {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
-                    <Link href="/" className="text-2xl font-title text-gradient-primary whitespace-nowrap">
-                        {siteConfig.name}
+                    <Link href="/" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title text-gradient-primary whitespace-nowrap flex items-center gap-2">
+                        <img
+                            src={siteConfig.imageSVG}
+                            alt={siteConfig.name}
+                            className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto"
+                        />
                     </Link>
+
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">

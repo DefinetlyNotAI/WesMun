@@ -110,6 +110,7 @@ export const siteConfig = {
             tiktok: "https://tiktok.com/@wesmun",
         },
     },
+    imageSVG: "/wesmun.svg",
 }
 
 export const MainText = {

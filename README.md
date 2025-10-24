@@ -1,6 +1,6 @@
 <!--suppress ALL -->
 <p align="center">
-    <img src="src/media/WesmunLogo.png" align="center" width="30%" alt="MD Logo">
+    <img src="public/wesmun.webp" align="center" width="30%" alt="MD Logo">
 </p>
 <p align="center"><h1 align="center">WESMUN</h1>
 <p align="center">

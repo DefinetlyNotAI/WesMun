@@ -164,7 +164,7 @@ export const departments: Department[] = [
         email: "finance@wesmun.com",
         team: [
             {name: "Arham Khan", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200"},
-            {name: "Mariya Taiyeb", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Mahnoor Iftikhar", position: "Director of Finance", image: "/placeholder.svg?height=200&width=200"},
         ],
     },
     {

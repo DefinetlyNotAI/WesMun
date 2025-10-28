@@ -91,11 +91,11 @@ export const offerings: Offering[] = [
 export const siteConfig = {
     name: "WESMUN",
     event: {
-        date: "January 30th to February 1st, 2025",
+        date: "January 30th to February 1st, 2026",
         location: "Wesgreen International School",
         theme: "Geopolitics, Networking Control and Transnational Threats",
-        conferenceStart: "2025-01-30T14:30:00", // January 30, 2025, 12:30 PM
-        conferenceEnd: "2025-02-01T22:00:00",  // February 1, 2025, 10:00 PM
+        conferenceStart: "2026-01-30T14:30:00", // January 30, 2026, 12:30 PM
+        conferenceEnd: "2026-02-01T22:00:00",  // February 1, 2026, 10:00 PM
     },
     contact: {
         email: "secretariat@wesmun.com",

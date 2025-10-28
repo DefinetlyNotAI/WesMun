@@ -10,16 +10,16 @@ export const departments: Department[] = [
         bannerImage: "/placeholder.svg?height=300&width=1200",
         email: "secretariat@wesmun.com",
         team: [
-            {name: "Hatim Saeed", position: "Secretary General (SG)", image: "/placeholder.svg?height=200&width=200"},
-            {name: "Mishal Irfan", position: "Secretary General (SG)", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Mishal Irfan", position: "Secretary General", image: "/placeholder.svg?height=200&width=200"},
+            {name: "Hatim Saeed", position: "Secretary General", image: "/placeholder.svg?height=200&width=200"},
             {
                 name: "Arsalan Ali",
-                position: "Deputy Secretary General (DSG)",
+                position: "Deputy Secretary General",
                 image: "/placeholder.svg?height=200&width=200"
             },
             {
                 name: "Joan Qais",
-                position: "Deputy Secretary General (DSG)",
+                position: "Deputy Secretary General",
                 image: "/placeholder.svg?height=200&width=200"
             },
         ],
@@ -33,7 +33,6 @@ export const departments: Department[] = [
         email: "it@wesmun.com",
         team: [
             {name: "Shahm Najeeb", position: "Head Director of IT", image: "/placeholder.svg?height=200&width=200"},
-            {name: "Zayed Munir", position: "Assistant Director of IT", image: "/placeholder.svg?height=200&width=200"},
         ],
     },
     {

@@ -14,10 +14,13 @@ export const metadata: Metadata = {
 // Navigation Links
 export const navigationLinks = [
     {name: "Home", href: "/"},
+    // TODO : Remove this link until committees are finalized
     {name: "Committees", href: "/committees"},
     {name: "Sign Up", href: "/sign-up"},
+    // TODO : Remove this link until faqs page is ready
     {name: "FAQs", href: "/faqs"},
     {name: "Contact", href: "/contact"},
+    // TODO : Remove this link until departments page is ready
     {name: "Departments", href: "/departments"},
 ]
 
@@ -88,15 +91,15 @@ export const offerings: Offering[] = [
 export const siteConfig = {
     name: "WESMUN",
     event: {
-        date: "March 15-17, 2026",
+        date: "January 30th to February 1st, 2025",
         location: "Wesgreen International School",
         theme: "Geopolitics, Networking Control and Transnational Threats",
-        conferenceStart: "2026-12-01T09:00:00", // December 1st, 2026 at 9 AM
-        conferenceEnd: "2026-12-04T17:00:00", // December 4th, 2026 at 5 PM (3 days after start)
+        conferenceStart: "2025-01-30T14:30:00", // January 30, 2025, 12:30 PM
+        conferenceEnd: "2025-02-01T22:00:00",  // February 1, 2025, 10:00 PM
     },
     contact: {
         email: "secretariat@wesmun.com",
-        address: "1151 Richmond St, London, ON N6A 3K7",
+        address: "Wesgreen International School, Muwaileh, Sharjah",
         socialMedia: {
             instagram: "https://instagram.com/w.e.s.mun",
             tiktok: "https://tiktok.com/@w.e.s.mun",
@@ -113,6 +116,7 @@ export const MainText = {
     dateLocation: `${siteConfig.event.date} | ${siteConfig.event.location}`,
     buttons: [
         {text: "Register Now", href: "/sign-up", primary: true},
+        // TODO : Remove this link until committees are finalized
         {text: "View Committees", href: "/committees", primary: false},
     ],
 

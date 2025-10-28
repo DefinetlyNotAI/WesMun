@@ -88,6 +88,19 @@ export default function SignUpPage() {
                         ))}
                     </div>
 
+                    <div className="mt-20 text-center">
+                        <h2 className="text-3xl font-bold mb-6 text-balance">
+                            {SignUpText.FEATURES_TITLE || "Why Join Us"}
+                        </h2>
+                        <ul className="max-w-3xl mx-auto text-left list-disc list-inside text-muted-foreground space-y-3">
+                            {signUpPageContent.features.map((feature, index) => (
+                                <li key={index} className="text-lg leading-relaxed">
+                                    {feature}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
                     <div className="mt-12 text-center">
                         <p className="text-sm text-muted-foreground mb-4">{SignUpText.HELP_TEXT}</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -3,6 +3,12 @@ export const signUpPageContent = {
     title: "Register for WESMUN 2026",
     description: "Join us for an unforgettable Model UN experience. Choose your registration type below.",
     earlyBirdDeadline: "2026-02-01T23:59:59",
+    features: [
+        "15 dynamic committees led by engaging and practiced chairs",
+        "Lavish buffet featuring 20 dishes from 5 cuisines - a feast for everyone",
+        "Vibrant social night featuring live Indian dhol performances and energetic dabke dances",
+        "Every delegates receives a FREE tote bag packed with all the essentials needed plus more for the event"
+    ],
     registrationTypes: [
         {
             id: "individual",
@@ -10,14 +16,6 @@ export const signUpPageContent = {
             price: "$60",
             earlyBirdPrice: "$45",
             description: "Perfect for individual students looking to attend WESMUN",
-            features: [
-                "Access to all committee sessions",
-                "Conference materials and background guides",
-                "Lunch on all three days",
-                "Social events and activities",
-                "Certificate of participation",
-                "Eligibility for awards",
-            ],
             signupLink: "https://forms.gle/individual-delegate-signup",
         },
         {
@@ -26,14 +24,6 @@ export const signUpPageContent = {
             price: "$50 per delegate",
             earlyBirdPrice: "$40 per delegate",
             description: "Discounted rate for schools bringing 10 or more delegates",
-            features: [
-                "All individual delegate benefits",
-                "Group discount pricing",
-                "Dedicated faculty advisor support",
-                "Priority committee placement",
-                "Group photo opportunity",
-                "School recognition at ceremonies",
-            ],
             signupLink: "https://forms.gle/school-group-signup",
         },
     ],
@@ -51,4 +41,5 @@ export const SignUpText = {
     VIEW_FAQS: "View FAQs",
     CONTACT_US: "Contact Us",
     REGISTER_NOW: "Register Now",
+    FEATURES_TITLE: "Why Join Us"
 } as const

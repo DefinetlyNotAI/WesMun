@@ -29,7 +29,7 @@ const [firstSG, secondSG] = departments.find(d => d.id === "secretariat")!.team.
 export const secretaryGeneralLetter = {
     title: "Letter from the Secretaries General",
     name: `${firstSG.name} & ${secondSG.name}`,
-    position: "Secretaries General",
+    position: "Secretary General",
     image: "/placeholder.svg?height=400&width=1200",
     content: `Dear leaders of the future,
 

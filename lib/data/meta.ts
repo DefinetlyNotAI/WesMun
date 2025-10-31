@@ -31,15 +31,15 @@ export const secretaryGeneralLetter = {
     name: `${firstSG.name} & ${secondSG.name}`,
     position: "Secretaries General",
     image: "/placeholder.svg?height=400&width=1200",
-    content: `Dear Delegates,
+    content: `Dear leaders of the future,
 
-It is with great pleasure that we welcome you to WESMUN 2026. As Secretaries General, we are honored to invite you to join us for three days of rigorous debate, diplomatic negotiation, and global problem-solving.
+With admiration, unimaginable excitement, and thrills, we welcome you to WESMUN'26, which marks our 10th annual MUN. With a decade’s worth of experience and the careful analysis of past failures and triumphs, we assure you this MUN will be one of the most refined and polished you have ever come across. We simply cannot wait to meet you and watch your passion ignite and set the world ablaze.
 
-This year's conference promises to be our most ambitious yet, bringing together the brightest minds from across the region to tackle the world's most pressing challenges. Whether you're a seasoned delegate or attending your first Model UN conference, WESMUN offers an unparalleled opportunity to develop your skills in public speaking, critical thinking, and international relations.
+Through crystal clear lenses, our vision for this conference remains unobstructed. The purpose of this conference is not only to serve us but, more importantly, all of you. This is a golden opportunity not only to educate yourself but also those around you, for everyone has something to learn. To think there’s no room for improvement is to think you’re perfect — and no one’s perfect.
 
-Our dedicated team has worked tirelessly to create an experience that will challenge you intellectually while fostering lasting friendships and memories. We encourage you to engage fully with the conference, step outside your comfort zone, and embrace the spirit of international cooperation that defines the United Nations.
+During our conference, you will engage in meaningful dialogue exchanges, discussing real-world problems and situations, including geopolitics, corruption, crime, and much more. You will observe yourself applying critical thinking to identify issues, discover solutions, and express yourself in a confident and effective manner. These skills will be etched into your very being, sticking with you for the rest of your life, and it will not be long before you realise these are necessary skills to master.
 
-We look forward to seeing you at WESMUN 2026.`,
+We can't wait to see you at WESMUN 2026 and hope you leave with an unforgettable experience.`,
 }
 
 // Site Configuration (e.g. footer) and Main page

@@ -13,12 +13,12 @@ export const departments: Department[] = [
             {name: "Mishal Irfan", position: "Secretary General", image: "/placeholder.svg?height=200&width=200"},
             {name: "Hatim Saeed", position: "Secretary General", image: "/placeholder.svg?height=200&width=200"},
             {
-                name: "Arsalan Ali",
+                name: "Joan Qais",
                 position: "Deputy Secretary General",
                 image: "/placeholder.svg?height=200&width=200"
             },
             {
-                name: "Joan Qais",
+                name: "Arsalan Ali",
                 position: "Deputy Secretary General",
                 image: "/placeholder.svg?height=200&width=200"
             },

@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 // Navigation Links
 export const navigationLinks = [
     {name: "Home", href: "/"},
-    // TODO : Remove this link until committees are finalized
-    {name: "Committees", href: "/committees"},
-    {name: "Sign Up", href: "/sign-up"},
-    // TODO : Remove this link until faqs page is ready
+    // TODO : Removed this link until committees are finalized
+    // {name: "Committees", href: "/committees"},
+    // TODO : Removed this link until registration is ready
+    // {name: "Sign Up", href: "/sign-up"},
     {name: "FAQs", href: "/faqs"},
     {name: "Contact", href: "/contact"},
-    // TODO : Remove this link until departments page is ready
-    {name: "Departments", href: "/departments"},
+    // TODO : Removed this link until departments page is ready
+    // {name: "Departments", href: "/departments"},
 ]
 
 // Secretary General Letter
@@ -116,8 +116,8 @@ export const MainText = {
     dateLocation: `${siteConfig.event.date} | ${siteConfig.event.location}`,
     buttons: [
         {text: "Register Now", href: "/sign-up", primary: true},
-        // TODO : Remove this link until committees are finalized
-        {text: "View Committees", href: "/committees", primary: false},
+        // TODO : Removed this link until committees are finalized
+        // {text: "View Committees", href: "/committees", primary: false},
     ],
 
     STATS: [

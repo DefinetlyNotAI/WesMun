@@ -133,6 +133,7 @@ export default function HomePage() {
             </section>
 
             {/* MainText.CTA Section */}
+            {/* TODO Removed until registration is open
             <section className="py-20 px-4">
                 <div className="container mx-auto text-center animate-in fade-in duration-1000 delay-500">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">{MainText.CTA.title}</h2>
@@ -144,7 +145,7 @@ export default function HomePage() {
                     </Button>
                 </div>
             </section>
-
+            */}
             <Footer/>
         </div>
     )

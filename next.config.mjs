@@ -16,7 +16,10 @@ const securityHeaders = [
 
 // noinspection JSUnusedGlobalSymbols
 const nextConfig = {
-
+    env: {
+        GIT_COMMIT_HASH: process.env.VERCEL_GIT_COMMIT_SHA || "local",
+        GIT_BRANCH: process.env.VERCEL_GIT_COMMIT_REF || "local",
+    },
     async headers() {
         return [
             {

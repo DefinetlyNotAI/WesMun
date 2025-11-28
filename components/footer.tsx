@@ -2,6 +2,7 @@ import Link from "next/link"
 import {SiInstagram, SiTiktok} from "react-icons/si"
 import {contactInfo} from "@/lib/data/contact"
 import {navigationLinks, siteConfig} from "@/lib/data/meta";
+import DeploymentInfo from "@/components/deployement-info";
 
 export function Footer() {
     return (
@@ -64,6 +65,7 @@ export function Footer() {
                     <p>
                         &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
                     </p>
+                    <DeploymentInfo />
                 </div>
             </div>
         </footer>

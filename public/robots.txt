@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wesmun.com
+
+# Sitemaps
+Sitemap: https://wesmun.com/sitemap.xml

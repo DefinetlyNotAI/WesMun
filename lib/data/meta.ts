@@ -16,8 +16,6 @@ export const navigationLinks = [
     {name: "Home", href: "/"},
     // TODO : Removed this link until committees are finalized
     // {name: "Committees", href: "/committees"},
-    // TODO : Removed this link until registration is ready
-    // {name: "Sign Up", href: "/sign-up"},
     {name: "FAQs", href: "/faqs"},
     {name: "Contact", href: "/contact"},
     {name: "Departments", href: "/departments"},
@@ -121,7 +119,7 @@ export const MainText = {
 
     STATS: [
         {icon: Users, value: "500+", label: "Expected Delegates"},
-        {icon: Globe, value: "6", label: "Diverse Committees"},
+        {icon: Globe, value: "15", label: "Diverse Committees"},
         {icon: Award, value: "3 Days", label: "Of Intense Debate"},
     ],
 

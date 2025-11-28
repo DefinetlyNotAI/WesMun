@@ -11,21 +11,33 @@ export const signUpPageContent = {
     ],
     registrationTypes: [
         {
-            id: "individual",
-            name: "Individual Delegate",
-            price: "$60",
-            earlyBirdPrice: "$45",
-            description: "Perfect for individual students looking to attend WESMUN",
-            signupLink: "https://forms.gle/individual-delegate-signup",
+            id: "internal",
+            name: "Internal Delegate",
+            price: "250 AED",
+            earlyBirdPrice: "220 AED",
+            description: "For Wesgreen students attending the MUN",
+            signupLink: "https://docs.google.com/forms/d/e/1FAIpQLSfbGvbvb7Um6DLoHWCLYRN9pdgRZQ7yfCtiR9OIlW9TAHNu9w/viewform",
         },
         {
-            id: "school-group",
-            name: "School Group (10+ delegates)",
-            price: "$50 per delegate",
-            earlyBirdPrice: "$40 per delegate",
-            description: "Discounted rate for schools bringing 10 or more delegates",
-            signupLink: "https://forms.gle/school-group-signup",
+            id: "external",
+            name: "External Delegate",
+            price: "250 AED",
+            earlyBirdPrice: "220 AED",
+            description: "For students from other schools attending the MUN",
+            signupLink: "https://docs.google.com/forms/d/e/1FAIpQLSfOPO1rDcaC9m32TTtKGICWrcd8zjcF_sn0GvbbvIQsS9hZTA/viewform",
         },
+        {
+            id: "team-member",
+            name: "WESMUN Team Member",
+            price: "165 AED",
+            description: "For students who are part of the WESMUN organizing team",
+        },
+        {
+            id: "chair",
+            name: "Committee Chair",
+            price: "180 AED",
+            description: "For students chairing committees at WESMUN 2026",
+        }
     ],
 }
 
@@ -41,5 +53,21 @@ export const SignUpText = {
     VIEW_FAQS: "View FAQs",
     CONTACT_US: "Contact Us",
     REGISTER_NOW: "Register Now",
-    FEATURES_TITLE: "Why Join Us"
+    FEATURES_TITLE: "Why Join Us",
+    VIEW_PAYMENT_INSTRUCTIONS: "View Payment Instructions"
 } as const
+
+// Define the content
+export const paymentInstructions: Record<"internal" | "external", string[]> = {
+    internal: [
+        "Open GEMS Connect App",
+        "Tap on Activities",
+        "Tap on School Activities",
+        "Pay for the role you had registered for",
+        "Send the proof of payment to {{ finance@wesmun.com }}",
+    ],
+    external: [
+        "Check your email regarding bank details to pay via bank transfer",
+        "Once paid, send proof of payment to {{ finance@wesmun.com }}",
+    ],
+};

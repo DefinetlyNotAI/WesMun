@@ -8,11 +8,13 @@ import {Navigation} from "@/components/navigation"
 import {Footer} from "@/components/footer"
 import {ScrollToTop} from "@/components/scroll-to-top"
 import {Check, ExternalLink} from "lucide-react"
-import {signUpPageContent, SignUpText} from "@/lib/data/signup"
+import {paymentInstructions, signUpPageContent, SignUpText} from "@/lib/data/signup"
+import PaymentModal from "@/components/payment-modal"
 
 
 export default function SignUpPage() {
     const [isEarlyBird, setIsEarlyBird] = useState(true)
+    const [showPaymentModal, setShowPaymentModal] = useState(false)
 
     useEffect(() => {
         const checkEarlyBird = () => {
@@ -43,23 +45,18 @@ export default function SignUpPage() {
                             <Card key={type.id} className="bg-card border-border relative flex flex-col">
                                 <CardHeader className="text-center pb-4">
                                     <CardTitle className="text-2xl mb-2">{type.name}</CardTitle>
-                                    <CardDescription
-                                        className="text-sm min-h-[40px]">{type.description}</CardDescription>
+                                    <CardDescription className="text-sm min-h-[40px]">{type.description}</CardDescription>
                                     <div className="mt-4">
-                                        {isEarlyBird ? (
+                                        {isEarlyBird && type.earlyBirdPrice ? (
                                             <>
-                                                <div
-                                                    className="text-sm text-muted-foreground line-through">{type.price}</div>
-                                                <span
-                                                    className="text-4xl font-bold text-primary">{type.earlyBirdPrice}</span>
-                                                <div
-                                                    className="text-xs text-muted-foreground mt-1">{SignUpText.EARLY_BIRD_LABEL}</div>
+                                                <div className="text-sm text-muted-foreground line-through">{type.price}</div>
+                                                <span className="text-4xl font-bold text-primary">{type.earlyBirdPrice}</span>
+                                                <div className="text-xs text-muted-foreground mt-1">{SignUpText.EARLY_BIRD_LABEL}</div>
                                             </>
                                         ) : (
                                             <>
                                                 <span className="text-4xl font-bold text-primary">{type.price}</span>
-                                                <div
-                                                    className="text-xs text-muted-foreground mt-1">{SignUpText.REGULAR_PRICE_LABEL}</div>
+                                                <div className="text-xs text-muted-foreground mt-1">{SignUpText.REGULAR_PRICE_LABEL}</div>
                                             </>
                                         )}
                                     </div>
@@ -74,19 +71,37 @@ export default function SignUpPage() {
                                         </div>
                                         <p className="text-sm text-muted-foreground leading-relaxed pl-7">{SignUpText.PERKS_DESCRIPTION}</p>
                                     </div>
-                                    <Button
-                                        asChild
-                                        className="w-full h-11 bg-primary text-primary-foreground hover:bg-primary/90"
-                                        onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
-                                    >
-                                        <Link href={type.signupLink} target="_blank">
-                                            {SignUpText.REGISTER_NOW} <ExternalLink className="ml-2" size={16}/>
-                                        </Link>
-                                    </Button>
+                                    {type.signupLink ? (
+                                        <Button
+                                            asChild
+                                            className="w-full h-11 bg-primary text-primary-foreground hover:bg-primary/90"
+                                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                                        >
+                                            <Link href={type.signupLink} target="_blank">
+                                                {SignUpText.REGISTER_NOW} <ExternalLink className="ml-2" size={16} />
+                                            </Link>
+                                        </Button>
+                                    ) : (
+                                        <>
+                                            <Button
+                                                onClick={() => setShowPaymentModal(true)}
+                                                className="w-full h-11 bg-primary text-primary-foreground hover:bg-primary/90"
+                                            >
+                                                {SignUpText.VIEW_PAYMENT_INSTRUCTIONS}
+                                            </Button>
+                                        </>
+                                    )}
                                 </CardContent>
                             </Card>
                         ))}
                     </div>
+
+                    {/* Payment modal rendered centered on screen */}
+                    <PaymentModal
+                        open={showPaymentModal}
+                        onCloseAction={() => setShowPaymentModal(false)}
+                        instructions={paymentInstructions}
+                    />
 
                     <div className="mt-20 text-center">
                         <h2 className="text-3xl font-bold mb-6 text-balance">

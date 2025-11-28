@@ -22,9 +22,9 @@ export default function DeploymentInfo() {
                 rel="noopener noreferrer"
                 style={{ textDecoration: "underline", color: "#aaa" }}
             >
-                {hash}
+                {hash?.slice(0, 6)}
             </a>{" "}
-            Branch: {branch}
+            on '{branch}' branch.
         </div>
     )
 }

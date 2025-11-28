@@ -36,14 +36,34 @@ such as committees, team members, schedules, and more.
 
 ## Features
 
-- **Committee Information**: Detailed pages for each committee, including descriptions and member lists.
-- **Team Information**: Pages displaying team members with their roles and images.
-- **Responsive Design**: The website is designed to be responsive and accessible on various devices.
-- **Custom JavaScript**: Includes custom scripts for enhanced functionality and user experience.
-- **Bootstrap Integration**: Utilizes Bootstrap for styling and layout.
-- **Easy Navigation**: Intuitive navigation structure for easy access to different sections.
-- **Modern Design**: Clean and modern design to enhance user experience.
-- **Cross-Browser Compatibility**: Ensures the website works well on different browsers.
+### Core Functionality
+- **Committee Management**: Dynamic committee pages with detailed information, background guides, chair profiles, and difficulty levels
+- **Department Showcase**: Comprehensive department pages featuring team members, roles, and contact information
+- **Event Countdown**: Real-time countdown timer to WESMUN event start date
+- **Registration System**: Integrated sign-up forms with payment modal for delegate registration
+- **FAQ System**: Categorized frequently asked questions (General, Registration, Committees, Logistics)
+- **Contact Page**: Easy-to-access contact information with social media links
+
+### Technical Features
+- **Next.js 15**: Built with the latest Next.js framework for optimal performance and SEO
+- **TypeScript**: Fully typed codebase for better development experience and fewer bugs
+- **Server-Side Rendering**: Fast page loads and improved SEO with SSR capabilities
+- **Responsive Design**: Mobile-first design that adapts seamlessly across all devices
+- **Modern UI Components**: Utilizes shadcn/ui and Radix UI for accessible, customizable components
+- **Dark Mode Support**: Theme switching capability with next-themes
+- **Smooth Animations**: Engaging user experience with Framer Motion-style animations
+- **Form Validation**: React Hook Form with Zod resolvers for robust form handling
+- **Analytics Integration**: Vercel Analytics for tracking user engagement
+- **Optimized Images**: Next.js Image component for automatic image optimization
+
+### Design & UX
+- **Custom Typography**: Playfair Display font for elegant headings
+- **Gradient Backgrounds**: Modern gradient effects and visual polish
+- **Interactive Cards**: Hover effects and smooth transitions throughout
+- **Scroll-to-Top**: Convenient navigation for long pages
+- **Accessible Components**: WCAG-compliant UI elements using Radix UI primitives
+- **Loading States**: Proper loading indicators for better UX
+- **Toast Notifications**: User feedback system for actions and updates
 
 ---
 

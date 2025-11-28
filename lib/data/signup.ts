@@ -16,6 +16,9 @@ export const signUpPageContent = {
             price: "250 AED",
             earlyBirdPrice: "220 AED",
             description: "For Wesgreen students attending the MUN",
+            perksDescription:
+                "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
+
             signupLink: "https://docs.google.com/forms/d/e/1FAIpQLSfbGvbvb7Um6DLoHWCLYRN9pdgRZQ7yfCtiR9OIlW9TAHNu9w/viewform",
         },
         {
@@ -24,6 +27,9 @@ export const signUpPageContent = {
             price: "250 AED",
             earlyBirdPrice: "220 AED",
             description: "For students from other schools attending the MUN",
+            perksDescription:
+                "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
+
             signupLink: "https://docs.google.com/forms/d/e/1FAIpQLSfOPO1rDcaC9m32TTtKGICWrcd8zjcF_sn0GvbbvIQsS9hZTA/viewform",
         },
         {
@@ -31,12 +37,18 @@ export const signUpPageContent = {
             name: "WESMUN Team Member",
             price: "165 AED",
             description: "For students who are part of the WESMUN organizing team",
+            perksDescription:
+                "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
+
         },
         {
             id: "chair",
             name: "Committee Chair",
             price: "180 AED",
             description: "For students chairing committees at WESMUN 2026",
+            perksDescription:
+                "Full conference access, materials, meals, social events, certificate of participation, and Shield.",
+
         }
     ],
 }
@@ -45,8 +57,6 @@ export const SignUpText = {
     PAGE_TITLE: "Register for WESMUN 2026",
     PAGE_SUBTITLE: "Choose your registration type and secure your spot at this year's conference",
     PERKS_TITLE: "Perks Included",
-    PERKS_DESCRIPTION:
-        "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
     EARLY_BIRD_LABEL: "Early Bird Price",
     REGULAR_PRICE_LABEL: "Regular Price",
     HELP_TEXT: "Need help choosing? Check out our FAQs or contact us directly",

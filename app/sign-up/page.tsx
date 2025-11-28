@@ -69,7 +69,7 @@ export default function SignUpPage() {
                                             <span
                                                 className="text-lg font-semibold text-foreground">{SignUpText.PERKS_TITLE}</span>
                                         </div>
-                                        <p className="text-sm text-muted-foreground leading-relaxed pl-7">{SignUpText.PERKS_DESCRIPTION}</p>
+                                        <p className="text-sm text-muted-foreground leading-relaxed pl-7">{type.perksDescription}</p>
                                     </div>
                                     {type.signupLink ? (
                                         <Button

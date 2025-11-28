@@ -29,7 +29,6 @@ export interface CommitteeDetailPageClientProps {
 export interface DepartmentMember {
     name: string
     position: string
-    image: string
 }
 
 export interface Department {

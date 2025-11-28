@@ -20,8 +20,7 @@ export const navigationLinks = [
     // {name: "Sign Up", href: "/sign-up"},
     {name: "FAQs", href: "/faqs"},
     {name: "Contact", href: "/contact"},
-    // TODO : Removed this link until departments page is ready
-    // {name: "Departments", href: "/departments"},
+    {name: "Departments", href: "/departments"},
 ]
 
 // Secretary General Letter
@@ -30,7 +29,7 @@ export const secretaryGeneralLetter = {
     title: "Letter from the Secretaries General",
     name: `${firstSG.name} & ${secondSG.name}`,
     position: "Secretary General",
-    image: "/placeholder.svg?height=400&width=1200",
+    image: "/img/dep/sg.webp",
     content: `Dear leaders of the future,
 
 With admiration, unimaginable excitement, and thrills, we welcome you to WESMUN'26, which marks our 10th annual MUN. With a decade’s worth of experience and the careful analysis of past failures and triumphs, we assure you this MUN will be one of the most refined and polished you have ever come across. We simply cannot wait to meet you and watch your passion ignite and set the world ablaze.
@@ -129,7 +128,7 @@ export const MainText = {
     SG_LETTER: {
         title: secretaryGeneralLetter.title,
         content: secretaryGeneralLetter.content.split("\n\n"),
-        image: secretaryGeneralLetter.image || "/placeholder.svg",
+        image: secretaryGeneralLetter.image,
         name: secretaryGeneralLetter.name,
         position: secretaryGeneralLetter.position,
     },

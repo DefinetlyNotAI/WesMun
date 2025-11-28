@@ -1,10 +1,10 @@
-import Image from "next/image"
-import {Navigation} from "@/components/navigation"
-import {Footer} from "@/components/footer"
-import {ScrollToTop} from "@/components/scroll-to-top"
-import {Card, CardContent} from "@/components/ui/card"
-import {Mail} from "lucide-react"
-import {departments, DepartmentText} from "@/lib/data/departments"
+import Image from "next/image";
+import {Navigation} from "@/components/navigation";
+import {Footer} from "@/components/footer";
+import {ScrollToTop} from "@/components/scroll-to-top";
+import {Card, CardContent} from "@/components/ui/card";
+import {Mail} from "lucide-react";
+import {departments, DepartmentText} from "@/lib/data/departments";
 
 export default function DepartmentsPage() {
     return (
@@ -21,67 +21,7 @@ export default function DepartmentsPage() {
 
                     <div className="space-y-12">
                         {departments.map((department) => (
-                            <Card
-                                key={department.id}
-                                className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors"
-                            >
-                                {/* Department Banner */}
-                                <div className="relative h-48 md:h-64 bg-muted">
-                                    <Image
-                                        src={department.bannerImage || DepartmentText.PLACEHOLDER_IMAGE}
-                                        alt={`${department.name} team`}
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div
-                                        className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"/>
-
-                                    {/* Responsive Text */}
-                                    <div
-                                        className="relative flex flex-col justify-start p-4 md:absolute md:bottom-0 md:left-0 md:right-0 md:p-6">
-                                        <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-1 md:mb-2">{department.name}</h2>
-                                        <p className="text-sm md:text-pretty text-muted-foreground max-w-3xl">{department.description}</p>
-                                        {department.email && (
-                                            <a
-                                                href={`mailto:${department.email}`}
-                                                className="inline-flex items-center gap-1.5 text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors mt-2 break-all"
-                                            >
-                                                <Mail size={16} className="flex-shrink-0"/>
-                                                <span className="truncate">{department.email}</span>
-                                            </a>
-                                        )}
-                                    </div>
-                                </div>
-
-                                {/* Team Members */}
-                                <CardContent className="p-6">
-                                    <div
-                                        className={`grid grid-cols-1 gap-6 ${
-                                            department.team.length === 4
-                                                ? 'md:grid-cols-2'
-                                                : 'md:grid-cols-2 lg:grid-cols-3'
-                                        }`}
-                                    >
-                                        {department.team.map((member, index) => (
-                                            <div key={index} className="flex items-start gap-4">
-                                                <div
-                                                    className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
-                                                    <Image
-                                                        src={member.image || DepartmentText.PLACEHOLDER_IMAGE}
-                                                        alt={member.name}
-                                                        fill
-                                                        className="object-cover"
-                                                    />
-                                                </div>
-                                                <div className="flex-1 min-w-0">
-                                                    <h3 className="font-semibold text-foreground text-balance">{member.name}</h3>
-                                                    <p className="text-sm text-primary mb-2">{member.position}</p>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </CardContent>
-                            </Card>
+                            <DepartmentCard key={department.id} department={department} />
                         ))}
                     </div>
                 </div>
@@ -89,5 +29,62 @@ export default function DepartmentsPage() {
 
             <Footer/>
         </div>
-    )
+    );
+}
+
+function DepartmentCard({ department }: { department: typeof departments[number] }) {
+    return (
+        <Card className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors p-0">
+            {/* Banner Image */}
+            <div className="relative w-full h-64 sm:h-96 md:h-[400px]">
+                <Image
+                    src={department.bannerImage || DepartmentText.PLACEHOLDER_IMAGE}
+                    alt={`${department.name} team`}
+                    width={1200}
+                    height={300}
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"/>
+                <h2 className="absolute bottom-4 left-4 text-2xl md:text-4xl font-bold text-foreground">
+                    {department.name}
+                </h2>
+            </div>
+
+            {/* Description and Email BELOW the image */}
+            {(department.description || department.email) && (
+                <div className="px-6 py-4">
+                    {department.description && (
+                        <p className="text-sm md:text-pretty text-foreground mb-2">
+                            {department.description}
+                        </p>
+                    )}
+                    {department.email && (
+                        <a
+                            href={`mailto:${department.email}`}
+                            className="inline-flex items-center gap-1.5 text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors"
+                        >
+                            <Mail size={16} className="flex-shrink-0"/>
+                            <span className="truncate">{department.email}</span>
+                        </a>
+                    )}
+                </div>
+            )}
+
+            {/* Team Members */}
+            <CardContent className="p-6">
+                <div className={`grid grid-cols-1 gap-6 ${
+                    department.team.length === 4 ? 'md:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3'
+                }`}>
+                    {department.team.map((member, index) => (
+                        <div key={index} className="flex items-start gap-4">
+                            <div className="flex-1 min-w-0">
+                                <h3 className="font-semibold text-foreground text-balance">{member.name}</h3>
+                                <p className="text-sm text-primary mb-2">{member.position}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </CardContent>
+        </Card>
+    );
 }

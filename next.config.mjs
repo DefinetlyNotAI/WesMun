@@ -16,14 +16,7 @@ const securityHeaders = [
 
 // noinspection JSUnusedGlobalSymbols
 const nextConfig = {
-    images: {
-        localPatterns: [
-            {
-                // Match any file in the public folder and allow query strings (required in Next.js 16+)
-                pathname: "/:path*",
-            },
-        ],
-    },
+
     async headers() {
         return [
             {

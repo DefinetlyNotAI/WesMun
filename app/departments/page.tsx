@@ -36,13 +36,13 @@ function DepartmentCard({ department }: { department: typeof departments[number]
     return (
         <Card className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors p-0">
             {/* Banner Image */}
-            <div className="relative w-full h-64 sm:h-96 md:h-[400px]">
+            <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px]">
                 <Image
                     src={department.bannerImage || DepartmentText.PLACEHOLDER_IMAGE}
                     alt={`${department.name} team`}
                     width={1200}
                     height={300}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain sm:object-cover sm:h-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"/>
                 <h2 className="absolute bottom-4 left-4 text-2xl md:text-4xl font-bold text-foreground">

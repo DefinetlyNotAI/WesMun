@@ -21,12 +21,13 @@ export const faqs: FAQ[] = [
         id: "registration-cost",
         question: "How much does registration cost?",
         answer:
-            "Early bird registration is $45 per delegate (until February 1st), and regular registration is $60 per delegate. Group discounts are available for schools bringing 10+ delegates. Registration includes all conference materials, meals, and social events.",
+            "Early bird registration is 220 AED per delegate (until February 1st), and regular registration is 250 AED per delegate. Registration includes all conference materials, meals, and social events. More details can be found on the signup page.",
         category: "Registration",
     },
     {
         id: "registration-deadline",
         question: "When is the registration deadline?",
+        // TODO update deadline date
         answer:
             "The final registration deadline is March 1st, 2026. However, we encourage early registration as committee spots are limited and fill up quickly. Early bird pricing ends February 1st, 2026.",
         category: "Registration",
@@ -42,21 +43,14 @@ export const faqs: FAQ[] = [
         id: "country-assignment",
         question: "Can I choose which country I represent?",
         answer:
-            "You can indicate country preferences during registration, and we'll do our best to accommodate them. Final country assignments will be sent out two weeks before the conference along with your background guide.",
+            "You can indicate 3 country preferences during registration, and we'll do our best to accommodate them. Final country assignments will be sent out two weeks before the conference along with your background guide.",
         category: "Committees",
     },
     {
         id: "dress-code",
         question: "What is the dress code?",
         answer:
-            "Western business attire is required for all committee sessions. This typically means suits or blazers with dress pants/skirts for delegates. Casual attire is acceptable for social events. Specific guidelines will be provided in your delegate handbook.",
-        category: "Logistics",
-    },
-    {
-        id: "accommodation",
-        question: "Is accommodation provided?",
-        answer:
-            "WESMUN does not provide accommodation, but we have partnered with several local hotels offering discounted rates for conference attendees. A list of recommended hotels will be sent upon registration confirmation.",
+            "Western business attire is required for all committee sessions. This typically means suits or blazers with dress pants/skirts for delegates.",
         category: "Logistics",
     },
     {

@@ -74,32 +74,51 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                         </CardHeader>
                         <CardContent>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="flex items-center gap-4">
-                                    <Image
-                                        src={committee.chair.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
-                                        alt={committee.chair.name}
-                                        width={80}
-                                        height={80}
-                                        className="rounded-full object-cover border-2 border-primary"
-                                    />
-                                    <div>
-                                        <p className="text-lg font-semibold text-foreground">{committee.chair.name}</p>
-                                        <p className="text-sm text-muted-foreground">{CommitteeDetailPage.CHAIR_LABEL}</p>
+                                {committee.chair1 && (
+                                    <div className="flex items-center gap-4">
+                                        <Image
+                                            src={committee.chair1.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
+                                            alt={committee.chair1.name}
+                                            width={80}
+                                            height={80}
+                                            className="rounded-full object-cover border-2 border-primary"
+                                        />
+                                        <div>
+                                            <p className="text-lg font-semibold text-foreground">{committee.chair1.name}</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <Image
-                                        src={committee.viceChair.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
-                                        alt={committee.viceChair.name}
-                                        width={80}
-                                        height={80}
-                                        className="rounded-full object-cover border-2 border-primary"
-                                    />
-                                    <div>
-                                        <p className="text-lg font-semibold text-foreground">{committee.viceChair.name}</p>
-                                        <p className="text-sm text-muted-foreground">{CommitteeDetailPage.VICE_CHAIR_LABEL}</p>
+                                )}
+
+                                {committee.chair2 && (
+                                    <div className="flex items-center gap-4">
+                                        <Image
+                                            src={committee.chair2.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
+                                            alt={committee.chair2.name}
+                                            width={80}
+                                            height={80}
+                                            className="rounded-full object-cover border-2 border-primary"
+                                        />
+                                        <div>
+                                            <p className="text-lg font-semibold text-foreground">{committee.chair2.name}</p>
+                                        </div>
                                     </div>
-                                </div>
+                                )}
+
+                                {committee.chair3 && (
+                                    <div className="flex items-center gap-4">
+                                        <Image
+                                            src={committee.chair3.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
+                                            alt={committee.chair3.name}
+                                            width={80}
+                                            height={80}
+                                            className="rounded-full object-cover border-2 border-primary"
+                                        />
+                                        <div>
+                                            <p className="text-lg font-semibold text-foreground">{committee.chair3.name}</p>
+                                        </div>
+                                    </div>
+                                )}
+
                             </div>
                         </CardContent>
                     </Card>
@@ -132,21 +151,33 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     </Card>
 
                     {/* Action Buttons */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <Button asChild variant="outline" className="h-12 text-base bg-transparent">
                             <a href={committee.backgroundGuidePdf} download>
-                                <Download className="mr-2" size={18}/>
+                                <Download className="mr-2" size={12}/>
                                 {CommitteeDetailPage.DOWNLOAD_BG_GUIDE}
                             </a>
                         </Button>
+
                         <Button
                             asChild
                             className="h-12 text-base bg-primary text-primary-foreground hover:bg-primary/90"
                             onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                         >
-                            <Link href={committee.signupLink} target="_blank">
-                                {CommitteeDetailPage.APPLY_BUTTON}
-                                <ExternalLink className="ml-2" size={18}/>
+                            <Link href={committee.signupLink.internal} target="_blank">
+                                {CommitteeDetailPage.APPLY_BUTTON.INTERNAL}
+                                <ExternalLink className="ml-2" size={12}/>
+                            </Link>
+                        </Button>
+
+                        <Button
+                            asChild
+                            className="h-12 text-base bg-primary text-primary-foreground hover:bg-primary/90"
+                            onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
+                        >
+                            <Link href={committee.signupLink.external} target="_blank">
+                                {CommitteeDetailPage.APPLY_BUTTON.EXTERNAL}
+                                <ExternalLink className="ml-2" size={12}/>
                             </Link>
                         </Button>
                     </div>

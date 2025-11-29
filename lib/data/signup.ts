@@ -1,4 +1,9 @@
 // Sign Up Page Content
+export const signupBaseUrl = {
+    internal: "https://docs.google.com/forms/d/e/1FAIpQLSfbGvbvb7Um6DLoHWCLYRN9pdgRZQ7yfCtiR9OIlW9TAHNu9w/viewform",
+    external: "https://docs.google.com/forms/d/e/1FAIpQLSfOPO1rDcaC9m32TTtKGICWrcd8zjcF_sn0GvbbvIQsS9hZTA/viewform"
+};
+
 export const signUpPageContent = {
     title: "Register for WESMUN 2026",
     description: "Join us for an unforgettable Model UN experience. Choose your registration type below.",
@@ -19,7 +24,7 @@ export const signUpPageContent = {
             perksDescription:
                 "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
 
-            signupLink: "https://docs.google.com/forms/d/e/1FAIpQLSfbGvbvb7Um6DLoHWCLYRN9pdgRZQ7yfCtiR9OIlW9TAHNu9w/viewform",
+            signupLink: signupBaseUrl.internal,
         },
         {
             id: "external",
@@ -30,7 +35,7 @@ export const signUpPageContent = {
             perksDescription:
                 "Full conference access, materials, meals, social events, certificate of participation, and eligibility for awards.",
 
-            signupLink: "https://docs.google.com/forms/d/e/1FAIpQLSfOPO1rDcaC9m32TTtKGICWrcd8zjcF_sn0GvbbvIQsS9hZTA/viewform",
+            signupLink: signupBaseUrl.external,
         },
         {
             id: "team-member",

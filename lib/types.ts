@@ -1,20 +1,29 @@
 // Committees
+export interface signupLink {
+    internal: string,
+    external: string
+}
+
 export interface Committee {
     id: string
     name: string
     abbreviation: string
     description: string
     topics: string[]
-    chair: {
+    chair1: {
         name: string
         image: string
     }
-    viceChair: {
+    chair2?: {
+        name: string
+        image: string
+    }
+    chair3?: {
         name: string
         image: string
     }
     bannerImage: string
-    signupLink: string
+    signupLink: signupLink
     detailedDescription: string
     backgroundGuidePdf: string
     committeeSize: string

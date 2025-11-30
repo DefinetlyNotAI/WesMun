@@ -64,7 +64,7 @@ export const faqs: FAQ[] = [
         id: "awards",
         question: "Are there awards given at WESMUN?",
         answer:
-            "Yes! We recognize outstanding delegates with awards including Best Delegate, Outstanding Delegate, and Honorable Mention in each committee. Awards are based on research, diplomacy, speaking ability, and overall contribution to committee debate.",
+            "Yes! We recognize outstanding delegates with awards including Best Delegate, Distinguished Delegate, Best Orator and Best Research in each committee. Awards are based on research, diplomacy, speaking ability, and overall contribution to committee debate and are decided by your chairs.",
         category: "General",
     },
 ]

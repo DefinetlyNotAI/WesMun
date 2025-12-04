@@ -62,7 +62,7 @@ export const departments: Department[] = [
                 position: "Assistant Director of Logistics",
             },
             {
-                name: "Omar Wael",
+                name: "Omar Zedan",
                 position: "Assistant Director of Logistics",
             }
         ],
@@ -176,6 +176,17 @@ export const departments: Department[] = [
             },
         ],
     },
+    {
+        id: "crisis",
+        name: "Crisis",
+        description:
+            "Designing and managing dynamic crisis scenarios to enhance delegate engagement and problem-solving skills.",
+        bannerImage: "/img/dep/crisis.webp",
+        team: [
+            {name: "Talal Hassan", position: "Head of Crisis"},
+            {name: "Zaina Basil", position: "Head of Crisis"},
+        ],
+    }
 ]
 
 export const DepartmentText = {

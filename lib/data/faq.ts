@@ -21,17 +21,17 @@ export const faqs: FAQ[] = [
         id: "registration-cost",
         question: "How much does registration cost?",
         answer:
-            "Early bird registration is 220 AED per delegate (until February 1st), and regular registration is 250 AED per delegate. Registration includes all conference materials, meals, and social events. More details can be found on the signup page.",
+            "Early bird registration is 220 AED per delegate, and regular registration is 250 AED per delegate. Registration includes all conference materials, meals, and social events. More details can be found on the signup page.",
         category: "Registration",
     },
-    {
+    /*{
         id: "registration-deadline",
         question: "When is the registration deadline?",
         // TODO update deadline date
         answer:
             "The final registration deadline is March 1st, 2026. However, we encourage early registration as committee spots are limited and fill up quickly. Early bird pricing ends February 1st, 2026.",
         category: "Registration",
-    },
+    },*/
     {
         id: "committee-assignment",
         question: "How are committee assignments made?",
@@ -40,10 +40,10 @@ export const faqs: FAQ[] = [
         category: "Committees",
     },
     {
-        id: "country-assignment",
+        id: "committee-assignment",
         question: "Can I choose which country I represent?",
         answer:
-            "You can indicate 3 country preferences during registration, and we'll do our best to accommodate them. Final country assignments will be sent out two weeks before the conference along with your background guide.",
+            "Final country assignments will be sent out two weeks before the conference along with your background guide.",
         category: "Committees",
     },
     {

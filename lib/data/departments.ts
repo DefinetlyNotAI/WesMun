@@ -58,7 +58,7 @@ export const departments: Department[] = [
                 position: "Assistant Director of Logistics",
             },
             {
-                name: "Zain Al Barbawi",
+                name: "Zain Al Barbarawi",
                 position: "Assistant Director of Logistics",
             },
             {

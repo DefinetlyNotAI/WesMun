@@ -40,7 +40,7 @@ export const faqs: FAQ[] = [
         category: "Committees",
     },
     {
-        id: "committee-assignment",
+        id: "country-assignment",
         question: "Can I choose which country I represent?",
         answer:
             "Final country assignments will be sent out two weeks before the conference along with your background guide.",

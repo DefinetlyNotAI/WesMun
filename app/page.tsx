@@ -80,7 +80,7 @@ export default function HomePage() {
                         </div>
                         <Card className="bg-card border-border overflow-hidden">
                             <div className="w-full h-64 md:h-80 relative bg-muted">
-                                <Image src={MainText.SG_LETTER.image} alt="Secretaries General" fill
+                                <Image src={MainText.SG_LETTER.image} alt="Secretary Generals" fill
                                        className="object-cover"/>
                             </div>
                             <CardContent className="p-8 md:p-12">

@@ -24,7 +24,7 @@ export const navigationLinks = [
 // Secretary General Letter
 const [firstSG, secondSG] = departments.find(d => d.id === "secretariat")!.team.slice(0, 2);
 export const secretaryGeneralLetter = {
-    title: "Letter from the Secretaries General",
+    title: "Letter from the Secretary Generals",
     name: `${firstSG.name} & ${secondSG.name}`,
     position: "Secretary General",
     image: "/img/dep/sg.webp",

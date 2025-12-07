@@ -11,8 +11,7 @@ export const committees: Committee[] = [
         description: "UNICEF focuses on protecting children's rights, ensuring access to education, and responding to humanitarian crises worldwide.",
         detailedDescription: "UNICEF works globally to promote and protect the rights and well-being of every child, especially those affected by conflict, poverty, or displacement. Delegates will explore the intersection between geopolitics, humanitarian aid, and children’s welfare in the modern world.",
         topics: [
-            "Addressing the impact of geopolitical conflicts, sanctions, and occupations on children’s rights and access to aid.",
-            "Addressing how global challenges such as climate change, natural disasters, and pandemics affect children’s health and well-being."
+            "Addressing how global challenges such as climate change, natural disasters, and pandemics affect children's health and well-being."
         ],
         chair1: {name: "Wasiq Nabeel", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Ahmed Saad", image: "/placeholder.svg?height=300&width=300"},
@@ -77,8 +76,8 @@ export const committees: Committee[] = [
         description: "GA3 handles social, humanitarian, and cultural issues including human rights, equality, and social development.",
         detailedDescription: "This committee explores the human side of global politics. Delegates will address exploitation, conflict, and human rights abuses through multilateral negotiation.",
         topics: [
-            "Combating Human Trafficking and Modern Slavery in Transnational Networks.",
-            "Addressing Human Rights Violations Arising from Geopolitical Conflicts."
+            "Combating human trafficking and modern slavery in transnational networks.",
+            "Addressing human rights violations arising from geopolitical conflicts."
         ],
         chair1: {name: "Manthan Gulat", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Oshian", image: "/placeholder.svg?height=300&width=300"},
@@ -99,8 +98,8 @@ export const committees: Committee[] = [
         description: "A dynamic, debate-driven committee that simulates governance and ethical discussions within the Formula 1 world.",
         detailedDescription: "Delegates will analyze decision-making and fairness in the world’s most elite motorsport. They will assess safety, competitiveness, and consistency through structured policy debate.",
         topics: [
-            "Evaluating the Role of Sprint Races in Formula 1: Considering Whether to Retain, Modify, or Discontinue Them in Light of Competitive Balance, Safety, and Fan Engagement.",
-            "Ensuring Consistency in Driver Penalties: Weighing the Pursuit of Fairness Against the Complex and Variable Nature of Racing Incidents."
+            "Evaluating the role of sprint races in Formula 1: considering whether to retain, modify, or discontinue them in light of competitive balance, safety, and fan engagement.",
+            "Ensuring consistency in driver penalties: weighing the pursuit of fairness against the complex and variable nature of racing incidents."
         ],
         chair1: {name: "Adham Hamdy", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Omar Moamen", image: "/placeholder.svg?height=300&width=300"},
@@ -123,8 +122,8 @@ export const committees: Committee[] = [
         description: "GA1 focuses on international peace and security, disarmament, and the regulation of weapons and defense technologies.",
         detailedDescription: "Delegates in GA1 will debate the future of warfare, automation, and global defense compliance. The committee will focus on how new technologies reshape conflict and deterrence.",
         topics: [
-            "Addressing the challenges and risks posed by autonomous defense systems capable of mass destruction.",
-            "Strengthening verification mechanisms to ensure compliance with nuclear non-proliferation treaties."
+            "Regulating cross-border transfers of emerging military technologies.",
+            "Addressing the geopolitical risks of proxy conflicts and foreign military support."
         ],
         chair1: {name: "Leen Elgharably", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Khalid Ashraf", image: "/placeholder.svg?height=300&width=300"},
@@ -145,8 +144,8 @@ export const committees: Committee[] = [
         description: "A regional intergovernmental organization representing the Arab world, focused on unity, stability, and development.",
         detailedDescription: "The Arab League committee addresses critical regional issues affecting Arab states. Delegates will discuss information integrity, water scarcity, and political stability in the Middle East.",
         topics: [
-            "Addressing resource scarcity and water security as growing threats to regional stability and unity.",
-            "Discussing the external interference of information within Arab media networks."
+            "Addressing the rise in violence due to political corruption and the lack of cooperation between MENA countries.",
+            "Addressing resource scarcity and water security as growing threats to regional stability and unity."
         ],
         chair1: {name: "Layal Melhem", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Nadine Tabche", image: "/placeholder.svg?height=300&width=300"},
@@ -189,8 +188,8 @@ export const committees: Committee[] = [
         description: "UN Women advocates for gender equality and the empowerment of women globally.",
         detailedDescription: "Delegates will discuss feminism’s political dynamics and the evolving digital landscape for women’s rights. The committee tackles equality beyond slogans — through geopolitics and data.",
         topics: [
-            "Examining Feminism as a Geopolitical Tool and the Westernization of Gender Equality Narratives.",
-            "Discussing the challenges caused by Digital oppression of Women in the age of AI."
+            "Examining feminism as a geopolitical tool and the westernization of gender equality narratives.",
+            "Discussing the challenges caused by digital oppression of women in the age of AI."
         ],
         chair1: {name: "Anthony Sami", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Drishti Lohana", image: "/placeholder.svg?height=300&width=300"},
@@ -211,8 +210,8 @@ export const committees: Committee[] = [
         description: "ECOSOC coordinates the UN’s economic, social, and development activities across the globe.",
         detailedDescription: "Delegates will explore strategies to reduce inequality, strengthen cooperation, and fight transnational crime to secure global stability.",
         topics: [
-            "Addressing global economic inequality to strengthen international stability.",
-            "Combating transnational organized crime to protect global security and development."
+            "Addressing the economic and social impacts of automation and artificial intelligence on global employment and social development.",
+            "Addressing the global rise of human trafficking and modern slavery to enhance security and development."
         ],
         chair1: {name: "Lara Mazen", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Omar El Houssaini", image: "/placeholder.svg?height=300&width=300"},
@@ -235,8 +234,8 @@ export const committees: Committee[] = [
         description: "UNOOSA promotes international cooperation in the peaceful use and exploration of outer space.",
         detailedDescription: "Delegates will debate the governance of space as a shared domain. Topics include cybersecurity threats to satellites and militarization of orbit.",
         topics: [
-            "Addressing cybersecurity threats to Global satellite and space infrastructure.",
-            "Regulating military and commercial expansion in outer space."
+            "Governing space resource exploitation and mitigating the disastrous effects of space debris.",
+            "Addressing cybersecurity threats to global satellites and the sovereignty and governance of Earth's observational data."
         ],
         chair1: {name: "Alishba Ahmed", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Rohith John", image: "/placeholder.svg?height=300&width=300"},
@@ -257,8 +256,8 @@ export const committees: Committee[] = [
         description: "UNSC maintains international peace and security and has the authority to make binding resolutions.",
         detailedDescription: "A fast-paced and high-stakes committee dealing with global crises, security, and conflict intervention. Delegates must balance diplomacy, strategy, and realism.",
         topics: [
-            "Assessing the Security implications of private military and security companies.",
-            "Protecting international peace amid transnational terrorism and extremist networks."
+            "Protecting international peace amid transnational terrorism and extremist networks.",
+            "Assessing the geopolitical and security implications of foreign military bases in conflict-affected regions."
         ],
         chair1: {name: "Mishall Shahid", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Adithya Rajesh", image: "/placeholder.svg?height=300&width=300"},
@@ -279,8 +278,8 @@ export const committees: Committee[] = [
         description: "The PBC supports peace efforts in countries emerging from conflict and coordinates international aid for stability.",
         detailedDescription: "Delegates will tackle interference, AI ethics, and the complex post-conflict rebuilding process. The PBC demands diplomacy with long-term vision.",
         topics: [
-            "Preventing foreign interference and proxy influence in post-conflict states.",
-            "Examining the ethical and security challenges of using artificial intelligence in peacekeeping."
+            "Addressing the militarization of humanitarian aid in active and post-conflict zones and its implications for peacebuilding.",
+            "Addressing how gender-based political violence and structural discrimination hinder women's role in peacebuilding."
         ],
         chair1: {name: "Qurratulain Azza Kazmi", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Eshal Khan", image: "/placeholder.svg?height=300&width=300"},

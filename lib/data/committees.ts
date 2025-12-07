@@ -17,7 +17,7 @@ export const committees: Committee[] = [
         chair1: {name: "Wasiq Nabeel", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Ahmed Saad", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Zeina Islam", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/unicef.svg",
+        bannerImage: "/com/banner/unicef.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -39,7 +39,7 @@ export const committees: Committee[] = [
         chair1: {name: "William Bryant", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Hussam El Haj", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Habiba Mohamed", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/who.svg",
+        bannerImage: "/com/banner/who.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -61,7 +61,7 @@ export const committees: Committee[] = [
         chair1: {name: "Aaradhya Vij", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Imani Karabu", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Ayten Toeima", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/unhrc.svg",
+        bannerImage: "/com/banner/unhrc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -83,7 +83,7 @@ export const committees: Committee[] = [
         chair1: {name: "Manthan Gulat", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Oshian", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Tasnime Zermout", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/ga3.svg",
+        bannerImage: "/com/banner/ga3.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -105,7 +105,7 @@ export const committees: Committee[] = [
         chair1: {name: "Adham Hamdy", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Omar Moamen", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Rayyan Chams", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/f1.svg",
+        bannerImage: "/com/banner/f1.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -129,7 +129,7 @@ export const committees: Committee[] = [
         chair1: {name: "Leen Elgharably", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Khalid Ashraf", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Rahul Girish", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/ga1.svg",
+        bannerImage: "/com/banner/ga1.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -151,7 +151,7 @@ export const committees: Committee[] = [
         chair1: {name: "Layal Melhem", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Nadine Tabche", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Fatima Hatem", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/arab-league.svg",
+        bannerImage: "/com/banner/arab-league.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -173,7 +173,7 @@ export const committees: Committee[] = [
         chair1: {name: "Kabeer Anil", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Amaan Anas Mohtasham", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Ayia Waleed", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/unodc.svg",
+        bannerImage: "/com/banner/unodc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -195,7 +195,7 @@ export const committees: Committee[] = [
         chair1: {name: "Anthony Sami", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Drishti Lohana", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Kamilia Akbar", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/unw.svg",
+        bannerImage: "/com/banner/unw.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -217,7 +217,7 @@ export const committees: Committee[] = [
         chair1: {name: "Lara Mazen", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Omar El Houssaini", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Lynn Hassan", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/ecosoc.svg",
+        bannerImage: "/com/banner/ecosoc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -241,7 +241,7 @@ export const committees: Committee[] = [
         chair1: {name: "Alishba Ahmed", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Rohith John", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Shohaima Akhtar", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/unoosa.svg",
+        bannerImage: "/com/banner/unoosa.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -263,7 +263,7 @@ export const committees: Committee[] = [
         chair1: {name: "Mishall Shahid", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Adithya Rajesh", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Antony Michael", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/unsc.svg",
+        bannerImage: "/com/banner/unsc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -285,7 +285,7 @@ export const committees: Committee[] = [
         chair1: {name: "Qurratulain Azza Kazmi", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Eshal Khan", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Dhruv Hitesh", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/pbc.svg",
+        bannerImage: "/com/banner/pbc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -304,7 +304,7 @@ export const committees: Committee[] = [
         chair1: {name: "Ram Prasad", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Joshua John Ligo", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Dua Ghani", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/interpol.svg",
+        bannerImage: "/com/banner/interpol.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
@@ -323,7 +323,7 @@ export const committees: Committee[] = [
         chair1: {name: "Eyad Samara", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Hamza Mohamad", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Rawan Helali", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/banners/hcc.svg",
+        bannerImage: "/com/banner/hcc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`

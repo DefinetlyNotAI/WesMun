@@ -18,7 +18,7 @@ export const committees: Committee[] = [
         chair3: {name: "Tasnime Zermout", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unicef.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNICEF+(junior)&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/unicef.pdf",
@@ -40,7 +40,7 @@ export const committees: Committee[] = [
         chair3: {name: "Habiba Mohamed", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/who.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=WHO&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/who.pdf",
@@ -62,7 +62,7 @@ export const committees: Committee[] = [
         chair3: {name: "Ayten Toeima", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unhrc.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNHRC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/unhrc.pdf",
@@ -84,7 +84,7 @@ export const committees: Committee[] = [
         chair3: {name: "Tasnime Zermout", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/ga3.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=GA3&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/ga3.pdf",
@@ -106,7 +106,7 @@ export const committees: Committee[] = [
         chair3: {name: "Rayyan Chams", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/f1.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=F1&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/f1.pdf",
@@ -130,7 +130,7 @@ export const committees: Committee[] = [
         chair3: {name: "Rahul Girish", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/ga1.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=GA1&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/ga1.pdf",
@@ -152,7 +152,7 @@ export const committees: Committee[] = [
         chair3: {name: "Fatima Hatem", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/arab-league.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=Arab+League+(AR)&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/arab-league.pdf",
@@ -174,7 +174,7 @@ export const committees: Committee[] = [
         chair3: {name: "Ayia Waleed", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unodc.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNODC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/unodc.pdf",
@@ -196,7 +196,7 @@ export const committees: Committee[] = [
         chair3: {name: "Kamilia Akbar", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unw.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNWOMEN&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/unw.pdf",
@@ -218,7 +218,7 @@ export const committees: Committee[] = [
         chair3: {name: "Lynn Hassan", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/ecosoc.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=ECOSOC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/ecosoc.pdf",
@@ -242,7 +242,7 @@ export const committees: Committee[] = [
         chair3: {name: "Shohaima Akhtar", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unoosa.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNOOSA&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/unoosa.pdf",
@@ -264,7 +264,7 @@ export const committees: Committee[] = [
         chair3: {name: "Antony Michael", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unsc.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNSC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/unsc.pdf",
@@ -286,7 +286,7 @@ export const committees: Committee[] = [
         chair3: {name: "Dhruv Hitesh", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/pbc.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=PBC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/pbc.pdf",
@@ -305,7 +305,7 @@ export const committees: Committee[] = [
         chair3: {name: "Dua Ghani", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/interpol.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=INTERPOL&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/interpol.pdf",
@@ -324,7 +324,7 @@ export const committees: Committee[] = [
         chair3: {name: "Rawan Helali", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/hcc.svg",
         signupLink: {
-            internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=HCC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
         },
         backgroundGuidePdf: "/guides/hcc.pdf",

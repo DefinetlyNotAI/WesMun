@@ -19,7 +19,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/unicef.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNICEF+(junior)&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNICEF+(junior)&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unicef.pdf",
         committeeSize: "35-45 delegates",
@@ -41,7 +41,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/who.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=WHO&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=WHO&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/who.pdf",
         committeeSize: "25-30 delegates",
@@ -63,7 +63,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/unhrc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNHRC&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNHRC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unhrc.pdf",
         committeeSize: "30-35 delegates",
@@ -85,7 +85,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/ga3.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=GA3&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=GA3&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/ga3.pdf",
         committeeSize: "40-50 delegates",
@@ -107,7 +107,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/f1.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=F1&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=F1&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/f1.pdf",
         committeeSize: "20-25 delegates",
@@ -131,7 +131,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/ga1.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=GA1&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=GA1&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/ga1.pdf",
         committeeSize: "35 delegates",
@@ -153,7 +153,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/arab-league.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=Arab+League+(AR)&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=Arab+League+(AR)&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/arab-league.pdf",
         committeeSize: "30 delegates",
@@ -175,7 +175,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/unodc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNODC&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNODC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unodc.pdf",
         committeeSize: "25-30 delegates",
@@ -197,7 +197,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/unw.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNWOMEN&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNWOMEN&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unw.pdf",
         committeeSize: "30 delegates",
@@ -219,7 +219,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/ecosoc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=ECOSOC&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=ECOSOC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/ecosoc.pdf",
         committeeSize: "30 delegates",
@@ -243,7 +243,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/unoosa.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNOOSA&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNOOSA&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unoosa.pdf",
         committeeSize: "20 delegates",
@@ -265,7 +265,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/unsc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNSC&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNSC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unsc.pdf",
         committeeSize: "15 delegates",
@@ -287,7 +287,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/pbc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=PBC&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=PBC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/pbc.pdf",
         committeeSize: "20 delegates",
@@ -306,7 +306,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/interpol.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=INTERPOL&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=INTERPOL&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/interpol.pdf",
         committeeSize: "CLASSIFIED",
@@ -325,7 +325,7 @@ export const committees: Committee[] = [
         bannerImage: "/com/banner/hcc.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=HCC&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?COMMITTEE=TYPE`
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=HCC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/hcc.pdf",
         committeeSize: "CLASSIFIED",

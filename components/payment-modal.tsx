@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
-import { createPortal } from "react-dom"
+import React, {useEffect, useRef, useState} from "react"
+import {createPortal} from "react-dom"
 
 type PaymentInstructions = Record<string, string[]>
 
@@ -11,7 +11,7 @@ type Props = {
     instructions: PaymentInstructions
 }
 
-export default function PaymentModal({ open, onCloseAction, instructions }: Props) {
+export default function PaymentModal({open, onCloseAction, instructions}: Props) {
     const [mounted, setMounted] = useState(false)
     const modalRoot = useRef<HTMLElement | null>(null)
 
@@ -33,9 +33,11 @@ export default function PaymentModal({ open, onCloseAction, instructions }: Prop
     // Close on Esc
     useEffect(() => {
         if (!open) return
+
         function onKey(e: KeyboardEvent) {
             if (e.key === "Escape") onCloseAction()
         }
+
         window.addEventListener("keydown", onKey)
         return () => window.removeEventListener("keydown", onKey)
     }, [open, onCloseAction])
@@ -90,13 +92,13 @@ export default function PaymentModal({ open, onCloseAction, instructions }: Prop
                     >
                         <div className="p-4 sm:p-6 max-h-[70vh] overflow-y-auto">
                             <div className="flex items-start justify-between">
-                                <h3 className="text-lg font-semibold" style={{ color: "#e0aa3e" }}>
+                                <h3 className="text-lg font-semibold" style={{color: "#e0aa3e"}}>
                                     Payment Instructions
                                 </h3>
                                 <button
                                     onClick={onCloseAction}
                                     className="ml-4 transition-colors"
-                                    style={{ color: "#e0aa3e" }}
+                                    style={{color: "#e0aa3e"}}
                                     onMouseEnter={(e) => (e.currentTarget.style.color = "#f0d28a")}
                                     onMouseLeave={(e) => (e.currentTarget.style.color = "#e0aa3e")}
                                     aria-label="Close payment instructions"
@@ -108,10 +110,10 @@ export default function PaymentModal({ open, onCloseAction, instructions }: Prop
                             <div className="mt-4 text-sm space-y-4">
                                 {Object.entries(instructions).map(([key, steps]) => (
                                     <div key={key}>
-                                        <h4 className="font-medium mb-2 capitalize" style={{ color: "#e0aa3e" }}>
+                                        <h4 className="font-medium mb-2 capitalize" style={{color: "#e0aa3e"}}>
                                             {key}
                                         </h4>
-                                        <ol className="list-decimal list-inside space-y-1" style={{ color: "#d29a33" }}>
+                                        <ol className="list-decimal list-inside space-y-1" style={{color: "#d29a33"}}>
                                             {steps.map((step, i) => (
                                                 <li key={i} className="leading-relaxed">
                                                     {step.split(/(\{\{.*?}})/g).map((part, pi) => {
@@ -123,7 +125,7 @@ export default function PaymentModal({ open, onCloseAction, instructions }: Prop
                                                                     key={pi}
                                                                     href={`mailto:${email}`}
                                                                     className="underline transition-colors"
-                                                                    style={{ color: "#e0aa3e" }}
+                                                                    style={{color: "#e0aa3e"}}
                                                                     onMouseEnter={(e) => (e.currentTarget.style.color = "#f0d28a")}
                                                                     onMouseLeave={(e) => (e.currentTarget.style.color = "#e0aa3e")}
                                                                 >

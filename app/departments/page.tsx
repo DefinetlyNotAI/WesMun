@@ -21,7 +21,7 @@ export default function DepartmentsPage() {
 
                     <div className="space-y-12">
                         {departments.map((department) => (
-                            <DepartmentCard key={department.id} department={department} />
+                            <DepartmentCard key={department.id} department={department}/>
                         ))}
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default function DepartmentsPage() {
     );
 }
 
-function DepartmentCard({ department }: { department: typeof departments[number] }) {
+function DepartmentCard({department}: { department: typeof departments[number] }) {
     return (
         <Card className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors p-0">
             {/* Banner Image */}

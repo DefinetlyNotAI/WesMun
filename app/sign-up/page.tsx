@@ -45,18 +45,23 @@ export default function SignUpPage() {
                             <Card key={type.id} className="bg-card border-border relative flex flex-col">
                                 <CardHeader className="text-center pb-4">
                                     <CardTitle className="text-2xl mb-2">{type.name}</CardTitle>
-                                    <CardDescription className="text-sm min-h-[40px]">{type.description}</CardDescription>
+                                    <CardDescription
+                                        className="text-sm min-h-[40px]">{type.description}</CardDescription>
                                     <div className="mt-4">
                                         {isEarlyBird && type.earlyBirdPrice ? (
                                             <>
-                                                <div className="text-sm text-muted-foreground line-through">{type.price}</div>
-                                                <span className="text-4xl font-bold text-primary">{type.earlyBirdPrice}</span>
-                                                <div className="text-xs text-muted-foreground mt-1">{SignUpText.EARLY_BIRD_LABEL}</div>
+                                                <div
+                                                    className="text-sm text-muted-foreground line-through">{type.price}</div>
+                                                <span
+                                                    className="text-4xl font-bold text-primary">{type.earlyBirdPrice}</span>
+                                                <div
+                                                    className="text-xs text-muted-foreground mt-1">{SignUpText.EARLY_BIRD_LABEL}</div>
                                             </>
                                         ) : (
                                             <>
                                                 <span className="text-4xl font-bold text-primary">{type.price}</span>
-                                                <div className="text-xs text-muted-foreground mt-1">{SignUpText.REGULAR_PRICE_LABEL}</div>
+                                                <div
+                                                    className="text-xs text-muted-foreground mt-1">{SignUpText.REGULAR_PRICE_LABEL}</div>
                                             </>
                                         )}
                                     </div>
@@ -75,10 +80,10 @@ export default function SignUpPage() {
                                         <Button
                                             asChild
                                             className="w-full h-11 bg-primary text-primary-foreground hover:bg-primary/90"
-                                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                                            onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                                         >
                                             <Link href={type.signupLink} target="_blank">
-                                                {SignUpText.REGISTER_NOW} <ExternalLink className="ml-2" size={16} />
+                                                {SignUpText.REGISTER_NOW} <ExternalLink className="ml-2" size={16}/>
                                             </Link>
                                         </Button>
                                     ) : (

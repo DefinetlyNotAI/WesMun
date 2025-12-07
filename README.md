@@ -37,7 +37,9 @@ such as committees, team members, schedules, and more.
 ## Features
 
 ### Core Functionality
-- **Committee Management**: Dynamic committee pages with detailed information, background guides, chair profiles, and difficulty levels
+
+- **Committee Management**: Dynamic committee pages with detailed information, background guides, chair profiles, and
+  difficulty levels
 - **Department Showcase**: Comprehensive department pages featuring team members, roles, and contact information
 - **Event Countdown**: Real-time countdown timer to WESMUN event start date
 - **Registration System**: Integrated sign-up forms with payment modal for delegate registration
@@ -45,6 +47,7 @@ such as committees, team members, schedules, and more.
 - **Contact Page**: Easy-to-access contact information with social media links
 
 ### Technical Features
+
 - **Next.js 15**: Built with the latest Next.js framework for optimal performance and SEO
 - **TypeScript**: Fully typed codebase for better development experience and fewer bugs
 - **Server-Side Rendering**: Fast page loads and improved SEO with SSR capabilities
@@ -57,6 +60,7 @@ such as committees, team members, schedules, and more.
 - **Optimized Images**: Next.js Image component for automatic image optimization
 
 ### Design & UX
+
 - **Custom Typography**: Playfair Display font for elegant headings
 - **Gradient Backgrounds**: Modern gradient effects and visual polish
 - **Interactive Cards**: Hover effects and smooth transitions throughout

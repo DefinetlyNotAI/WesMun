@@ -1,10 +1,10 @@
 import CommitteeDetailPageClient from "./CommitteeDetailPageClient"
-import { notFound } from "next/navigation"
-import { committees } from "@/lib/data/committees"
+import {notFound} from "next/navigation"
+import {committees} from "@/lib/data/committees"
 
 // Generate static paths for SSG
 export function generateStaticParams() {
-    return committees.map((committee) => ({ id: committee.id }))
+    return committees.map((committee) => ({id: committee.id}))
 }
 
 // Server component
@@ -27,5 +27,5 @@ export default async function CommitteeDetailPage(props: any) {
         notFound()
     }
 
-    return <CommitteeDetailPageClient committee={committee} />
+    return <CommitteeDetailPageClient committee={committee}/>
 }

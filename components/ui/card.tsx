@@ -47,6 +47,7 @@ function CardDescription({className, ...props}: React.ComponentProps<'div'>) {
         />
     )
 }
+
 function CardContent({className, ...props}: React.ComponentProps<'div'>) {
     return (
         <div
@@ -56,6 +57,7 @@ function CardContent({className, ...props}: React.ComponentProps<'div'>) {
         />
     )
 }
+
 export {
     Card,
     CardHeader,

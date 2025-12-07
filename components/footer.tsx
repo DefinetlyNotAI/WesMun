@@ -65,7 +65,7 @@ export function Footer() {
                     <p>
                         &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
                     </p>
-                    <DeploymentInfo />
+                    <DeploymentInfo/>
                 </div>
             </div>
         </footer>

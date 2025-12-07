@@ -13,9 +13,9 @@ export const committees: Committee[] = [
         topics: [
             "Addressing how global challenges such as climate change, natural disasters, and pandemics affect children's health and well-being."
         ],
-        chair1: {name: "Wasiq Nabeel", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Ahmed Saad", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Zeina Islam", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Raghad Mohammed", image: "/placeholder.svg?height=300&width=300"},
+        chair2: {name: "Oshian Thada Magar", image: "/placeholder.svg?height=300&width=300"},
+        chair3: {name: "Tasnime Zermout", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/com/banner/unicef.svg",
         signupLink: {
             internal: `${signupBaseUrl.internal}?COMMITTEE=TYPE`,

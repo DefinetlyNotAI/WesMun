@@ -210,8 +210,8 @@ export const committees: Committee[] = [
         description: "ECOSOC coordinates the UN’s economic, social, and development activities across the globe.",
         detailedDescription: "Delegates will explore strategies to reduce inequality, strengthen cooperation, and fight transnational crime to secure global stability.",
         topics: [
-            "Addressing the economic and social impacts of automation and artificial intelligence on global employment and social development.",
-            "Addressing the global rise of human trafficking and modern slavery to enhance security and development."
+            "Addressing the Geopolitical and Economic Effects of AI on Global Employment and Social Development.",
+            "Addressing the rise of human trafficking networks and modern slavery as a major transnational threat to security and development."
         ],
         chair1: {name: "Lara Mazen", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Omar El Houssaini", image: "/placeholder.svg?height=300&width=300"},

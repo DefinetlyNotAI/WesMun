@@ -20,12 +20,12 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-muted/20 to-background"/>
+                <div className="absolute inset-0 bg-linear-to-b from-muted/20 to-background"/>
                 <div className="container mx-auto relative z-10">
                     <div className="max-w-4xl mx-auto text-center animate-in fade-in duration-1000">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-title mb-6 text-balance whitespace-normal sm:whitespace-nowrap">
                             {MainText.title.split(" ").slice(0, -1).join(" ")}{" "}
-                            <span className="text-[#e0aa3e]">{MainText.title.split(" ").slice(-1)}</span>
+                            <span className="text-primary">{MainText.title.split(" ").slice(-1)}</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-primary font-semibold mb-4 text-balance">{MainText.theme}</p>
                         <p className="text-base md:text-lg text-muted-foreground mb-8 text-pretty">{MainText.description}</p>

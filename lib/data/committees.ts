@@ -16,7 +16,7 @@ export const committees: Committee[] = [
         chair1: {name: "Raghad Mohammed", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Oshian Thada Magar", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Tasnime Zermout", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/unicef.svg",
+        bannerImage: "/img/com/banner/unicef.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNICEF+(junior)&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNICEF+(junior)&entry.905580654=Yes`
@@ -36,9 +36,9 @@ export const committees: Committee[] = [
             "Addressing digital warfare and psychological manipulation and their impact on global mental health through information control."
         ],
         chair1: {name: "William Bryant", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Hussam El Haj", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Habiba Mohamed", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/who.svg",
+        chair2: {name: "Hussam El Haj", image: "/img/com/single/Hussam_El_Haj_WHO.webp"},
+        chair3: {name: "Habiba Mohamed", image: "/img/com/single/Habiba_MohamedWHO.webp"},
+        bannerImage: "/img/com/banner/who.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=WHO&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=WHO&entry.905580654=Yes`
@@ -59,8 +59,8 @@ export const committees: Committee[] = [
         ],
         chair1: {name: "Aaradhya Vij", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Imani Karabu", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Ayten Toeima", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/unhrc.svg",
+        chair3: {name: "Ayten Toeima", image: "/img/com/single/AytenToeimaUNHRC.webp"},
+        bannerImage: "/img/com/banner/unhrc.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNHRC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNHRC&entry.905580654=Yes`
@@ -71,7 +71,7 @@ export const committees: Committee[] = [
     },
     {
         id: "ga3",
-        name: "General Assembly Third Committee (SOCHUM)",
+        name: "General Assembly Third Committee",
         abbreviation: "GA3",
         description: "GA3 handles social, humanitarian, and cultural issues including human rights, equality, and social development.",
         detailedDescription: "This committee explores the human side of global politics. Delegates will address exploitation, conflict, and human rights abuses through multilateral negotiation.",
@@ -101,10 +101,10 @@ export const committees: Committee[] = [
             "Evaluating the role of sprint races in Formula 1: considering whether to retain, modify, or discontinue them in light of competitive balance, safety, and fan engagement.",
             "Ensuring consistency in driver penalties: weighing the pursuit of fairness against the complex and variable nature of racing incidents."
         ],
-        chair1: {name: "Adham Hamdy", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Omar Moamen", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Adham Hamdy", image: "/img/com/single/Adham_Hamdy_F1.webp"},
+        chair2: {name: "Omar Moamen", image: "/img/com/single/Omar_Moamen_F1.webp"},
         chair3: {name: "Rayyan Chams", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/f1.svg",
+        bannerImage: "/img/com/banner/f1.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=F1&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=F1&entry.905580654=Yes`
@@ -125,10 +125,10 @@ export const committees: Committee[] = [
             "Regulating cross-border transfers of emerging military technologies.",
             "Addressing the geopolitical risks of proxy conflicts and foreign military support."
         ],
-        chair1: {name: "Leen Elgharably", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Khalid Ashraf", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Leen Elgharably", image: "/img/com/single/Leen_ElgharablyGA1.webp"},
+        chair2: {name: "Khalid Ashraf", image: "/img/com/single/Khalid_Ashraf_GA1.webp"},
         chair3: {name: "Rahul Girish", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/ga1.svg",
+        bannerImage: "/img/com/banner/ga1.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=GA1&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=GA1&entry.905580654=Yes`
@@ -147,10 +147,10 @@ export const committees: Committee[] = [
             "Addressing the rise in violence due to political corruption and the lack of cooperation between MENA countries.",
             "Addressing resource scarcity and water security as growing threats to regional stability and unity."
         ],
-        chair1: {name: "Layal Melhem", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Nadine Tabche", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Fatima Hatem", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/arab-league.svg",
+        chair1: {name: "Layal Melhem", image: "/img/com/single/Layal_Melhem_AL.webp"},
+        chair2: {name: "Nadine Tabche", image: "/img/com/single/Nadine_TabcheAL.webp"},
+        chair3: {name: "Fatima Hatem", image: "/img/com/single/Fatima_Hatem_AL.webp"},
+        bannerImage: "/img/com/banner/AL.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=Arab+League+(AR)&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=Arab+League+(AR)&entry.905580654=Yes`
@@ -169,10 +169,10 @@ export const committees: Committee[] = [
             "Addressing the challenges faced by individuals who use substances, including homelessness, violence, and the impact of drug distribution.",
             "Addressing the causes of cybercrime and terrorism financing through digital and financial networks."
         ],
-        chair1: {name: "Kabeer Anil", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Amaan Anas Mohtasham", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Ayia Waleed", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/unodc.svg",
+        chair1: {name: "Kabeer Anil", image: "/img/com/single/Kabeer_Anil_UNODC.webp"},
+        chair2: {name: "Amaan Anas Mohtasham", image: "/img/com/single/Amaan_Anas_MohtashamUNODC.webp"},
+        chair3: {name: "Ayia Waleed", image: "/img/com/single/Ayia_Waleed_UNODC.webp"},
+        bannerImage: "/img/com/banner/unodc.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNODC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNODC&entry.905580654=Yes`
@@ -191,10 +191,10 @@ export const committees: Committee[] = [
             "Examining feminism as a geopolitical tool and the westernization of gender equality narratives.",
             "Discussing the challenges caused by digital oppression of women in the age of AI."
         ],
-        chair1: {name: "Anthony Sami", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Anthony Sami", image: "/img/com/single/Anthony_Sami_UNW.webp"},
         chair2: {name: "Drishti Lohana", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Kamilia Akbar", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/unw.svg",
+        chair3: {name: "Kamilia Akbar", image: "/img/com/single/Kamilia_Imtiaz_UNW.webp"},
+        bannerImage: "/img/com/banner/unw.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNWOMEN&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNWOMEN&entry.905580654=Yes`
@@ -213,10 +213,10 @@ export const committees: Committee[] = [
             "Addressing the Geopolitical and Economic Effects of AI on Global Employment and Social Development.",
             "Addressing the rise of human trafficking networks and modern slavery as a major transnational threat to security and development."
         ],
-        chair1: {name: "Lara Mazen", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Omar El Houssaini", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Lara Mazen", image: "/img/com/single/Lara_Ameen_ECOSOC.webp"},
+        chair2: {name: "Omar El Houssaini", image: "/img/com/single/Omar_El_Houssaini_ECOSOC.webp"},
         chair3: {name: "Lynn Hassan", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/ecosoc.svg",
+        bannerImage: "/img/com/banner/ecosoc.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=ECOSOC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=ECOSOC&entry.905580654=Yes`
@@ -237,10 +237,10 @@ export const committees: Committee[] = [
             "Governing space resource exploitation and mitigating the disastrous effects of space debris.",
             "Addressing cybersecurity threats to global satellites and the sovereignty and governance of Earth's observational data."
         ],
-        chair1: {name: "Alishba Ahmed", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Rohith John", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Alishba Ahmed", image: "/img/com/single/Alishba_Ahmed_UNOOSA.webp"},
+        chair2: {name: "Rohith John", image: "/img/com/single/Rohith_John_UNOOSA.webp"},
         chair3: {name: "Shohaima Akhtar", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/unoosa.svg",
+        bannerImage: "/img/com/banner/unoosa.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNOOSA&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNOOSA&entry.905580654=Yes`
@@ -259,10 +259,10 @@ export const committees: Committee[] = [
             "Protecting international peace amid transnational terrorism and extremist networks.",
             "Assessing the geopolitical and security implications of foreign military bases in conflict-affected regions."
         ],
-        chair1: {name: "Mishall Shahid", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Adithya Rajesh", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Antony Michael", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/unsc.svg",
+        chair1: {name: "Mishall Shahid", image: "/img/com/single/Mishall_Shahid_UNSC.webp"},
+        chair2: {name: "Adithya Rajesh", image: "/img/com/single/Adithya_Rajesh_UNSC.webp"},
+        chair3: {name: "Antony Michael", image: "/img/com/single/Antony_Michael_UNSC.webp"},
+        bannerImage: "/img/com/banner/unsc.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNSC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNSC&entry.905580654=Yes`
@@ -281,10 +281,10 @@ export const committees: Committee[] = [
             "Addressing the militarization of humanitarian aid in active and post-conflict zones and its implications for peacebuilding.",
             "Addressing how gender-based political violence and structural discrimination hinder women's role in peacebuilding."
         ],
-        chair1: {name: "Qurratulain Azza Kazmi", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Qurratulain Azza Kazmi", image: "/img/com/single/QurratulainAzzaKazmi_PBC.webp"},
         chair2: {name: "Eshal Khan", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Dhruv Hitesh", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/pbc.svg",
+        chair3: {name: "Dhruv Hitesh", image: "/img/com/single/Dhruv_Hitesh_PBC.webp"},
+        bannerImage: "/img/com/banner/pbc.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=PBC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=PBC&entry.905580654=Yes`
@@ -300,10 +300,10 @@ export const committees: Committee[] = [
         description: "CLASSIFIED",
         detailedDescription: "CLASSIFIED INFORMATION",
         topics: ["CLASSIFIED INFORMATION"],
-        chair1: {name: "Ram Prasad", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Ram Prasad", image: "/img/com/single/Ram_Prasad_INTERPOL.webp"},
         chair2: {name: "Joshua John Ligo", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Dua Ghani", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/interpol.svg",
+        chair3: {name: "Dua Ghani", image: "/img/com/single/Dua_Ghani_INTERPOL.webp"},
+        bannerImage: "/img/com/banner/interpol.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=INTERPOL&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=INTERPOL&entry.905580654=Yes`
@@ -319,10 +319,10 @@ export const committees: Committee[] = [
         description: "CLASSIFIED",
         detailedDescription: "CLASSIFIED INFORMATION",
         topics: ["CLASSIFIED INFORMATION"],
-        chair1: {name: "Eyad Samara", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Hamza Mohamad", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Rawan Helali", image: "/placeholder.svg?height=300&width=300"},
-        bannerImage: "/com/banner/hcc.svg",
+        chair1: {name: "Eyad Samara", image: "/img/com/single/Eyad_Samara_HCC.webp"},
+        chair2: {name: "Hamza Mohamad", image: "/img/com/single/Hamza_Mohamad_Al_Wahsh_HCC.webp"},
+        chair3: {name: "Rawan Helali", image: "/img/com/single/Rawan_Helali_HCC.webp"},
+        bannerImage: "/img/com/banner/hcc_final.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=HCC&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=HCC&entry.905580654=Yes`

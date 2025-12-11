@@ -36,6 +36,8 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                             src={committee.bannerImage || CommitteeDetailPage.PLACEHOLDER_IMAGE}
                             alt={`${committee.name} Banner`}
                             fill
+                            priority
+                            sizes="(max-width: 1280px) 100vw, 1280px"
                             className="object-cover"
                         />
                     </div>

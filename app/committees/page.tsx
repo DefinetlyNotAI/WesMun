@@ -35,6 +35,7 @@ export default function CommitteesPage() {
                                             src={committee.bannerImage || CommitteeText.PLACEHOLDER_IMAGE}
                                             alt={`${committee.name} Banner`}
                                             fill
+                                            sizes="(max-width: 1024px) 100vw, 50vw"
                                             className="object-cover"
                                         />
                                     </div>

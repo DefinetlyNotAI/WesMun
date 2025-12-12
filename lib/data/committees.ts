@@ -239,7 +239,6 @@ export const committees: Committee[] = [
         ],
         chair1: {name: "Alishba Ahmed", image: "/img/com/single/Alishba_Ahmed_UNOOSA.webp"},
         chair2: {name: "Rohith John", image: "/img/com/single/Rohith_John_UNOOSA.webp"},
-        chair3: {name: "Shohaima Akhtar", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/img/com/banner/unoosa.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNOOSA&entry.1245311872=Yes`,

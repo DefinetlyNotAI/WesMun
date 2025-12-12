@@ -15,6 +15,17 @@ export default function CommitteesPage() {
     const [query, setQuery] = useState("")
     const [difficulty, setDifficulty] = useState<"All" | "Beginner" | "Intermediate" | "Advanced">("All")
 
+    // EASTER EGG
+    const handleSearch = (q: string) => {
+        const normalized = q.trim().toLowerCase()
+        if (normalized === 'shahm') {
+            const rickroll = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            // open rickroll in a new tab and redirect current tab to the GitHub profile
+            window.open(rickroll, '_blank', 'noopener,noreferrer')
+            window.location.href = 'https://github.com/DefinetlyNotAI'
+        }
+    }
+
     const filtered = useMemo(() => {
         const q = query.trim().toLowerCase()
         return committees.filter((c) => {
@@ -47,6 +58,12 @@ export default function CommitteesPage() {
                             <input
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter') {
+                                        e.preventDefault()
+                                        handleSearch(query)
+                                    }
+                                }}
                                 placeholder="Search committees..."
                                 className="w-full bg-muted border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
                                 aria-label="Search committees"

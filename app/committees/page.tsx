@@ -1,5 +1,6 @@
 "use client"
 
+import React, {useMemo, useState} from "react"
 import Link from "next/link"
 import Image from "next/image"
 import {Card, CardHeader, CardTitle} from "@/components/ui/card"
@@ -11,22 +12,63 @@ import {ArrowRight, Users} from "lucide-react"
 import {committees, CommitteeText} from "@/lib/data/committees"
 
 export default function CommitteesPage() {
+    const [query, setQuery] = useState("")
+    const [difficulty, setDifficulty] = useState<"All" | "Beginner" | "Intermediate" | "Advanced">("All")
+
+    const filtered = useMemo(() => {
+        const q = query.trim().toLowerCase()
+        return committees.filter((c) => {
+            if (difficulty !== "All" && c.difficulty !== difficulty) return false
+            if (!q) return true
+            return (
+                c.name.toLowerCase().includes(q) ||
+                c.description.toLowerCase().includes(q) ||
+                c.detailedDescription.toLowerCase().includes(q) ||
+                c.topics.join(" ").toLowerCase().includes(q)
+            )
+        })
+    }, [query, difficulty])
+
     return (
         <div className="min-h-screen">
             <ScrollToTop/>
             <Navigation/>
 
-            <section className="pt-32 pb-20 px-4">
+            <section className="pt-32 pb-6 px-4">
                 <div className="container mx-auto animate-in fade-in duration-1000">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-6">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">{CommitteeText.PAGE_TITLE}</h1>
-                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-                            {CommitteeText.PAGE_SUBTITLE}
-                        </p>
+                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">{CommitteeText.PAGE_SUBTITLE}</p>
+                    </div>
+
+                    {/* Filters */}
+                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 justify-between max-w-4xl mx-auto mb-6">
+                        <div className="flex-1">
+                            <input
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                                placeholder="Search committees..."
+                                className="w-full bg-muted border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                                aria-label="Search committees"
+                            />
+                        </div>
+                        <div className="w-48">
+                            <select
+                                value={difficulty}
+                                onChange={(e) => setDifficulty(e.target.value as any)}
+                                className="w-full bg-muted border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                                aria-label="Filter by difficulty"
+                            >
+                                <option>All</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        {committees.map((committee) => (
+                        {filtered.map((committee) => (
                             <Link key={committee.id} href={`/committees/${committee.id}`}>
                                 <Card
                                     className="bg-card border-border overflow-hidden hover:border-primary/50 transition-all cursor-pointer h-full p-0">

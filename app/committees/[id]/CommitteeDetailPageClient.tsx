@@ -31,14 +31,14 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                     </Link>
 
                     {/* Banner image */}
-                    <div className="w-full h-64 md:h-80 relative bg-muted rounded-lg overflow-hidden mb-8">
+                    <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px] bg-muted rounded-t-xl overflow-hidden mb-8">
                         <Image
                             src={committee.bannerImage || CommitteeDetailPage.PLACEHOLDER_IMAGE}
                             alt={`${committee.name} Banner`}
-                            fill
+                            width={1200}
+                            height={300}
                             priority
-                            sizes="(max-width: 1280px) 100vw, 1280px"
-                            className="object-cover"
+                            className="block w-full h-auto object-contain sm:h-full rounded-t-xl"
                         />
                     </div>
 

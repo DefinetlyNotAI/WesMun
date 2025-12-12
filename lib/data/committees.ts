@@ -117,7 +117,7 @@ export const committees: Committee[] = [
     // Intermediate
     {
         id: "ga1",
-        name: "General Assembly First Committee (DISEC)",
+        name: "General Assembly First Committee",
         abbreviation: "GA1",
         description: "GA1 focuses on international peace and security, disarmament, and the regulation of weapons and defense technologies.",
         detailedDescription: "Delegates in GA1 will debate the future of warfare, automation, and global defense compliance. The committee will focus on how new technologies reshape conflict and deterrence.",

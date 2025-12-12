@@ -29,14 +29,14 @@ export default function CommitteesPage() {
                         {committees.map((committee) => (
                             <Link key={committee.id} href={`/committees/${committee.id}`}>
                                 <Card
-                                    className="bg-card border-border overflow-hidden hover:border-primary/50 transition-all cursor-pointer h-full">
-                                    <div className="w-full h-48 relative bg-muted">
+                                    className="bg-card border-border overflow-hidden hover:border-primary/50 transition-all cursor-pointer h-full p-0">
+                                    <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px] bg-muted rounded-t-xl overflow-hidden">
                                         <Image
                                             src={committee.bannerImage || CommitteeText.PLACEHOLDER_IMAGE}
                                             alt={`${committee.name} Banner`}
-                                            fill
-                                            sizes="(max-width: 1024px) 100vw, 50vw"
-                                            className="object-cover"
+                                            width={1200}
+                                            height={300}
+                                            className="block w-full h-auto object-contain sm:h-full rounded-t-xl"
                                         />
                                     </div>
                                     <CardHeader className="border-b border-border">

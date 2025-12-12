@@ -36,15 +36,15 @@ function DepartmentCard({department}: { department: typeof departments[number] }
     return (
         <Card className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors p-0">
             {/* Banner Image */}
-            <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px]">
+            <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px] rounded-t-xl overflow-hidden">
                 <Image
                     src={department.bannerImage || DepartmentText.PLACEHOLDER_IMAGE}
                     alt={`${department.name} team`}
                     width={1200}
                     height={300}
-                    className="w-full h-auto object-contain sm:object-cover sm:h-full"
+                    className="block w-full h-auto object-contain sm:object-cover sm:h-full rounded-t-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"/>
+                <div className="absolute inset-0 bg-linear-to-t from-background/90 to-transparent"/>
                 <h2 className="absolute bottom-4 left-4 text-2xl md:text-4xl font-bold text-foreground">
                     {department.name}
                 </h2>
@@ -63,7 +63,7 @@ function DepartmentCard({department}: { department: typeof departments[number] }
                             href={`mailto:${department.email}`}
                             className="inline-flex items-center gap-1.5 text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors"
                         >
-                            <Mail size={16} className="flex-shrink-0"/>
+                            <Mail size={16} className="shrink-0"/>
                             <span className="truncate">{department.email}</span>
                         </a>
                     )}

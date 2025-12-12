@@ -67,18 +67,20 @@ export default function CommitteesPage() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 gap-6">
                         {filtered.map((committee) => (
                             <Link key={committee.id} href={`/committees/${committee.id}`}>
                                 <Card
                                     className="bg-card border-border overflow-hidden hover:border-primary/50 transition-all cursor-pointer h-full p-0">
-                                    <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px] bg-muted rounded-t-xl overflow-hidden">
+                                    {/* Image-first banner: image controls height, constrained by max-height so layout stays modular */}
+                                    <div className="relative w-full rounded-t-xl overflow-hidden">
                                         <Image
                                             src={committee.bannerImage || CommitteeText.PLACEHOLDER_IMAGE}
                                             alt={`${committee.name} Banner`}
-                                            width={1200}
-                                            height={300}
-                                            className="block w-full h-auto object-contain sm:h-full rounded-t-xl"
+                                            width={1600}
+                                            height={900}
+                                            className="block w-full h-auto object-contain max-h-[60vh] md:max-h-[50vh] rounded-t-xl"
+                                            sizes="100vw"
                                         />
                                     </div>
                                     <CardHeader className="border-b border-border">

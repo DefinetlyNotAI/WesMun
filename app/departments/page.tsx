@@ -36,15 +36,16 @@ function DepartmentCard({department}: { department: typeof departments[number] }
     return (
         <Card className="bg-card border-border overflow-hidden hover:border-primary/50 transition-colors p-0">
             {/* Banner Image */}
-            <div className="relative w-full h-auto sm:h-64 md:h-96 lg:h-[400px] rounded-t-xl overflow-hidden">
+            <div className="relative w-full rounded-t-xl overflow-hidden">
                 <Image
                     src={department.bannerImage || DepartmentText.PLACEHOLDER_IMAGE}
                     alt={`${department.name} team`}
-                    width={1200}
-                    height={300}
-                    className="block w-full h-auto object-contain sm:object-cover sm:h-full rounded-t-xl"
+                    width={1600}
+                    height={900}
+                    className="block w-full h-auto object-contain max-h-[60vh] md:max-h-[50vh] rounded-t-xl"
+                    sizes="100vw"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-background/90 to-transparent"/>
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent"/>
                 <h2 className="absolute bottom-4 left-4 text-2xl md:text-4xl font-bold text-foreground">
                     {department.name}
                 </h2>

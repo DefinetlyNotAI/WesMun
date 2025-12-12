@@ -22,7 +22,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNICEF+(junior)&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unicef.pdf",
-        committeeSize: "35-45 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Beginner"
     },
     {
@@ -44,7 +44,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=WHO&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/who.pdf",
-        committeeSize: "25-30 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Beginner"
     },
     {
@@ -88,7 +88,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=GA3&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/ga3.pdf",
-        committeeSize: "40-50 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Beginner"
     },
     {
@@ -110,7 +110,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=F1&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/f1.pdf",
-        committeeSize: "20-25 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Beginner"
     },
 
@@ -134,7 +134,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=GA1&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/ga1.pdf",
-        committeeSize: "35 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Intermediate"
     },
     {
@@ -156,7 +156,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=Arab+League+(AR)&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/arab-league.pdf",
-        committeeSize: "30 delegates",
+        committeeSize: "20 delegates",
         difficulty: "Intermediate"
     },
     {
@@ -178,7 +178,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNODC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unodc.pdf",
-        committeeSize: "25-30 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Intermediate"
     },
     {
@@ -200,7 +200,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNWOMEN&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unw.pdf",
-        committeeSize: "30 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Intermediate"
     },
     {
@@ -222,7 +222,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=ECOSOC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/ecosoc.pdf",
-        committeeSize: "30 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Intermediate"
     },
 
@@ -245,7 +245,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNOOSA&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/unoosa.pdf",
-        committeeSize: "20 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Advanced"
     },
     {
@@ -289,7 +289,7 @@ export const committees: Committee[] = [
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=PBC&entry.905580654=Yes`
         },
         backgroundGuidePdf: "/guides/pbc.pdf",
-        committeeSize: "20 delegates",
+        committeeSize: "30-35 delegates",
         difficulty: "Advanced"
     },
     {

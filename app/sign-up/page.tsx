@@ -11,7 +11,6 @@ import {Check, ExternalLink} from "lucide-react"
 import {paymentInstructions, signUpPageContent, SignUpText} from "@/lib/data/signup"
 import PaymentModal from "@/components/payment-modal"
 
-
 export default function SignUpPage() {
     const [isEarlyBird, setIsEarlyBird] = useState(true)
     const [showPaymentModal, setShowPaymentModal] = useState(false)
@@ -46,7 +45,7 @@ export default function SignUpPage() {
                                 <CardHeader className="text-center pb-4">
                                     <CardTitle className="text-2xl mb-2">{type.name}</CardTitle>
                                     <CardDescription
-                                        className="text-sm min-h-[40px]">{type.description}</CardDescription>
+                                        className="text-sm min-h-10">{type.description}</CardDescription>
                                     <div className="mt-4">
                                         {isEarlyBird && type.earlyBirdPrice ? (
                                             <>
@@ -70,7 +69,7 @@ export default function SignUpPage() {
                                 <CardContent className="flex-1 flex flex-col">
                                     <div className="mb-6 flex-1">
                                         <div className="flex items-center gap-2 mb-3">
-                                            <Check className="text-primary flex-shrink-0" size={20}/>
+                                            <Check className="text-primary shrink-0" size={20}/>
                                             <span
                                                 className="text-lg font-semibold text-foreground">{SignUpText.PERKS_TITLE}</span>
                                         </div>

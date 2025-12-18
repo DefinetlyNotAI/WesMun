@@ -5,7 +5,16 @@ import {Card, CardContent} from "@/components/ui/card"
 import {Button} from "@/components/ui/button"
 import {SiInstagram, SiTiktok} from "react-icons/si"
 import {contactInfo, ContactText} from "@/lib/data/contact"
+import type { Metadata } from 'next'
 
+
+export const metadata: Metadata = {
+    title: 'Contact - WESMUN 2026',
+    description: ContactText.PAGE_SUBTITLE || 'Contact WESMUN',
+    alternates: {
+        canonical: 'https://wesmun.com/contact'
+    }
+}
 
 export default function ContactPage() {
     return (

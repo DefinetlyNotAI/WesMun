@@ -23,11 +23,21 @@ const nextConfig = {
     async headers() {
         return [
             {
-                source: "/(.*)",
+                source: "(/.*)",
                 headers: securityHeaders,
             },
         ];
     },
+    // Redirect /index.html to / to avoid duplicate-index issues
+    async redirects() {
+        return [
+            {
+                source: '/index.html',
+                destination: '/',
+                permanent: true,
+            },
+        ]
+    }
 };
 
 export default nextConfig;

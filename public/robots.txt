@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wesmun.com
+Host: https://www.wesmun.com
 
 # Sitemaps
-Sitemap: https://wesmun.com/sitemap.xml
+Sitemap: https://www.wesmun.com/sitemap.xml

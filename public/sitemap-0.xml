@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
     <url>
-        <loc>https://wesmun.com</loc>
+        <loc>https://www.wesmun.com</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/departments</loc>
+        <loc>https://www.wesmun.com/departments</loc>
         <lastmod>2025-12-07T20:17:20.466Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/faqs</loc>
+        <loc>https://www.wesmun.com/faqs</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees</loc>
+        <loc>https://www.wesmun.com/committees</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/sign-up</loc>
+        <loc>https://www.wesmun.com/sign-up</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/contact</loc>
+        <loc>https://www.wesmun.com/contact</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -40,91 +40,91 @@
 
     <!-- Committee pages: priority 0.7, daily updates (approx every 2 days) -->
     <url>
-        <loc>https://wesmun.com/committees/arab-league</loc>
+        <loc>https://www.wesmun.com/committees/arab-league</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/ecosoc</loc>
+        <loc>https://www.wesmun.com/committees/ecosoc</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/f1</loc>
+        <loc>https://www.wesmun.com/committees/f1</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/ga1</loc>
+        <loc>https://www.wesmun.com/committees/ga1</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/ga3</loc>
+        <loc>https://www.wesmun.com/committees/ga3</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/hcc</loc>
+        <loc>https://www.wesmun.com/committees/hcc</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/interpol</loc>
+        <loc>https://www.wesmun.com/committees/interpol</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/pbc</loc>
+        <loc>https://www.wesmun.com/committees/pbc</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/unhrc</loc>
+        <loc>https://www.wesmun.com/committees/unhrc</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/unicef</loc>
+        <loc>https://www.wesmun.com/committees/unicef</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/unodc</loc>
+        <loc>https://www.wesmun.com/committees/unodc</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/unoosa</loc>
+        <loc>https://www.wesmun.com/committees/unoosa</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/unsc</loc>
+        <loc>https://www.wesmun.com/committees/unsc</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/unw</loc>
+        <loc>https://www.wesmun.com/committees/unw</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://wesmun.com/committees/who</loc>
+        <loc>https://www.wesmun.com/committees/who</loc>
         <lastmod>2025-12-07T20:17:20.467Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>

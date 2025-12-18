@@ -54,11 +54,10 @@ export default function CommitteesPage() {
     // EASTER EGG
     const handleSearch = (q: string) => {
         const normalized = q.trim().toLowerCase()
-        if (normalized === 'shahm') {
-            const rickroll = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            // open rickroll in a new tab and redirect current tab to the GitHub profile
-            window.open(rickroll, '_blank', 'noopener,noreferrer')
-            window.location.href = 'https://github.com/DefinetlyNotAI'
+        if (normalized.includes("shahm")) {
+            const rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            window.open(rickroll, "_blank", "noopener,noreferrer")
+            window.location.href = "https://github.com/DefinetlyNotAI"
         }
     }
 
@@ -93,12 +92,10 @@ export default function CommitteesPage() {
                         <div className="flex-1">
                             <input
                                 value={query}
-                                onChange={(e) => setQuery(e.target.value)}
-                                onKeyDown={(e) => {
-                                    if (e.key === 'Enter') {
-                                        e.preventDefault()
-                                        handleSearch(query)
-                                    }
+                                onChange={(e) => {
+                                    const v = e.target.value
+                                    setQuery(v)
+                                    handleSearch(v)
                                 }}
                                 placeholder="Search committees..."
                                 className="w-full bg-muted border border-border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary"

@@ -40,10 +40,11 @@ function DepartmentCard({department}: { department: typeof departments[number] }
                 <Image
                     src={department.bannerImage || DepartmentText.PLACEHOLDER_IMAGE}
                     alt={`${department.name} team`}
-                    width={1600}
-                    height={900}
+                    width={1280}
+                    height={720}
                     className="block w-full h-auto object-contain max-h-[60vh] md:max-h-[50vh] rounded-t-xl"
-                    sizes="100vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1280px, 1280px"
+                    priority={false}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent"/>
                 <h2 className="absolute bottom-4 left-4 text-2xl md:text-4xl font-bold text-foreground">

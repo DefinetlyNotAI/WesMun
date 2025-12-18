@@ -58,11 +58,11 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                         <Image
                             src={committee.bannerImage || CommitteeDetailPage.PLACEHOLDER_IMAGE}
                             alt={`${committee.name} Banner`}
-                            width={1600}
-                            height={900}
+                            width={1280}
+                            height={720}
                             priority
                             className="block w-full h-auto object-contain max-h-[60vh] md:max-h-[50vh] rounded-t-xl"
-                            sizes="100vw"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1280px, 1280px"
                         />
                     </div>
 

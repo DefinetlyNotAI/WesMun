@@ -2,6 +2,15 @@
   "name": "wesmun",
   "version": "2026.0.0",
   "private": true,
+  "browserslist": [
+    "chrome >= 94",
+    "edge >= 94",
+    "firefox >= 93",
+    "safari >= 15",
+    "not dead",
+    "not ie 11",
+    "not op_mini all"
+  ],
   "scripts": {
     "build": "next build",
     "dev": "next dev",

@@ -147,6 +147,7 @@
 
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-sans), serif;
+        contain: layout style;
     }
 
     .logo, .hero-title, .section-title {
@@ -155,6 +156,16 @@
 
     p, span, div, a, button, input, textarea, select, label {
         font-family: var(--font-sans), serif;
+    }
+
+    /* Performance: Use containment for major sections */
+    section {
+        contain: layout style paint;
+    }
+
+    /* Performance: Reduce reflows for images */
+    img, picture {
+        content-visibility: auto;
     }
 }
 

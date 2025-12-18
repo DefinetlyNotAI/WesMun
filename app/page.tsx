@@ -80,8 +80,12 @@ export default function HomePage() {
                         </div>
                         <Card className="bg-card border-border overflow-hidden">
                             <div className="w-full h-64 md:h-80 relative bg-muted">
-                                <Image src={MainText.SG_LETTER.image} alt="Secretary Generals" fill
-                                       sizes="(max-width: 1280px) 100vw, 1280px"
+                                <Image src={MainText.SG_LETTER.image} alt="Secretary Generals"
+                                       width={750}
+                                       height={500}
+                                       sizes="(max-width: 640px) 640px, (max-width: 768px) 750px, 1080px"
+                                       quality={60}
+                                       loading="lazy"
                                        className="object-cover"/>
                             </div>
                             <CardContent className="p-8 md:p-12">
@@ -135,7 +139,7 @@ export default function HomePage() {
 
             {/* MainText.CTA Section */}
             <section className="py-20 px-4">
-                <div className="container mx-auto text-center animate-in fade-in duration-1000 delay-500">
+                <div className="container mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">{MainText.CTA.title}</h2>
                     <p className="text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">{MainText.CTA.description}</p>
                     <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">

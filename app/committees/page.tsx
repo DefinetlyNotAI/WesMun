@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useMemo, useState} from "react"
+import React, {useEffect, useMemo, useState} from "react"
 import Link from "next/link"
 import Image from "next/image"
 import {Card, CardHeader, CardTitle} from "@/components/ui/card"
@@ -8,12 +8,48 @@ import {Badge} from "@/components/ui/badge"
 import {Navigation} from "@/components/navigation"
 import {Footer} from "@/components/footer"
 import {ScrollToTop} from "@/components/scroll-to-top"
-import {ArrowRight, Users} from "lucide-react"
+import {ArrowRight, Users, Download} from "lucide-react"
 import {committees, CommitteeText} from "@/lib/data/committees"
+import {checkImageExists, checkUrlExists} from "@/lib/checkResource"
 
 export default function CommitteesPage() {
     const [query, setQuery] = useState("")
     const [difficulty, setDifficulty] = useState<"All" | "Beginner" | "Intermediate" | "Advanced">("All")
+
+    // track which committees have valid banners and which have pdfs
+    const [visibleCommittees, setVisibleCommittees] = useState(() => committees)
+    const [pdfAvailableMap, setPdfAvailableMap] = useState<Record<string, boolean>>({})
+
+    // On mount: validate banner images and PDFs (client-side). We purposely do not remove the
+    // committee server-side because this page is client-side. For performance we perform checks
+    // in parallel but with modest timeouts in lib/checkResource.
+    useEffect(() => {
+        let mounted = true
+
+        async function validateResources() {
+            const bannerChecks = await Promise.all(
+                committees.map(async (c) => ({ id: c.id, ok: await checkImageExists(c.bannerImage || CommitteeText.PLACEHOLDER_IMAGE) }))
+            )
+            const visible = committees.filter((c) => bannerChecks.find((b) => b.id === c.id)?.ok)
+
+            const pdfEntries = await Promise.all(
+                committees.map(async (c) => ({ id: c.id, ok: await checkUrlExists(c.backgroundGuidePdf) }))
+            )
+
+            if (!mounted) return
+            const pdfMap: Record<string, boolean> = {}
+            pdfEntries.forEach((p) => (pdfMap[p.id] = p.ok))
+
+            setVisibleCommittees(visible)
+            setPdfAvailableMap(pdfMap)
+        }
+
+        validateResources()
+
+        return () => {
+            mounted = false
+        }
+    }, [])
 
     // EASTER EGG
     const handleSearch = (q: string) => {
@@ -28,7 +64,7 @@ export default function CommitteesPage() {
 
     const filtered = useMemo(() => {
         const q = query.trim().toLowerCase()
-        return committees.filter((c) => {
+        return visibleCommittees.filter((c) => {
             if (difficulty !== "All" && c.difficulty !== difficulty) return false
             if (!q) return true
             return (
@@ -38,7 +74,7 @@ export default function CommitteesPage() {
                 c.topics.join(" ").toLowerCase().includes(q)
             )
         })
-    }, [query, difficulty])
+    }, [query, difficulty, visibleCommittees])
 
     return (
         <div className="min-h-screen">
@@ -129,6 +165,24 @@ export default function CommitteesPage() {
                                                 </div>
                                                 <p className="text-sm text-muted-foreground leading-relaxed">{committee.description}</p>
                                             </div>
+
+                                            {/* PDF indicator / download availability - show a small icon that reflects availability */}
+                                            <div className="flex items-center ml-4">
+                                                <button
+                                                    className={`inline-flex items-center px-3 py-2 rounded-md text-sm border ${pdfAvailableMap[committee.id] ? 'bg-transparent border-transparent text-primary hover:underline' : 'bg-muted text-muted-foreground cursor-not-allowed'} `}
+                                                    aria-disabled={!pdfAvailableMap[committee.id]}
+                                                    title={pdfAvailableMap[committee.id] ? 'Download background guide' : 'We are working on creating the background guides'}
+                                                    onClick={(e) => {
+                                                        if (!pdfAvailableMap[committee.id]) {
+                                                            e.preventDefault()
+                                                            e.stopPropagation()
+                                                        }
+                                                    }}
+                                                >
+                                                    <Download className={pdfAvailableMap[committee.id] ? 'text-primary' : 'text-muted-foreground'} size={16} />
+                                                </button>
+                                            </div>
+
                                         </div>
                                     </CardHeader>
                                 </Card>

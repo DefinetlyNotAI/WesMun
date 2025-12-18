@@ -24,14 +24,12 @@ export const faqs: FAQ[] = [
             "Early bird registration is 220 AED per delegate, and regular registration is 250 AED per delegate. Registration includes all conference materials, meals, and social events. More details can be found on the signup page.",
         category: "Registration",
     },
-    /*{
+    {
         id: "registration-deadline",
         question: "When is the registration deadline?",
-        // TODO update deadline date
-        answer:
-            "The final registration deadline is March 1st, 2026. However, we encourage early registration as committee spots are limited and fill up quickly. Early bird pricing ends February 1st, 2026.",
+        answer: "The final registration deadline is March 1st, 2026 (To be confirmed). However, we encourage early registration as committee spots are limited and fill up quickly.", // TODO Add this when confirmed: Early bird pricing ends February 1st, 2026
         category: "Registration",
-    },*/
+    },
     {
         id: "committee-assignment",
         question: "How are committee assignments made?",

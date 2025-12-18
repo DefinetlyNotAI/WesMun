@@ -14,8 +14,7 @@ export const metadata: Metadata = {
 // Navigation Links
 export const navigationLinks = [
     {name: "Home", href: "/"},
-    // TODO : Removed this link until committees are finalized
-    // {name: "Committees", href: "/committees"},
+    {name: "Committees", href: "/committees"},
     {name: "FAQs", href: "/faqs"},
     {name: "Contact", href: "/contact"},
     {name: "Departments", href: "/departments"},
@@ -113,8 +112,7 @@ export const MainText = {
     dateLocation: `${siteConfig.event.date} | ${siteConfig.event.location}`,
     buttons: [
         {text: "Register Now", href: "/sign-up", primary: true},
-        // TODO : Removed this link until committees are finalized
-        // {text: "View Committees", href: "/committees", primary: false},
+        {text: "View Committees", href: "/committees", primary: false},
     ],
 
     STATS: [

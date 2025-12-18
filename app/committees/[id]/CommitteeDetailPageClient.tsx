@@ -11,8 +11,31 @@ import {ScrollToTop} from "@/components/scroll-to-top"
 import {ArrowLeft, Download, ExternalLink, Users} from "lucide-react"
 import {CommitteeDetailPage} from "@/lib/data/committees";
 import {CommitteeDetailPageClientProps} from "@/lib/types";
+import {useEffect, useState} from "react"
+import {checkUrlExists} from "@/lib/checkResource"
 
 export default function CommitteeDetailPageClient({committee}: CommitteeDetailPageClientProps) {
+    const [pdfAvailable, setPdfAvailable] = useState<boolean | null>(null)
+    const [chair1Src, setChair1Src] = useState(committee.chair1?.image || CommitteeDetailPage.PLACEHOLDER_IMAGE)
+    const [chair2Src, setChair2Src] = useState(committee.chair2?.image || CommitteeDetailPage.PLACEHOLDER_IMAGE)
+    const [chair3Src, setChair3Src] = useState(committee.chair3?.image || CommitteeDetailPage.PLACEHOLDER_IMAGE)
+
+    useEffect(() => {
+        let mounted = true
+        async function check() {
+            const ok = await checkUrlExists(committee.backgroundGuidePdf)
+            if (!mounted) return
+            setPdfAvailable(ok)
+        }
+        check()
+        return () => { mounted = false }
+    }, [committee.backgroundGuidePdf])
+
+    // fallback handlers update state so Next/Image will render placeholder
+    const handleChair1Error = () => setChair1Src(CommitteeDetailPage.PLACEHOLDER_IMAGE)
+    const handleChair2Error = () => setChair2Src(CommitteeDetailPage.PLACEHOLDER_IMAGE)
+    const handleChair3Error = () => setChair3Src(CommitteeDetailPage.PLACEHOLDER_IMAGE)
+
     return (
         <div className="min-h-screen">
             <ScrollToTop/>
@@ -80,11 +103,12 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                 {committee.chair1 && (
                                     <div className="flex items-center gap-4">
                                         <Image
-                                            src={committee.chair1.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
+                                            src={chair1Src}
                                             alt={committee.chair1.name}
                                             width={80}
                                             height={80}
                                             className="rounded-full object-cover border-2 border-primary"
+                                            onError={handleChair1Error}
                                         />
                                         <div>
                                             <p className="text-lg font-semibold text-foreground">{committee.chair1.name}</p>
@@ -95,11 +119,12 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                 {committee.chair2 && (
                                     <div className="flex items-center gap-4">
                                         <Image
-                                            src={committee.chair2.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
+                                            src={chair2Src}
                                             alt={committee.chair2.name}
                                             width={80}
                                             height={80}
                                             className="rounded-full object-cover border-2 border-primary"
+                                            onError={handleChair2Error}
                                         />
                                         <div>
                                             <p className="text-lg font-semibold text-foreground">{committee.chair2.name}</p>
@@ -110,11 +135,12 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                 {committee.chair3 && (
                                     <div className="flex items-center gap-4">
                                         <Image
-                                            src={committee.chair3.image || CommitteeDetailPage.PLACEHOLDER_IMAGE}
+                                            src={chair3Src}
                                             alt={committee.chair3.name}
                                             width={80}
                                             height={80}
                                             className="rounded-full object-cover border-2 border-primary"
+                                            onError={handleChair3Error}
                                         />
                                         <div>
                                             <p className="text-lg font-semibold text-foreground">{committee.chair3.name}</p>
@@ -155,8 +181,8 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
 
                     {/* Action Buttons */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <Button asChild variant="outline" className="h-12 text-base bg-transparent">
-                            <a href={committee.backgroundGuidePdf} download>
+                        <Button asChild variant="outline" className={`h-12 text-base bg-transparent ${pdfAvailable === false ? 'opacity-60 cursor-not-allowed' : ''}`} aria-disabled={pdfAvailable === false}>
+                            <a href={committee.backgroundGuidePdf} download onClick={(e) => { if (pdfAvailable === false) e.preventDefault() }} title={pdfAvailable === false ? 'We are working on creating the background guides' : ''}>
                                 <Download className="mr-2" size={12}/>
                                 {CommitteeDetailPage.DOWNLOAD_BG_GUIDE}
                             </a>

@@ -13,9 +13,9 @@ export const committees: Committee[] = [
         topics: [
             "Addressing how global challenges such as climate change, natural disasters, and pandemics affect children's health and well-being."
         ],
-        chair1: {name: "Raghad Mohammed", image: "/placeholder.svg?height=300&width=300"},
-        chair2: {name: "Oshian Thada Magar", image: "/placeholder.svg?height=300&width=300"},
-        chair3: {name: "Tasnime Zermout", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Wasiq Nabeel", image: "/placeholder.svg?height=300&width=300"},
+        chair2: {name: "Zaina Islam", image: "/placeholder.svg?height=300&width=300"},
+        chair3: {name: "Ahmed Saad", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/img/com/banner/unicef.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNICEF+(junior)&entry.1245311872=Yes`,
@@ -57,7 +57,7 @@ export const committees: Committee[] = [
             "Maintaining a balance between national security and human rights in counterterrorism efforts and sanctioned regions.",
             "Overseeing emerging technologies to stop the misuse of AI and government surveillance."
         ],
-        chair1: {name: "Aaradhya Vij", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Mohamed Matthana", image: "/placeholder.svg?height=300&width=300"},
         chair2: {name: "Imani Karabu", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Ayten Toeima", image: "/img/com/single/AytenToeimaUNHRC.webp"},
         bannerImage: "/img/com/banner/unhrc.webp",
@@ -239,6 +239,7 @@ export const committees: Committee[] = [
         ],
         chair1: {name: "Alishba Ahmed", image: "/img/com/single/Alishba_Ahmed_UNOOSA.webp"},
         chair2: {name: "Rohith John", image: "/img/com/single/Rohith_John_UNOOSA.webp"},
+        chair3: {name: "Syeda Naba Adnan", image: "/placeholder.svg?height=300&width=300"},
         bannerImage: "/img/com/banner/unoosa.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNOOSA&entry.1245311872=Yes`,
@@ -281,7 +282,7 @@ export const committees: Committee[] = [
             "Addressing how gender-based political violence and structural discrimination hinder women's role in peacebuilding."
         ],
         chair1: {name: "Qurratulain Azza Kazmi", image: "/img/com/single/QurratulainAzzaKazmi_PBC.webp"},
-        chair2: {name: "Eshal Khan", image: "/placeholder.svg?height=300&width=300"},
+        chair2: {name: "Maryam Jandali", image: "/placeholder.svg?height=300&width=300"},
         chair3: {name: "Dhruv Hitesh", image: "/img/com/single/Dhruv_Hitesh_PBC.webp"},
         bannerImage: "/img/com/banner/pbc.webp",
         signupLink: {

@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "postbuild": "next-sitemap"
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

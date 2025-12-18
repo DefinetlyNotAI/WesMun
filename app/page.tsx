@@ -81,8 +81,7 @@ export default function HomePage() {
                         <Card className="bg-card border-border overflow-hidden">
                             <div className="w-full h-64 md:h-80 relative bg-muted">
                                 <Image src={MainText.SG_LETTER.image} alt="Secretary Generals"
-                                       width={750}
-                                       height={500}
+                                       fill
                                        sizes="(max-width: 640px) 640px, (max-width: 768px) 750px, 1080px"
                                        quality={60}
                                        loading="lazy"

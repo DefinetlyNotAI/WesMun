@@ -11,7 +11,8 @@ export function generateStaticParams() {
 
 // Provide a user-selected canonical for each dynamic committee page
 export async function generateMetadata({ params }: any): Promise<Metadata> {
-    const id = params?.id
+    const resolvedParams = await params
+    const id = resolvedParams?.id
     const committee: Committee | undefined = committees.find((c) => c.id === String(id))
     if (!committee) {
         return {}

@@ -92,9 +92,9 @@ export default function PaymentModal({open, onCloseAction, instructions}: Props)
                     >
                         <div className="p-4 sm:p-6 max-h-[70vh] overflow-y-auto">
                             <div className="flex items-start justify-between">
-                                <h3 className="text-lg font-semibold" style={{color: "#e0aa3e"}}>
+                                <h2 className="text-lg font-semibold" style={{color: "#e0aa3e"}}>
                                     Payment Instructions
-                                </h3>
+                                </h2>
                                 <button
                                     onClick={onCloseAction}
                                     className="ml-4 transition-colors"
@@ -110,9 +110,9 @@ export default function PaymentModal({open, onCloseAction, instructions}: Props)
                             <div className="mt-4 text-sm space-y-4">
                                 {Object.entries(instructions).map(([key, steps]) => (
                                     <div key={key}>
-                                        <h4 className="font-medium mb-2 capitalize" style={{color: "#e0aa3e"}}>
+                                        <h3 className="font-medium mb-2 capitalize" style={{color: "#e0aa3e"}}>
                                             {key}
-                                        </h4>
+                                        </h3>
                                         <ol className="list-decimal list-inside space-y-1" style={{color: "#d29a33"}}>
                                             {steps.map((step, i) => (
                                                 <li key={i} className="leading-relaxed">

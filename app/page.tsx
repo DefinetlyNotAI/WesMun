@@ -63,7 +63,7 @@ export default function HomePage() {
                                     className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
                                     <stat.icon className="text-primary" size={32}/>
                                 </div>
-                                <h3 className="text-3xl font-bold text-foreground mb-2">{stat.value}</h3>
+                                <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
                                 <p className="text-muted-foreground">{stat.label}</p>
                             </div>
                         ))}

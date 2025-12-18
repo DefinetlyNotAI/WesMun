@@ -31,7 +31,7 @@ export default function ContactPage() {
 
                     <Card className="bg-card border-border">
                         <CardContent className="p-8 text-center">
-                            <h3 className="text-xl font-semibold text-foreground mb-4">{ContactText.SOCIAL_TITLE}</h3>
+                            <h2 className="text-xl font-semibold text-foreground mb-4">{ContactText.SOCIAL_TITLE}</h2>
                             <div className="flex gap-4 justify-center mb-6">
                                 <Button asChild variant="outline" size="icon">
                                     <a

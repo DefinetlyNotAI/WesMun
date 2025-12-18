@@ -39,26 +39,59 @@ export async function checkImageExists(url: string, timeoutMs = 5000): Promise<b
     })
 }
 
+/**
+ * Checks if a URL resource exists by attempting a HEAD request.
+ * Uses XMLHttpRequest to minimize console noise from expected 404s.
+ * @param url The URL to check
+ * @param timeoutMs Timeout in milliseconds
+ * @returns Promise<boolean> true if resource exists and is accessible
+ */
 export async function checkUrlExists(url: string, timeoutMs = 5000): Promise<boolean> {
     if (!url) return false
-    const controller = new AbortController()
-    const timeout = setTimeout(() => controller.abort(), timeoutMs)
 
-    try {
-        // Try HEAD first for a lightweight check
-        let res = await fetch(url, { method: 'HEAD', signal: controller.signal })
-        clearTimeout(timeout)
-        if (res.ok) return true
+    return new Promise((resolve) => {
+        const xhr = new XMLHttpRequest()
+        let resolved = false
 
-        // Some servers don't allow HEAD. Try GET as a fallback.
-        const controller2 = new AbortController()
-        const timeout2 = setTimeout(() => controller2.abort(), timeoutMs)
-        res = await fetch(url, { method: 'GET', signal: controller2.signal })
-        clearTimeout(timeout2)
-        return res.ok
-    } catch (e) {
-        // network error / aborted / CORS opaque responses may show up here
-        return false
-    }
+        const cleanup = () => {
+            if (!resolved) {
+                resolved = true
+                xhr.abort()
+            }
+        }
+
+        const timer = setTimeout(() => {
+            cleanup()
+            resolve(false)
+        }, timeoutMs)
+
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                clearTimeout(timer)
+                if (!resolved) {
+                    resolved = true
+                    // Check if status is in the success range (200-299)
+                    resolve(xhr.status >= 200 && xhr.status < 300)
+                }
+            }
+        }
+
+        xhr.onerror = () => {
+            clearTimeout(timer)
+            if (!resolved) {
+                resolved = true
+                resolve(false)
+            }
+        }
+
+        try {
+            xhr.open('HEAD', url, true)
+            xhr.send()
+        } catch (e) {
+            clearTimeout(timer)
+            cleanup()
+            resolve(false)
+        }
+    })
 }
 

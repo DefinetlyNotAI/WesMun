@@ -10,13 +10,13 @@ export function Footer() {
             <div className="container mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
-                        <h3 className="text-lg font-bold text-primary mb-4">{siteConfig.name}</h3>
+                        <div className="text-lg font-bold text-primary mb-4">{siteConfig.name}</div>
                         <p className="text-sm text-muted-foreground mb-4">{siteConfig.event.theme}</p>
                         <p className="text-sm text-muted-foreground">{siteConfig.event.date}</p>
                     </div>
 
                     <div>
-                        <h4 className="text-sm font-semibold text-foreground mb-4">Quick Links</h4>
+                        <div className="text-sm font-semibold text-foreground mb-4">Quick Links</div>
                         <div className="flex flex-col gap-2">
                             {navigationLinks.map((link) => (
                                 <Link
@@ -31,7 +31,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-sm font-semibold text-foreground mb-4">Connect With Us</h4>
+                        <div className="text-sm font-semibold text-foreground mb-4">Connect With Us</div>
                         <div className="flex gap-4 mb-4">
                             <a
                                 href={contactInfo.socialMedia.instagram}

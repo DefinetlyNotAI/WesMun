@@ -32,8 +32,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                 as="font"
                 type="font/otf"
                 crossOrigin="anonymous"
-                // @ts-ignore - fetchpriority is valid but not in types yet
-                fetchpriority="high"
+                fetchPriority="high"
             />
         </head>
         <body className="font-sans antialiased">

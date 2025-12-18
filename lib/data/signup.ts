@@ -7,7 +7,7 @@ export const signupBaseUrl = {
 export const signUpPageContent = {
     title: "Register for WESMUN 2026",
     description: "Join us for an unforgettable Model UN experience. Choose your registration type below.",
-    earlyBirdDeadline: "2026-02-01T23:59:59",
+    earlyBirdDeadline: "2026-01-01T23:59:59",
     features: [
         "15 dynamic committees led by engaging and practiced chairs",
         "Lavish buffet featuring 20 dishes from 5 cuisines - a feast for everyone",

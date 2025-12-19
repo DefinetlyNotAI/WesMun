@@ -57,7 +57,7 @@ export const committees: Committee[] = [
             "Maintaining a balance between national security and human rights in counterterrorism efforts and sanctioned regions.",
             "Overseeing emerging technologies to stop the misuse of AI and government surveillance."
         ],
-        chair1: {name: "Mohamed Matthana", image: "/placeholder.svg?height=300&width=300"},
+        chair1: {name: "Mohamed Matthana", image: "/img/com/single/Mohamed_Matthana_UNHRC.webp"},
         chair2: {name: "Imani Karabu", image: "/img/com/single/Imani_Karabu_UNHRC.webp"},
         chair3: {name: "Ayten Toeima", image: "/img/com/single/AytenToeima_UNHRC.webp"},
         bannerImage: "/img/com/banner/unhrc.webp",

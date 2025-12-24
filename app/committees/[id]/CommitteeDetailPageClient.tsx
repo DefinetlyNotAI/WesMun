@@ -11,8 +11,9 @@ import {ScrollToTop} from "@/components/scroll-to-top"
 import {ArrowLeft, Download, ExternalLink, Users} from "lucide-react"
 import {CommitteeDetailPage} from "@/lib/data/committees";
 import {CommitteeDetailPageClientProps} from "@/lib/types";
-import {useEffect, useState} from "react"
+import React, {useEffect, useState} from "react"
 import {checkUrlExists} from "@/lib/checkResource"
+import {MdEmail} from "react-icons/md";
 
 export default function CommitteeDetailPageClient({committee}: CommitteeDetailPageClientProps) {
     const [pdfAvailable, setPdfAvailable] = useState<boolean | null>(null)
@@ -88,6 +89,12 @@ export default function CommitteeDetailPageClient({committee}: CommitteeDetailPa
                                 <Users size={14} className="mr-2"/>
                                 {committee.committeeSize}
                             </Badge>
+                            <a href={`mailto:${committee.email}`} className="inline-block">
+                                <Badge variant="outline" className="text-base px-4 py-1 border-muted-foreground/50">
+                                    <MdEmail size={14} className="mr-2" />
+                                    {committee.email}
+                                </Badge>
+                            </a>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">{committee.name}</h1>
                         <p className="text-lg text-muted-foreground text-pretty">{committee.description}</p>

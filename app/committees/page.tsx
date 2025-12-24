@@ -11,6 +11,7 @@ import {ScrollToTop} from "@/components/scroll-to-top"
 import {ArrowRight, Users, Download} from "lucide-react"
 import {committees, CommitteeText} from "@/lib/data/committees"
 import {checkImageExists, checkUrlExists} from "@/lib/checkResource"
+import {MdEmail} from "react-icons/md";
 
 export default function CommitteesPage() {
     const [query, setQuery] = useState("")
@@ -44,7 +45,7 @@ export default function CommitteesPage() {
             setPdfAvailableMap(pdfMap)
         }
 
-        validateResources()
+        validateResources().catch(console.error)
 
         return () => {
             mounted = false
@@ -159,6 +160,12 @@ export default function CommitteesPage() {
                                                         <Users size={12} className="mr-1"/>
                                                         {committee.committeeSize}
                                                     </Badge>
+                                                    <a href={`mailto:${committee.email}`} className="inline-block">
+                                                        <Badge variant="outline" className="border-muted-foreground/50 cursor-pointer">
+                                                            <MdEmail size={12} className="mr-1" />
+                                                            {committee.email}
+                                                        </Badge>
+                                                    </a>
                                                 </div>
                                                 <p className="text-sm text-muted-foreground leading-relaxed">{committee.description}</p>
                                             </div>

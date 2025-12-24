@@ -9,7 +9,7 @@ const securityHeaders = [
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src 'self' https://fonts.gstatic.com data:;
       connect-src 'self';
-      img-src 'self' data:;
+      img-src 'self' https: blob: data:;
     `.replace(/\s{2,}/g, " ").trim(),
     },
 ];
@@ -45,6 +45,15 @@ const nextConfig = {
                 search: '',
             },
         ],
+        // Allow optimizing external images from https hosts (adjust hostname list as needed)
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+                port: '',
+                pathname: '/**',
+            },
+        ],
     },
     async headers() {
         return [
@@ -63,7 +72,18 @@ const nextConfig = {
                 permanent: true,
             },
         ]
-    }
+    },
+    // Fallback rewrite: if /com/banner/* is requested and no static file exists, serve a placeholder
+    async rewrites() {
+        return {
+            fallback: [
+                {
+                    source: '/com/banner/:path*',
+                    destination: '/img/placeholder.webp', // ensure this file exists in public/img/placeholder.webp
+                },
+            ],
+        };
+    },
 };
 
 export default nextConfig;

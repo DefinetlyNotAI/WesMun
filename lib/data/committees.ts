@@ -5,27 +5,6 @@ import {signupBaseUrl} from "@/lib/data/signup";
 // Committees
 export const committees: Committee[] = [
     {
-        id: "unicef",
-        name: "United Nations International Children's Emergency Fund",
-        abbreviation: "UNICEF (JR)",
-        description: "UNICEF focuses on protecting children's rights, ensuring access to education, and responding to humanitarian crises worldwide.",
-        detailedDescription: "UNICEF works globally to promote and protect the rights and well-being of every child, especially those affected by conflict, poverty, or displacement. Delegates will explore the intersection between geopolitics, humanitarian aid, and children’s welfare in the modern world.",
-        topics: [
-            "Addressing how global challenges such as climate change, natural disasters, and pandemics affect children's health and well-being."
-        ],
-        chair1: {name: "Wasiq Nabeel", image: "/img/com/single/Wasiq_Nabeel_UNICEF.webp"},
-        chair2: {name: "Zaina Islam", image: "/img/com/single/Zaina_Islam_UNICEF.webp"},
-        chair3: {name: "Ahmed Saad", image: "/img/com/single/Ahmed_Saad_UNICEF.webp"},
-        bannerImage: "/img/com/banner/unicef.webp",
-        signupLink: {
-            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNICEF+(junior)&entry.1245311872=Yes`,
-            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNICEF+(junior)&entry.905580654=Yes`
-        },
-        backgroundGuidePdf: "/guides/unicef.pdf",
-        committeeSize: "30-35 delegates",
-        difficulty: "Beginner"
-    },
-    {
         id: "who",
         name: "World Health Organization",
         abbreviation: "WHO",
@@ -45,7 +24,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/who.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Beginner"
+        difficulty: "Beginner",
+        email: "who@wesmun.com"
     },
     {
         id: "unhrc",
@@ -67,7 +47,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/unhrc.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Beginner"
+        difficulty: "Beginner",
+        email: "unhrc@wesmun.com"
     },
     {
         id: "ga3",
@@ -89,7 +70,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/ga3.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Beginner"
+        difficulty: "Beginner",
+        email: "ga3@wesmun.com"
     },
     {
         id: "f1",
@@ -111,7 +93,30 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/f1.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Beginner"
+        difficulty: "Beginner",
+        email: "f1@wesmun.com"
+    },
+    {
+        id: "unicef",
+        name: "United Nations International Children's Emergency Fund",
+        abbreviation: "UNICEF (JR)",
+        description: "UNICEF focuses on protecting children's rights, ensuring access to education, and responding to humanitarian crises worldwide.",
+        detailedDescription: "UNICEF works globally to promote and protect the rights and well-being of every child, especially those affected by conflict, poverty, or displacement. Delegates will explore the intersection between geopolitics, humanitarian aid, and children’s welfare in the modern world.",
+        topics: [
+            "Addressing how global challenges such as climate change, natural disasters, and pandemics affect children's health and well-being."
+        ],
+        chair1: {name: "Wasiq Nabeel", image: "/img/com/single/Wasiq_Nabeel_UNICEF.webp"},
+        chair2: {name: "Zaina Islam", image: "/img/com/single/Zaina_Islam_UNICEF.webp"},
+        chair3: {name: "Ahmed Saad", image: "/img/com/single/Ahmed_Saad_UNICEF.webp"},
+        bannerImage: "/img/com/banner/unicef.webp",
+        signupLink: {
+            internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=UNICEF+(junior)&entry.1245311872=Yes`,
+            external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=UNICEF+(junior)&entry.905580654=Yes`
+        },
+        backgroundGuidePdf: "/guides/unicef.pdf",
+        committeeSize: "30-35 delegates",
+        difficulty: "Beginner",
+        email: "unicef@wesmun.com"
     },
 
     // Intermediate
@@ -135,7 +140,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/ga1.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Intermediate"
+        difficulty: "Intermediate",
+        email: "ga1@wesmun.com"
     },
     {
         id: "arab-league",
@@ -157,7 +163,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/arab-league.pdf",
         committeeSize: "20 delegates",
-        difficulty: "Intermediate"
+        difficulty: "Intermediate",
+        email: "arab.league@wesmun.com"
     },
     {
         id: "unodc",
@@ -179,7 +186,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/unodc.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Intermediate"
+        difficulty: "Intermediate",
+        email: "unodc@wesmun.com"
     },
     {
         id: "unw",
@@ -201,7 +209,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/unw.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Intermediate"
+        difficulty: "Intermediate",
+        email: "unw@wesmun.com"
     },
     {
         id: "ecosoc",
@@ -223,7 +232,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/ecosoc.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Intermediate"
+        difficulty: "Intermediate",
+        email: "ecosoc@wesmun.com"
     },
 
     // Advanced
@@ -247,7 +257,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/unoosa.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Advanced"
+        difficulty: "Advanced",
+        email: "unoosa@wesmun.com"
     },
     {
         id: "unsc",
@@ -269,7 +280,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/unsc.pdf",
         committeeSize: "15 delegates",
-        difficulty: "Advanced"
+        difficulty: "Advanced",
+        email: "unsc@wesmun.com"
     },
     {
         id: "pbc",
@@ -291,7 +303,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/pbc.pdf",
         committeeSize: "30-35 delegates",
-        difficulty: "Advanced"
+        difficulty: "Advanced",
+        email: "pbc@wesmun.com"
     },
     {
         id: "interpol",
@@ -310,7 +323,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/interpol.pdf",
         committeeSize: "CLASSIFIED",
-        difficulty: "Advanced"
+        difficulty: "Advanced",
+        email: "interpol@wesmun.com"
     },
     {
         id: "hcc",
@@ -329,7 +343,8 @@ export const committees: Committee[] = [
         },
         backgroundGuidePdf: "/guides/hcc.pdf",
         committeeSize: "CLASSIFIED",
-        difficulty: "Advanced"
+        difficulty: "Advanced",
+        email: "hcc@wesmun.com"
     }
 ];
 

@@ -28,6 +28,7 @@ export interface Committee {
     backgroundGuidePdf: string
     committeeSize: string
     difficulty: "Beginner" | "Intermediate" | "Advanced"
+    email: string
 }
 
 export interface CommitteeDetailPageClientProps {

@@ -82,7 +82,7 @@ export const committees: Committee[] = [
         chair1: {name: "Raghad Mohammed", image: "/img/com/single/Raghad_Mohammed_GA3.webp"},
         chair2: {name: "Oshian Thada Magar", image: "/img/com/single/Oshian_Thada_Magar_GA3.webp"},
         chair3: {name: "Tasnime Zermout", image: "/img/com/single/Tasnime_Zermout_GA3.webp"},
-        bannerImage: "/com/banner/ga3.svg",
+        bannerImage: "/com/banner/ga3.webp",
         signupLink: {
             internal: `${signupBaseUrl.internal}?usp=pp_url&entry.547941527=GA3&entry.1245311872=Yes`,
             external: `${signupBaseUrl.external}?usp=pp_url&entry.8456407=GA3&entry.905580654=Yes`
